@@ -1,2 +1,2 @@
-# rtfm
+# RTFM
 documentation 
