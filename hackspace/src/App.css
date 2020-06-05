@@ -1,0 +1,168 @@
+html {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /*overflow-y: scroll;*/
+}
+
+/*MENU HEADER*/
+.header { 
+  display: flex;
+  justify-content: space-around;
+  
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 20vh;
+  z-index: 2;
+
+  border-bottom: solid black 0.8px;
+  background: white;
+  transition: 1s;
+}
+.header h1 {
+  color: black;
+  margin: auto;
+}
+.header h1:hover {
+  cursor: pointer; 
+  color: red;
+}
+.header ,.header h1, .header:hover h1 {
+  transition: 0.5s;
+}
+
+/*SIDE BARE MENU LATERAL*/
+.lateral {
+  cursor:pointer;
+  position: fixed;
+  /*display: grid;*/
+  top: 0;
+
+  z-index: 1;
+
+  width: 3vw;
+  height: 100vh;
+  background: white;
+  border-right: solid black 0.8px;
+}
+
+
+/*IMAGES*/
+/*go Top ICONE */
+.goTop {
+  position: fixed;
+  z-index: 1;
+  right: 3vw;
+  bottom: 3vh;
+  cursor: pointer;
+}
+.goTop img{
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+
+  opacity: 0;
+}
+.goTop img:hover {
+  width: 60px;
+  height: 60px;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/*CODE*/
+pre, code {
+  font-family: monospace, monospace;
+}
+pre {
+  border : solid grey 2px;
+  overflow: auto;
+  background : #e9ecef;
+  text-align: start;
+  font-size: 11px;
+}
+pre > code {
+  display: block;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+/*CONTENT*/
+.categorie {
+  text-decoration: underline;
+}
+
+
+.codeTitle {
+  font-size: 22px;
+}
+
+.codeDescription {
+  font-size : 14px;
+}
+
+
+/*BASIC*/
+.underline {
+  text-decoration: underline;
+}
+.red * { 
+  color : red !important;
+}
+.dbug {
+  border : solid 4px red;
+}
+.pointer {
+  cursor : pointer;
+}
+
+/*TEXTE FONT*/
+.title {
+  font-size: 32px;
+}
+.subTitle {
+  font-size: 24px;
+}
+.lasTitle {
+  font-size: 13px;
+}
+
+
+/*GHOST*/
+.corps {
+  color: purple;
+  z-index: 0;
+  scroll-behavior: 'smooth';
+  margin-top: 20vh;
+}
+    .cat{
+      width:130px;
+      height:130px;
+      position:absolute;
+      background:#ff0059;
+    }
+
+
+/*DISABLE LINK STYLE*/
+a:link {
+  color:black;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*IMAGE*/
+.LOGO {
+
+}
+#LOGO {
+  width: 20vw;
+  height: 20vh;
+}

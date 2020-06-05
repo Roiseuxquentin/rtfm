@@ -1,0 +1,227 @@
+{
+    "axes": [
+        {
+            "title": "syntax",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Structures",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Snippet",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "HTML",
+                                    "type": "code",
+                                    "description": "Template / Squelette HTML 5",
+                                    "code": "<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Algorithme",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "BoucleJS",
+                            "type": "code",
+                            "description": "Loop Javascript",
+                            "code": "While (kankonsarette) { } ",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Front",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Back",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "'<html></html>'",
+                            "children": []
+                        },
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        },
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        },
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "méthodes",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Installation",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Pump It!",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Automatisation",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Compilation",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Ressources",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "FrameWork & Librairie",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Systéme",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "E-Learning",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Online Tools",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Gouffre",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HTML",
+                            "type": "code",
+                            "description": "Template / Squelette HTML 5",
+                            "code": "<html></html>",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Tools",
+            "type": "categorie",
+            "img": "",
+            "children": []
+        }
+    ]
+}
