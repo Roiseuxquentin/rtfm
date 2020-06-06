@@ -1,6 +1,17 @@
 import React, {Component} from 'react';
 import Sommaire from './Sommaire.js'
 
+// ################################################### 
+// #*/=============================================\*# 
+// # ||                      .__                  || #
+// # ||   ____   ____   ____ |  |   ____   ____   || #
+// # || _/ __ \_/ __ \ / ___\|  |  /  _ \ /  _ \  || #
+// # || \  ___/\  ___// /_/  >  |_(  <_> |  <_> ) || #
+// # ||  \___  >\___  >___  /|____/\____/ \____/  || #
+// # ||      \/     \/_____/                  2020|| #
+// #.\=============================================/.#
+// ###################################################
+
 class Lateral extends Component {
 	constructor(props) {
 		super(props)
@@ -11,22 +22,26 @@ class Lateral extends Component {
 
 	menu() {
 		let boolean = (!this.state.develop)
-		this.setState({develop : boolean}) 
-		let a = document.getSelection()
-			console.log('%c DebuGg : ', 'background: orange; color: red' , a )
+		this.setState({develop : boolean})
+		const contents = document.getElementById("contents")
+		const code = contents.querySelectorAll("code")
+
+		if (boolean) {
+			code.forEach(elt => elt.style.marginLeft = "20vw")
+			document.getElementById("header").style.zIndex = "0"
+			document.getElementById("header").style.opacity = 0
+		} else {
+			code.forEach(elt => elt.style.marginLeft = "10px")
+		}
 	}
 
 	render() {
 		return (<div className="lateral" 
-					style={{ width : `${this.state.develop ? "33vw" : "3vw" }`, transition : "0.5s" }}
-					onMouseEnter={() => this.menu()} 
-					onMouseLeave={() => this.menu()} >
+						style={{ width : `${this.state.develop ? "33vw" : "2vw" }`, transition : "0.5s" }}
+						onMouseEnter={() => this.menu()} 
+						onMouseLeave={() => this.menu()} >
 
-					<div className="LOGO" style={{ opacity : `${this.state.develop ? 1 : 0 }`, transition : `${this.state.develop ?  "1.5s" : "0.1s" }` }} >
-		         		<img id="LOGO"
-							src="https://code-art.swiss/wp-content/uploads/2017/12/codeart.png" />
-		         	</div>
-					<Sommaire data={this.props.axe} mode={this.state.develop} />
+					<Sommaire data={this.props.axe} mode={this.state.develop} lateral />
 		       </div>)
 	}
 }

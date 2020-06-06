@@ -2,9 +2,9 @@ html {
   text-align: center;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   /*overflow-y: scroll;*/
 }
-
 /*MENU HEADER*/
 .header { 
   display: flex;
@@ -13,28 +13,30 @@ html {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 20vh;
+  height: 180px;
   z-index: 2;
 
   border-bottom: solid black 0.8px;
   background: white;
   transition: 1s;
 }
-.header h1 {
+
+.header * {
   color: black;
   margin: auto;
+  transition: 1s;
 }
-.header h1:hover {
+.header *:hover {
   cursor: pointer; 
-  color: red;
+  color: #9fc9e0;
+  transition: 0.5s;
 }
-.header ,.header h1, .header:hover h1 {
+.header {
   transition: 0.5s;
 }
 
 /*SIDE BARE MENU LATERAL*/
 .lateral {
-  cursor:pointer;
   position: fixed;
   /*display: grid;*/
   top: 0;
@@ -45,11 +47,102 @@ html {
   height: 100vh;
   background: white;
   border-right: solid black 0.8px;
+  overflow-y: scroll;
+}
+.lateral span , .lateral a {
+  cursor: pointer;
+}
+.lateral img {
+  pointer-events: none;
+}
+.lateral .lasTitle, .lateral h1 {
+  color: purple;
+ }
+.lateral h1 {
+  font-size: 3rem;
+}
+/*TEXTE FONT*/
+.title {
+  font-size: 1.6rem;
+}
+.subTitle {
+  font-size: 1.3rem;
+}
+.lasTitle {
+  font-size: 1rem;
 }
 
 
+
+
+/*CODE*/
+pre, code {
+  font-family: monospace, monospace;
+  transition: 0.5s;
+  width: 75vw;
+}
+pre {
+  margin: auto;
+  border : solid black 0.5px;
+  border-radius: 3px;
+  overflow: auto;
+  background : #e9ecef;
+  text-align: start;
+  font-size: 11px;
+}
+pre > code {
+  margin-left: 10px;
+  display: block;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+/* Ripple effect */
+pre {
+  background-position: center;
+  transition: background 0.8s;
+}
+pre:hover {
+  background: #e9ecef radial-gradient(circle, transparent 1%, #e9ecef 1%) center/15000%;
+}
+pre:active {
+  /*background-color: #D5F5E3;*/
+  background-color: #D2B4DE;
+  background-size: 100%;
+  transition: background 0s;
+}
+pre:active, code:active {
+  cursor: copy !important;
+}
+
+/*CONTENT*/
+.categorie {
+  text-decoration: underline;
+}
+
+.codeTitle, .codeDescription, .codeStep , .categorie{
+  cursor: default;
+}
+.codeTitle {
+  font-size: 22px;
+  cursor: default;
+}
+.codeDescription {
+  font-size : 14px;
+}
+.codeStep {
+  font-size : 10px;
+  text-align: start;
+  padding-left: 15vw;
+}
+
+
+
+
+
+
 /*IMAGES*/
-/*go Top ICONE */
+/*ICON*/
 .goTop {
   position: fixed;
   z-index: 1;
@@ -70,36 +163,29 @@ html {
   transition: 0.5s;
   opacity: 1;
 }
-
-/*CODE*/
-pre, code {
-  font-family: monospace, monospace;
+/*LATERAL*/
+.lateralLOGO {
+  display: flex;
+  justify-content: center;
 }
-pre {
-  border : solid grey 2px;
-  overflow: auto;
-  background : #e9ecef;
-  text-align: start;
-  font-size: 11px;
+#lateralLOGO {
+  width: 100px;
+  height: 130px;
 }
-pre > code {
-  display: block;
-  padding: 1rem;
-  word-wrap: normal;
+/*HOME*/
+.categorieImg {
+  transition: 0.3s;
+  opacity: 1;
+  position : fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
-
-/*CONTENT*/
-.categorie {
-  text-decoration: underline;
-}
-
-
-.codeTitle {
-  font-size: 22px;
-}
-
-.codeDescription {
-  font-size : 14px;
+.rabbitEggs {
+  position : fixed;
+  z-index: -1;
+  top: 0;
+  left : 2vw;
 }
 
 
@@ -113,21 +199,21 @@ pre > code {
 .dbug {
   border : solid 4px red;
 }
-.pointer {
+.finger {
   cursor : pointer;
 }
-
-/*TEXTE FONT*/
-.title {
-  font-size: 32px;
-}
-.subTitle {
-  font-size: 24px;
-}
-.lasTitle {
-  font-size: 13px;
+.cursorDefault {
+    cursor: default;
 }
 
+/*DISABLE STYLE*/
+a:link {
+  color:black;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 
 /*GHOST*/
 .corps {
@@ -136,33 +222,4 @@ pre > code {
   scroll-behavior: 'smooth';
   margin-top: 20vh;
 }
-    .cat{
-      width:130px;
-      height:130px;
-      position:absolute;
-      background:#ff0059;
-    }
 
-
-/*DISABLE LINK STYLE*/
-a:link {
-  color:black;
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/*IMAGE*/
-.LOGO {
-
-}
-#LOGO {
-  width: 20vw;
-  height: 20vh;
-}

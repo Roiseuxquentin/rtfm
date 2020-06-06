@@ -1,23 +1,35 @@
 {
     "axes": [
         {
-            "title": "syntax",
+            "title": "Syntax",
+            "key": "syntax042",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Structures",
+                    "key": "structures042",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "Snippet",
+                            "key": "Snippet042",
                             "type": "categorie",
                             "children": [
                                 {
                                     "title": "HTML",
+                                    "key": "HTML042",
                                     "type": "code",
-                                    "description": "Template / Squelette HTML 5",
-                                    "code": "<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n",
+                                    "description": "Template",
+                                    "code": ["<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n", " Script JS" , "<script>\ndocument.getElementById('injectMe').innerHTML = 'Display my String!';\n</script>\n\n<script src='mySuperScript.js'></script>","Style CSS","<link rel='stylesheet' type='text/css' href='mySuperStyle.css'>"],
+                                    "children": []
+                                },
+                                {
+                                    "title": "REACTJS",
+                                    "key": "REACTJS042",
+                                    "type": "code",
+                                    "description": "Template d'un composant object react js.",
+                                    "code":[ "import React, {Component} from 'react';\n\nclass ComponentClass extends Component {\n\n  constructor(props) {\n      super(props)\n      this.state = {\n      clef : 'valeur'\n  }\n\n      this.action = this.action.bind()\n  }\n\n action() {\n  const text = 'je lis'\n  return text\n }\n\n render() {\n   return (<div>\n             <h1>Ping!</h1>\n           </div>)\n }\n}\n\nexport default ComponentClass;" ],
                                     "children": []
                                 }
                             ]
@@ -26,202 +38,129 @@
                 },
                 {
                     "title": "Algorithme",
+                    "key": "Algorithme042",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "BoucleJS",
+                            "key": "BoucleJS042",
                             "type": "code",
                             "description": "Loop Javascript",
-                            "code": "While (kankonsarette) { } ",
+                            "code": [ "While (kankonsarette) { } "],
                             "children": []
                         }
                     ]
                 },
                 {
                     "title": "Front",
+                    "key": "Front042",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "HTML",
+                            "key": "HTML043",
                             "type": "code",
                             "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
+                            "code": [ "<html></html>"],
                             "children": []
                         }
                     ]
                 },
                 {
                     "title": "Back",
+                    "key": "Back042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "'<html></html>'",
-                            "children": []
-                        },
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        },
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        },
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 }
             ]
         },
         {
-            "title": "méthodes",
+            "title": "Méthodes",
+            "key": "Methodes042",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Installation",
+                    "key": "Installation042",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "HTML",
+                            "key": "HTML048",
                             "type": "code",
                             "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
+                            "code": [ "<html></html>"],
                             "children": []
                         }
                     ]
                 },
                 {
                     "title": "Pump It!",
+                    "key": "tunning042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "Automatisation",
+                    "key": "Automatisation042",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "HTML",
+                            "key": "049",
                             "type": "code",
                             "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
+                            "code": [ "<html></html>"],
                             "children": []
                         }
                     ]
                 },
                 {
                     "title": "Compilation",
+                    "key": "Compilation042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 }
             ]
         },
         {
             "title": "Ressources",
+            "key": "Ressources042",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "FrameWork & Librairie",
+                    "key": "FrameWork042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "Systéme",
+                    "key": "sys042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "E-Learning",
+                    "key": "learning042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "Online Tools",
+                    "key": "Tools042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "Gouffre",
+                    "key": "Gouffre042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": "<html></html>",
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 }
             ]
-        },
-        {
-            "title": "Tools",
-            "type": "categorie",
-            "img": "",
-            "children": []
         }
     ]
 }

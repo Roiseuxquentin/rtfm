@@ -2,12 +2,23 @@ import React from 'react'
 import Header from './Header.js'
 import Lateral from './Lateral.js'
 
-const Nav = ({pages}) => {
+// ################################################### 
+// #*/=============================================\*# 
+// # ||                      .__                  || #
+// # ||   ____   ____   ____ |  |   ____   ____   || #
+// # || _/ __ \_/ __ \ / ___\|  |  /  _ \ /  _ \  || #
+// # || \  ___/\  ___// /_/  >  |_(  <_> |  <_> ) || #
+// # ||  \___  >\___  >___  /|____/\____/ \____/  || #
+// # ||      \/     \/_____/                  2020|| #
+// #.\=============================================/.#
+// ###################################################
+
+const Nav = ({pages, selected, onChange}) => {
 
 	let scrollPosition = 0
 
-	const goUp = (e) => {
- 		e.preventDefault()
+	const goUp = (event) => {
+ 		event.preventDefault()
  		window.scroll(0, 0)
 	}
 
@@ -19,6 +30,7 @@ const Nav = ({pages}) => {
 		}
 		else {
 			document.getElementById("header").style.opacity = 1
+			document.getElementById("header").style.zIndex = "2";
 		}
 		if ( window.scrollY > 300 ) {
 			document.getElementById("goTop").style.opacity = (0.7)
@@ -33,11 +45,11 @@ const Nav = ({pages}) => {
 
 	return (<div>
 				
-				<Header axes={pages} />
+				<Header axes={pages} onChange={onChange} />
         		
-        		<Lateral axe={pages[0]} />
+        		<Lateral axe={pages[selected]} />
 
-				<div className="goTop"  >
+				<div className="goTop" >
 	         		<img id="goTop"
 		         		onClick={goUp}
 						src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Circle-icons-arrow-up.svg/600px-Circle-icons-arrow-up.svg.png" />
