@@ -4,10 +4,15 @@ import Nav from './components/Nav.js'
 import Sommaire from './components/Sommaire.js'
 import Content from './components/Content.js'
 import GiveMeImg from './components/GiveMeImg.js'
+import GiveMeModal from './components/GiveMeModal.js'
 
 import data from './ressources/structure.json'
 
-import './App.css';
+import './styles/App.css';
+import './styles/text.css';
+import './styles/animate.css';
+import './styles/pics.css';
+import './styles/menu.css';
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -31,6 +36,7 @@ class App extends Component {
   onChangePage(event) {
     let page
     const selected = event.target.id
+
     switch (selected) {
       case "syntax042" :
         this.setState({page : 0, image : selected })
@@ -44,7 +50,7 @@ class App extends Component {
       default :
         return
     }
-  }  
+  }
 
   render() {
    return (
@@ -52,8 +58,7 @@ class App extends Component {
        
        <Nav pages={data.axes} selected={this.state.page} onChange={(event) => this.onChangePage(event)} />
 
-        <div className="corps">
-          <GiveMeImg source="capsuleCorp" />
+        <div className="corps fadeIn">
           <GiveMeImg source={data.axes[this.state.page].key} />
           <Sommaire data={data.axes[this.state.page]} mode />
           <Content data={data.axes[this.state.page]} />

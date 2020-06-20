@@ -22,16 +22,7 @@ const Nav = ({pages, selected, onChange}) => {
  		window.scroll(0, 0)
 	}
 
-	const hiddenScrollingDown = () => {
-	    let windowY = window.scrollY;
-		
-		if ( windowY > scrollPosition ) {
-			document.getElementById("header").style.opacity = 0
-		}
-		else {
-			document.getElementById("header").style.opacity = 1
-			document.getElementById("header").style.zIndex = "2";
-		}
+	const scrollingButton = () => {
 		if ( window.scrollY > 300 ) {
 			document.getElementById("goTop").style.opacity = (0.7)
 		} else {
@@ -41,7 +32,7 @@ const Nav = ({pages, selected, onChange}) => {
 		scrollPosition = window.scrollY
 	}
 
-    window.addEventListener('scroll', hiddenScrollingDown )
+    window.addEventListener('scroll', scrollingButton )
 
 	return (<div>
 				

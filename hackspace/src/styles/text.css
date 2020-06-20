@@ -1,0 +1,65 @@
+/*TEXTE*/
+
+/*FONT*/
+/*lateral*/
+.lateral h1 {
+  font-size: 3rem;
+}
+
+.title {
+  font-size: 1.6rem;
+}
+.subTitle {
+  font-size: 1.3rem;
+}
+.lasTitle {
+  font-size: 1rem;
+}
+
+.codeTitle, .codeDescription, .codeStep , .categorie{
+  cursor: default;
+}
+.codeTitle {
+  font-size: 22px;
+  cursor: default;
+}
+.codeDescription {
+  font-size : 14px;
+}
+.codeStep {
+  font-size : 10px;
+  text-align: start;
+  padding-left: 15vw;
+}
+
+
+/*DISABLE LINK STYLE*/
+.header a:link, .lateral a:link, .sommaire a:link {
+  color:black;
+  text-decoration: none;
+}
+
+/*CONTENT*/
+.categorie {
+  text-decoration: underline;
+}
+
+/*MODAL*/
+.lnkTitle {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.lnkStyle {
+  margin-top : 40px;
+ font-size: 12px;
+ color: blue; 
+}
+
+/*GENERIQUE*/
+
+.contentSpace {
+  margin: auto;
+  width: max-content;
+  cursor: pointer !important;
+  padding: 10px;
+}

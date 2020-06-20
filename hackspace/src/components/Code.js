@@ -37,14 +37,14 @@ const copyToClipboard = str => {                  //
 const Code = ({element}) => {
 	
 	return ( <figure id={element.key} key={element.key} >
-			  <figcaption className="codeTitle" >{element.title}</figcaption>
+			  <figcaption className="codeTitle purple" >{element.title}</figcaption>
 				  <p className="codeDescription" >{element.description}</p>
 				  
-				  	{element.code.map((elt,index) => {
+				  	{element.content.map((elt,index) => {
 
-					  	if (!(index % 2)) {
+					  	if (index % 2) {
 						    return (<pre key={index + Math.random()} >
-						    			<code className="finger" onClick={(event)=> copyToClipboard(elt) } >
+						    			<code className="finger purple" onClick={(event)=> copyToClipboard(elt) } >
 								    		{elt}
 								    	</code>
 								    </pre>)

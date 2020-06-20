@@ -27,9 +27,9 @@ const GiveMeImg = ({source}) => {
 		// case "Methodes042":
 		// 	return <img src={methodesImg} width="auto" height="150px" className="categorieImg" />
 		// 	break;
-		case "capsuleCorp":
-			return <img src={rabbitEggs} width="100px" height="130px" className="rabbitEggs" />
-			break;
+		// case "rabbit":
+		// 	return <img src={rabbitEggs} width="100px" height="130px" className="rabbitEggs" onClick={() => alert("ZmxhZwo=")} style={{opacity : 0.6}} />
+		// 	break;
 		default : 
 			// return <img src={ressourcesImg} width="auto" height="350px" className="categorieImg" />
 			return <div/>

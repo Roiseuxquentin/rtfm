@@ -1,5 +1,8 @@
 import React from 'react'
+
 import Code from './Code.js'
+import Link from './Link.js'
+import GiveMeModal from './GiveMeModal.js'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -18,18 +21,25 @@ const recursive = (parents) => {
 
 			return parents.children.map(child => {
 				if ( child.children.length && ( child.type == "categorie" ) ) {
-					return <div key={child.key} ><h1 id={child.key} className="categorie" >{child.title}</h1>{recursive(child.children)}</div>
+					return <div key={child.key} > <GiveMeModal data={parents} id={child.key} title={child.title} />  {recursive(child.children)}</div>
 				} else {
-					return <div key={child.key} ><h5 id={child.key} >{child.title}</h5>{recursive(child.children)}</div>
+					return <div key={child.key} ><GiveMeModal data={parents} id={child.key} title={child.title} /> {recursive(child.children)}</div>
 				}
 			 })
 	}  else {
 			return parents.map(element => {
 								if (element.type == "categorie") {
 									return ( 
-										<h2 id={element.key} key={element.key} className="cursorDefault">
-											{element.title} <br/>  {recursive(element.children)}
-										</h2>	) 
+										<div key={element.key} className="cursorDefault black ">
+											
+											<GiveMeModal data={parents} id={element.key} title={element.title} code />
+											{recursive(element.children)}
+										
+										</div>)
+
+								} else if (element.type == "link") {
+									return <Link element={element} key={element.key} /> 
+								
 								} else {
 									return <Code element={element} key={element.key} />
 								}

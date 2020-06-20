@@ -17,19 +17,138 @@
                             "type": "categorie",
                             "children": [
                                 {
-                                    "title": "HTML",
+                                    "title": "Squelette Html",
                                     "key": "HTML042",
                                     "type": "code",
-                                    "description": "Template",
-                                    "code": ["<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n", " Script JS" , "<script>\ndocument.getElementById('injectMe').innerHTML = 'Display my String!';\n</script>\n\n<script src='mySuperScript.js'></script>","Style CSS","<link rel='stylesheet' type='text/css' href='mySuperStyle.css'>"],
+                                    "description": "",
+                                    "content": [
+                                        "HTML",
+                                        "<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n",
+                                        " Script JS",
+                                        "<script>\ndocument.getElementById('injectMe').innerHTML = 'Display my String!';\n</script>\n\n<script src='mySuperScript.js'></script>",
+                                        "Style CSS",
+                                        "<link rel='stylesheet' type='text/css' href='mySuperStyle.css'>",
+                                        "BOOTSTRAP CDN CSS",
+                                        "<link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">",
+                                        "BOOTSTRAP CDN  Javascript",
+                                        "<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\" integrity=\"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI\" crossorigin=\"anonymous\"></script>"
+                                    ],
                                     "children": []
                                 },
                                 {
-                                    "title": "REACTJS",
+                                    "title": "Script Bash",
+                                    "key": "bash042",
+                                    "type": "code",
+                                    "description": "",
+                                    "content": [
+                                        " ",
+                                        "#!/bin/bash"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Components ReactJs",
                                     "key": "REACTJS042",
                                     "type": "code",
-                                    "description": "Template d'un composant object react js.",
-                                    "code":[ "import React, {Component} from 'react';\n\nclass ComponentClass extends Component {\n\n  constructor(props) {\n      super(props)\n      this.state = {\n      clef : 'valeur'\n  }\n\n      this.action = this.action.bind()\n  }\n\n action() {\n  const text = 'je lis'\n  return text\n }\n\n render() {\n   return (<div>\n             <h1>Ping!</h1>\n           </div>)\n }\n}\n\nexport default ComponentClass;" ],
+                                    "description": "Squelette d'un composant react js.",
+                                    "content": [
+                                        "CLASS",
+                                        "import React, {Component} from 'react';\n\nclass ComponentClass extends Component {\n\n  constructor(props) {\n      super(props)\n      this.state = {\n      clef : 'valeur'\n  }\n\n      this.action = this.action.bind()\n  }\n\n action() {\n  const text = 'je lis'\n  return text\n }\n\n render() {\n   return (<div>\n             <h1>Ping!</h1>\n           </div>)\n }\n}\n\nexport default ComponentClass;",
+                                        "FONCTION",
+                                        "import React from 'react'\n\nconst ComponentName = () => {\n\n    return (<div>\n           <h1>Ping!</h1>\n         </div>)\n}\n\nexport default ComponentName"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Lorem Ipsum",
+                                    "key": "LoremIp042",
+                                    "type": "code",
+                                    "description": "Le passage de Lorem Ipsum standard, utilisé depuis 1500.",
+                                    "content": [
+                                        "LATIN",
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident,\n sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Variables",
+                            "key": "Variables042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "String",
+                                    "key": "string042",
+                                    "type": "code",
+                                    "description": "Declaration d'une variable de type sting.",
+                                    "content": [
+                                        "JAVASCRIPT",
+                                        "let maVariable = 'hello World!'\nconst maVariableBis = 'byWorld'",
+                                        "PHP",
+                                        "<?php \n $myVariable =  \"ceci est une chaîne simple\";\n?>",
+                                        "C#",
+                                        "string maVariable = \"La string du C!\";",
+                                        "BASH",
+                                        "STR=\"Hello World!\"",
+                                        "PYTHON",
+                                        "maVariableString = 'Yo World!'"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Number",
+                                    "key": "number042",
+                                    "type": "code",
+                                    "description": "Declaration d'une variable de type integer.",
+                                    "content": [
+                                        "JAVASCRIPT",
+                                        "let maNbVariable = 42\nconst maNbVariableBis = 42",
+                                        "PHP",
+                                        "<?php \n $myNbVariable = 42;\n?>",
+                                        "C#",
+                                        "int myNbVariable ;\nmyNbVariable = 30;",
+                                        "PYTHON",
+                                        "myNbVariable = 42"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Array & List",
+                                    "key": "array042",
+                                    "type": "code",
+                                    "description": "Declaration d'un tableau index/element.",
+                                    "content": [
+                                        "JAVASCRIPT",
+                                        "const array = [42,\"element01\",\"element02\",true]\nconsole.log(array[0]) //========> 42",
+                                        "PHP",
+                                        "<?php\n    $numbers = array(1, 2, 3, 4, 5, 6);\n    $string = array(\"element00\",\"element01\",\"element02\",\"element03\");\n    echo $string[1];  // Affiche : 'element01'\n    echo $numbers[3];  // Affiche : 4\n?>\n",
+                                        "C#",
+                                        "string[] myArray = { \"element00\",\"element01\",\"element02\",\"element03\"};",
+                                        "BASH",
+                                        "myArray=(element00 element01 element02)\necho ${arr[1]} #========> element00\n\necho ${myArray[*]}  #========>  Tout les elements\necho ${!myArray[*]} #========>  Tout les index\necho ${#myArray[*]} #========>  Nb Elements\necho ${#myArray[0]} #========>  Length of item zero\n",
+                                        "PYTHON",
+                                        "from array import * #========> need lib , pas natif\nmy_array = array('i',[1,2,3,4]) #========> arrayIdentifierName = array(typecode, [Initializers]\n\n##typecode :\n#‘b’ : signed integer of size 1 byte\n#‘B’ : unsigned integer of size 1 byte\n#‘c’ : character of size 1 byte\n#‘u’ : unicode character of size 2 bytes\n#‘h’ : signed integer of size 2 bytes\n#‘H’ : unsigned integer of size 2 bytes\n#‘i’ : signed integer of size 2 bytes\n#‘I’ : unsigned integer of size 2 bytes\n#‘w’ : unicode character of size 4 bytes\n#‘l’ : signed integer of size 4 bytes\n#‘L’ : unsigned integer of size 4 bytes\n#‘f’ : floating point of size 4 bytes\n#‘d’ : floating point of size 8 bytes"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Object",
+                                    "key": "obj042",
+                                    "type": "code",
+                                    "description": "Declaration d'un objet clef/valeur ",
+                                    "content": [
+                                        "JAVASCRIPT",
+                                        "",
+                                        "PHP",
+                                        " ",
+                                        "C",
+                                        " ",
+                                        "BASH",
+                                        " ",
+                                        "PYTHON",
+                                        " "
+                                    ],
                                     "children": []
                                 }
                             ]
@@ -42,11 +161,57 @@
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "BoucleJS",
-                            "key": "BoucleJS042",
+                            "title": "Boucles",
+                            "key": "Boucle042",
                             "type": "code",
-                            "description": "Loop Javascript",
-                            "code": [ "While (kankonsarette) { } "],
+                            "description": " ",
+                            "content": [
+                                "JS",
+                                "let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
+                                "",
+                                "const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
+                                "PYTHON",
+                                "x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
+                                "",
+                                "for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
+                                "BASH",
+                                "while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
+                                "",
+                                "for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Condition",
+                            "key": "condition042",
+                            "type": "code",
+                            "description": " ",
+                            "content": [
+                                "JS",
+                                "const expr = \"Papayas\"\n\nswitch (expr) {\n  case \"Oranges\":\n    console.log(\"Le prix des Oranges est de 1€.\")\n    break\n  case \"Mangoes\":\n  case \"Papayas\":\n    console.log(\"Le prix des Mangues et des Papayes est de 2€.\")\n    break\n  default:\n    console.log(`Dsl, aucun prix pour ${expr}.`)\n}",
+                                "PYTHON",
+                                "a = 43\n\nif a > 43:\n    a = a + 1\nelif a == 43:\n    a = a - 1\nelse:\n    a = a * 2\n\n//========> a\n//========> 42",
+                                "BASH",
+                                "echo -n \"Entre le nom d'un pays : \"\nread COUNTRY\n\necho -n \"La langue officiel en $COUNTRY is \"\n\ncase $COUNTRY in\n\n  Lithuania)\n    echo -n \"Lithuanian\"\n    ;;\n\n  Romania | Moldova)\n    echo -n \"Romanian\"\n    ;;\n\n  Italy | \"San Marino\" | Switzerland | \"Vatican City\")\n    echo -n \"Italian\"\n    ;;\n\n  *)\n    echo -n \"unknown\"\n    ;;\nesac",
+                                "",
+                                "nom=\"Jack\"\n\nif [ $nom = \"Jack\" ]\nthen\n        echo \"Salut Jack !\"\nelif [ encore_autre_test ]\nthen\n        echo \"Le deuxieme test a été vérifié\"\nelse\n        echo \"Aucun des tests précédents n'a été vérifié\"\nfi",
+                                "PHP",
+                                " "
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Operateurs logiques",
+                            "key": "Operateur042",
+                            "type": "code",
+                            "description": " Logique de base pour articuler le code ",
+                            "content": [
+                                "SQL",
+                                "=           Égale\n<>          Pas égale\n!=          Pas égale\n>           Supérieur à\n<           Inférieur à\n>=          Supérieur ou égale à\n<=          Inférieur ou égale à\nIN          Liste de plusieurs valeurs possibles\nBETWEEN     Valeur comprise dans un intervalle donnée (utile pour les nombres ou dates)\nLIKE        Recherche en spécifiant le début, milieu ou fin d'un mot.\nIS NULL     Valeur est nulle\nIS NOT NULL Valeur n'est pas nulle",
+                                "BASH",
+                                " ",
+                                "JAVASCRIPT"
+                            ],
                             "children": []
                         }
                     ]
@@ -55,22 +220,89 @@
                     "title": "Front",
                     "key": "Front042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "key": "HTML043",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": [ "<html></html>"],
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "Back",
                     "key": "Back042",
                     "type": "categorie",
-                    "children": []
+                    "children": [
+                        {
+                            "title": "SQL",
+                            "key": "sql042",
+                            "type": "code",
+                            "description": "Syntax C.R.U.D pour les requetes SQL.",
+                            "content": [
+                                "CREATE",
+                                "CREATE DATABASE ma_base",
+                                "",
+                                "CREATE TABLE nom_de_la_table\n(\n    colonne1 type_donnees,\n    colonne2 type_donnees,\n    colonne3 type_donnees,\n    colonne4 type_donnees\n)",
+                                "",
+                                "INSERT INTO table VALUES ('valeur 1', 'valeur 2', ...)",
+                                "",
+                                "INSERT INTO table (nom_colonne_1, nom_colonne_2, ...\n VALUES ('valeur 1', 'valeur 2', ...)",
+                                "READ",
+                                " SELECT * FROM nom_table ",
+                                "",
+                                " SELECT nom_du_champ FROM nom_table ",
+                                "",
+                                "SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression",
+                                "",
+                                "SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression LIMIT 10 ",
+                                "UPDATE",
+                                "UPDATE table\nSET nom_colonne_1 = 'nouvelle valeur'\nWHERE condition",
+                                "DELETE",
+                                "DELETE FROM 'table'\nWHERE condition",
+                                "",
+                                "DELETE FROM 'utilisateur'",
+                                "",
+                                "TRUNCATE TABLE 'utilisateur'"
+                            ],
+                            "children": []
+                        }
+
+                    ]
+                },
+                {
+                    "title": "Dbug",
+                    "key": "Dbug042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Check Point",
+                            "key": "checkPoint042",
+                            "type": "code",
+                            "description": "Afficher un signal lors de l'execution du programme , pour aider au Dbug",
+                            "content": [
+                                "JS",
+                                "console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' )",
+                                "",
+                                "try {\n  nonExistentFunction()\n} catch (error) {\n  console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' , error )\n}",
+                                "PHP",
+                                "<?php\n\n$b = 3.1;\n$c = true;\nvar_dump($b, $c);\n\n?>",
+                                "PYTHON",
+                                " ",
+                                "BASH",
+                                " "
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "CrossOrigin",
+                            "key": "crossorigin042",
+                            "type": "code",
+                            "description": "L'origine de lq requete ne partage pas le meme domaine que celle du serveur,\n le serveur doit autoriser certains header.",
+                            "content": [
+                                "CLIENT header Javascript",
+                                " ",
+                                "SERVEUR nodejs",
+                                " ",
+                                "SERVEUR HEADER",
+                                " "
+                            ],
+                            "children": []
+                        }
+                    ]
                 }
             ]
         },
@@ -86,35 +318,40 @@
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "HTML",
-                            "key": "HTML048",
+                            "title": "DB SQL",
+                            "key": "sqlInstall042",
                             "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": [ "<html></html>"],
-                            "children": []
+                            "description": "Installation d'un Base de donnee SQL.",
+                            "content": [
+                                "Processus",
+                                " "
+                            ],
+                           "children": []
+                        },
+                        {
+                            "title": "Linux Starter",
+                            "key": "linuxStarter042",
+                            "type": "code",
+                            "description": "Installation & Mise a jour packages post-formattage.",
+                            "content": [
+                                "Mise a jour",
+                                "sudo apt update\nsudo apt upgrade",
+                                "Installation packages",
+                                "sudo apt -y install curl zsh terminator vlc irssi git tig nodejs vim sublime-text jq cmatrix mplayer gimp firefox teamviewer wkhtmltopdf xpdf cowsay nmap htop",
+                                "ALIAS _ .bashrc .zshrc",
+                                "date\necho \"\"\nalias pong='ping -c 2 roiseux.fr'\nalias l='ls -la'\nalias c='clear'",
+                                ""
+                            ],
+                           "children": []
                         }
+
                     ]
-                },
-                {
-                    "title": "Pump It!",
-                    "key": "tunning042",
-                    "type": "categorie",
-                    "children": []
                 },
                 {
                     "title": "Automatisation",
                     "key": "Automatisation042",
                     "type": "categorie",
-                    "children": [
-                        {
-                            "title": "HTML",
-                            "key": "049",
-                            "type": "code",
-                            "description": "Template / Squelette HTML 5",
-                            "code": [ "<html></html>"],
-                            "children": []
-                        }
-                    ]
+                    "children": []
                 },
                 {
                     "title": "Compilation",
@@ -131,10 +368,28 @@
             "img": "",
             "children": [
                 {
-                    "title": "FrameWork & Librairie",
+                    "title": "Web Design",
                     "key": "FrameWork042",
                     "type": "categorie",
-                    "children": []
+                    "children": [
+                        {
+                            "title": "Integration Graphique",
+                            "key": "IG042",
+                            "type": "link",
+                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "content": [
+                                "Kolor Palette & Nuances",
+                                "https://www.color-hex.com/color-palettes/popular.php",
+                                "Icone SVG",
+                                "https://icones8.fr/",
+                                "",
+                                "https://www.flaticon.com/",
+                                "BOOTSTAP CDN CSS",
+                                "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                            ],
+                            "children": []
+                        }
+                    ]
                 },
                 {
                     "title": "Systéme",

@@ -1,0 +1,54 @@
+
+/*MENU */
+
+/*HEADER*/
+
+.header { 
+  display: flex;
+  justify-content: space-around;
+  
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 130px;
+  z-index: 2;
+
+  border-bottom: solid black 0.8px;
+  background: white;
+  transition: 0.5s;
+}
+
+.header * {
+  color: black;
+  margin: auto;
+  transition: 1s;
+}
+.header *:hover {
+  cursor: pointer; 
+  color: #9fc9e0;
+  transition: 0.5s;
+}
+
+/*SIDE BARE MENU LATERAL*/
+.lateral {
+  position: fixed;
+  /*display: grid;*/
+  top: 0;
+
+  z-index: 1;
+
+  width: 3vw;
+  height: 100vh;
+  background: white;
+  border-right: solid black 0.8px;
+  overflow-y: scroll;
+}
+.lateral span , .lateral a {
+  cursor: pointer;
+}
+.lateral img {
+  pointer-events: none;
+}
+.lateral .lasTitle, .lateral h1 {
+  color: purple;
+ }

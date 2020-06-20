@@ -1,0 +1,182 @@
+/*GLOBAL*/
+
+html {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+/*CODE*/
+pre, code {
+  font-family: monospace, monospace;
+  transition: 0.5s;
+  width: 75vw;
+}
+pre {
+  margin: auto;
+  border : solid black 0.5px;
+  border-radius: 3px;
+  overflow: auto;
+  background : #e9ecef;
+  text-align: start;
+  font-size: 11px;
+}
+pre > code {
+  margin-left: 10px;
+  display: block;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+/*MODAL*/
+
+.modalContainer {
+  z-index: 10;
+  position: fixed;
+  top:0;
+  left: 0;
+  
+  background-color: rgba(159,201,224,0.5);
+  
+  width : 100%;
+  height : 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  z-index: 11;
+
+  position: fixed;
+  top: 0vh;
+  left: 22.5%;
+
+  width: 50%;
+  height: auto;
+  padding: 2.5%;
+
+  background : white;
+  border-bottom-right-radius: 42px;
+  border-bottom-left-radius:  42px;
+}
+
+
+select {
+  color: purple;
+  border : none;
+  border-bottom: none;
+  padding-left: 10px; 
+  /*border-bottom: 1px solid purple;*/
+  background: white;
+  height: 30px;
+  font-size: 25px;
+}
+
+.plus {
+  font-size: 42px;
+  width: 15%;
+}
+
+.lnkStyle , .lnkTitle { 
+
+  border-radius: 8px;
+}
+.lnkTitle { 
+  width: 75%;
+  height: 50px;
+  margin-top:10px;
+  border : solid purple 3px;
+  padding-left: 10px;
+}
+.lnkStyle {
+  width: 100%;
+  height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BASIC*/
+.center {
+  justify-content: center;
+  margin:auto;
+  text-align: center;
+}
+.aDroite {
+  justify-content: end;
+  text-align: right ;
+}
+.aGauche {
+  justify-content: start;
+  text-align: left; 
+}
+.underline {
+  text-decoration: underline;
+}
+.red * { 
+  color : red !important;
+}
+.purple {
+  color:purple;
+}
+.black {
+  color:black;
+}
+.dbug {
+  border : solid 4px red;
+}
+.finger {
+  cursor : pointer;
+}
+.cursorDefault {
+    cursor: default;
+}
+.invisible {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.max{
+  width: 100%;
+}
+.margin {
+  margin: 30px;
+}
+.marginT {
+  margin-top: 30px;
+}
+.marginB {
+  margin-bottom: 30px;
+}
+.noBorder {
+  border:none !important;
+}
