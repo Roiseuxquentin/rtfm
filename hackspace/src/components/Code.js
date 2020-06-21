@@ -44,7 +44,7 @@ const Code = ({element}) => {
 
 					  	if (index % 2) {
 						    return (<pre key={index + Math.random()} >
-						    			<code className="finger purple" onClick={(event)=> copyToClipboard(elt) } >
+						    			<code className="finger code" onClick={(event)=> copyToClipboard(elt) } >
 								    		{elt}
 								    	</code>
 								    </pre>)

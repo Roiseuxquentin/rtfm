@@ -57,11 +57,17 @@ class Header extends Component {
 		document.getElementById("header").style.height = "130px"
 	}
 
+	changePage(event) {
+		this.props.onChange(event)
+		scrollPosition = 0
+ 		window.scroll(0, 0)
+	}
+
 	render() {
 		return (<div className="header" id="header" 
 					onMouseEnter={() => this.display()} 
 					onMouseLeave={() => this.hidden()} >
-			  		{ 	this.state.pages.map(page => <h1 id={page.key} key={page.key} onClick={(event) => this.props.onChange(event)   } >{page.title}</h1>) }
+			  		{ 	this.state.pages.map(page => <h1 id={page.key} key={page.key} onClick={(event) => this.changePage(event)   } >{page.title}</h1>) }
 			 	</div>)
 	}
 }

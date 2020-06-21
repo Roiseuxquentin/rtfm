@@ -62,15 +62,10 @@ const Sommaire = ({ data, mode, lateral }) => {
 					marginLeft : `${lateral ?  "30px" : "0px" }` ,
 					margin : `${lateral ?  "30px" : "100px" }` }
 					
-	let categorieTitle = {
-		visibility : `${lateral ? "visible" : "hidden" }`,
-		border : "solid 3.5px black",
-		borderRadius : "5px",
-		padding : "15px"
-	 }
+	let categorieTitle = { visibility : `${lateral ? "visible" : "hidden" }` }
 	
 	return (<div style={styling} className="sommaire" >
-	  	      <h1 style={categorieTitle} className="cursorDefault center" >{data.title}</h1>
+	  	      <h1 style={categorieTitle} className="cursorDefault center lateralTitle" >{data.title}</h1>
 			 {recursive(data, lateral)}
 		    </div>)
 

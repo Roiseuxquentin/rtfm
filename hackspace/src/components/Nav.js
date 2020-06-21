@@ -20,6 +20,7 @@ const Nav = ({pages, selected, onChange}) => {
 	const goUp = (event) => {
  		event.preventDefault()
  		window.scroll(0, 0)
+ 		scrollPosition = 0
 	}
 
 	const scrollingButton = () => {

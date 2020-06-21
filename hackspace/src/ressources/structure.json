@@ -20,6 +20,7 @@
                                     "title": "ASCII",
                                     "key": "ascii42",
                                     "type": "code",
+                                    "keyWords" : "ascii art header bash banniere",
                                     "description": "",
                                     "content": [
                                         "Header",
@@ -36,6 +37,7 @@
                                     "title": "Squelette Html",
                                     "key": "HTML042",
                                     "type": "code",
+                                    "keyWords" : "html snippet script style css bootstrap",
                                     "description": "",
                                     "content": [
                                         "HTML",
@@ -55,6 +57,7 @@
                                     "title": "Script Bash",
                                     "key": "bash042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "",
                                     "content": [
                                         " ",
@@ -63,9 +66,22 @@
                                     "children": []
                                 },
                                 {
+                                    "title": "MediaQuery Css",
+                                    "key": "mdq042",
+                                    "type": "code",
+                                    "keyWords" : "media mediaquery smartphone mobile view screen css style adapte responsive",
+                                    "description": "",
+                                    "content": [
+                                        "",
+                                        "/* \n  ##Device = Desktops\n  ##Screen = 1281px to higher resolution desktops\n*/\n\n@media (min-width: 1281px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Laptops, Desktops\n  ##Screen = B/w 1025px to 1280px\n*/\n\n@media (min-width: 1025px) and (max-width: 1280px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (portrait)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (landscape)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n  \n  //CSS\n  \n}"
+                                    ],
+                                    "children": []
+                                },
+                                {
                                     "title": "ReactJs",
                                     "key": "REACTJS042",
                                     "type": "code",
+                                    "keyWords" : "react js component template reactjs javascript",
                                     "description": "Squelette d'un composant react js.",
                                     "content": [
                                         "CLASS",
@@ -79,6 +95,7 @@
                                     "title": "Lorem Ipsum",
                                     "key": "LoremIp042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "Le passage de Lorem Ipsum standard, utilisé depuis 1500.",
                                     "content": [
                                         "LATIN",
@@ -90,6 +107,7 @@
                                     "title": "SublimText",
                                     "key": "sublim042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "Raccourcit Clavier & package",
                                     "content": [
                                         "Raccourcit",
@@ -110,6 +128,7 @@
                                     "title": "String",
                                     "key": "string042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "Declaration d'une variable de type sting.",
                                     "content": [
                                         "JAVASCRIPT",
@@ -129,6 +148,7 @@
                                     "title": "Number",
                                     "key": "number042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "Declaration d'une variable de type integer.",
                                     "content": [
                                         "JAVASCRIPT",
@@ -146,6 +166,7 @@
                                     "title": "Array & List",
                                     "key": "array042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "Declaration d'un tableau index/element.",
                                     "content": [
                                         "JAVASCRIPT",
@@ -165,6 +186,7 @@
                                     "title": "Object",
                                     "key": "obj042",
                                     "type": "code",
+                                    "keyWords" : "",
                                     "description": "Declaration d'un objet clef/valeur ",
                                     "content": [
                                         "JAVASCRIPT",
@@ -193,6 +215,7 @@
                             "title": "Boucles",
                             "key": "Boucle042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": " ",
                             "content": [
                                 "JS",
@@ -214,6 +237,7 @@
                             "title": "Condition",
                             "key": "condition042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": " ",
                             "content": [
                                 "JS",
@@ -233,6 +257,7 @@
                             "title": "Operateurs logiques",
                             "key": "Operateur042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": " Logique de base pour articuler le code ",
                             "content": [
                                 "SQL",
@@ -256,6 +281,7 @@
                             "title": "GET",
                             "key": "get042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Requete http type GET",
                             "content": [
                                 "JS",
@@ -266,6 +292,7 @@
                             "title": "POST",
                             "key": "POST042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Requete http type POST",
                             "content": [
                                 "JS",
@@ -284,6 +311,7 @@
                             "title": "SQL",
                             "key": "sql042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Syntax C.R.U.D pour les requetes SQL.",
                             "content": [
                                 "CREATE",
@@ -317,6 +345,7 @@
                             "title": "Serveur",
                             "key": "serveur042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Serveur HTTP",
                             "content": [
                                 "PYTHON",
@@ -344,6 +373,7 @@
                             "title": "Check Point",
                             "key": "checkPoint042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Afficher un signal lors de l'execution du programme , pour aider au Dbug",
                             "content": [
                                 "JS",
@@ -363,6 +393,7 @@
                             "title": "CrossOrigin",
                             "key": "crossorigin042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "L'origine de lq requete ne partage pas le meme domaine que celle du serveur,\n le serveur doit autoriser certains header.",
                             "content": [
                                 "CLIENT header Javascript",
@@ -394,6 +425,7 @@
                             "title": "Linux Starter",
                             "key": "linuxStarter042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Installation & Mise a jour packages post-formattage.",
                             "content": [
                                 "Mise a jour",
@@ -414,6 +446,7 @@
                             "title": "REACT JS",
                             "key": "sqlInstall042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Start React project.",
                             "content": [
                                 "Standard",
@@ -439,6 +472,7 @@
                             "title": "DB SQL",
                             "key": "sqlInstall042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Installation d'un Base de donnee SQL.",
                             "content": [
                                 "Processus",
@@ -457,6 +491,7 @@
                             "title": "Installation Node Js",
                             "key": "nodePi042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Installation de NodeJs sur le raspberry Pi.",
                             "content": [
                                 "MISE A JOUR",
@@ -491,6 +526,7 @@
                             "title": "Connection",
                             "key": "codcheck042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "",
                             "content": [
                                 "SSH",
@@ -507,6 +543,7 @@
                             "title": "Wifi",
                             "key": "wifiPi042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "wifi params authentification ",
                             "content": [
                                 "Open File",
@@ -527,6 +564,7 @@
                             "title": "IP",
                             "key": "scanIp042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "",
                             "content": [
                                 "IP PUBLIQUE",
@@ -554,6 +592,7 @@
                             "title": "Coding Check",
                             "key": "codcheck042",
                             "type": "code",
+                            "keyWords" : "",
                             "description": "Outils de bonne pratique , verifie le code pondue.",
                             "content": [
                                 "Lint , travis .."
@@ -608,7 +647,7 @@
                 },
                 {
                     "title": "Online Tools",
-                    "key": "Tools042",
+                    "key": "onlineTools042",
                     "type": "categorie",
                     "children": []
                 },

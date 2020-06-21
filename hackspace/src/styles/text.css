@@ -1,9 +1,18 @@
 /*TEXTE*/
 
 /*FONT*/
+/*header*/
+.header {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
 /*lateral*/
-.lateral h1 {
+.lateralTitle {
   font-size: 3rem;
+  font-family: 'Sedgwick Ave Display', cursive;
+  
+  border : solid 3.5px black;
+  border-radius : 5px;
+  padding : 15px;
 }
 
 .title {
@@ -14,24 +23,34 @@
 }
 .lasTitle {
   font-size: 1rem;
+  font-family: 'Iceland', cursive;
+  
 }
 
 .codeTitle, .codeDescription, .codeStep , .categorie{
+  font-family: 'Iceland', cursive;
+
   cursor: default;
 }
 .codeTitle {
   font-size: 22px;
   cursor: default;
+
 }
 .codeDescription {
   font-size : 14px;
 }
 .codeStep {
-  font-size : 10px;
+  font-size : 15px;
   text-align: start;
   padding-left: 15vw;
+
 }
 
+.code {
+  /*font-size : 20px;*/
+  color: purple;  
+}
 
 /*DISABLE LINK STYLE*/
 .header a:link, .lateral a:link, .sommaire a:link {

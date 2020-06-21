@@ -13,6 +13,7 @@ import './styles/text.css';
 import './styles/animate.css';
 import './styles/pics.css';
 import './styles/menu.css';
+import './styles/phone.css';
 
 // ################################################### 
 // #*/=============================================\*# 
