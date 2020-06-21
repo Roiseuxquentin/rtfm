@@ -22,7 +22,7 @@ const recursive = (parents, lateral) => {
 		return parents.children.map((child, index) => {
 			if (lateral) indexage =`${index + 1}-`
 			if ( child.children.length && ( child.type == "categorie" ) ) {
-				return <h2 key={child.key} ><a href={`#${child.key}`} ><span className="title finger" >{indexage}{child.title}</span> </a><br/> {recursive(child.children, lateral)}</h2>
+				return <h2 key={child.key} ><a href={`#${child.key}`} ><span className="title finger" >{indexage}{child.title.toUpperCase()}</span> </a><br/> {recursive(child.children, lateral)}</h2>
 			} else {
 				return <h2 key={child.key} ><a href={`#${child.key}`} ><span className="title finger" >{indexage}{child.title}</span></a><br/>{recursive(child.children, lateral)}</h2>
 			}
@@ -30,8 +30,9 @@ const recursive = (parents, lateral) => {
 	} else {
 	
 		return  parents.map((element,index) =>{
-				if (!index && lateral) marginLastTitle =  {marginLeft : "60px"}
-				else marginLastTitle =  {marginLeft : "0px"}
+					if (!index && lateral) marginLastTitle =  {marginLeft : "60px"}
+					else marginLastTitle =  {marginLeft : "0px"}
+
 					if (element.type == "categorie") {
 						return ( 
 							<p key={element.key} >
@@ -40,7 +41,11 @@ const recursive = (parents, lateral) => {
 								{recursive(element.children, lateral)}
 							</p>	) 
 					} else {
-						return  <a key={element.key} href={`#${element.key}`} ><span className="lasTitle purple " style={marginLastTitle} > {element.title},</span> </a>
+						return  (<a key={element.key} href={`#${element.key}`} >
+									<span className="lasTitle purple " style={marginLastTitle} >
+										 {element.title}{ (index == (parents.length - 1)) ? "" : " , " }
+									</span>
+								</a>)
 					}
 				})
 	}
@@ -54,11 +59,18 @@ const Sommaire = ({ data, mode, lateral }) => {
 	let styling = { opacity : `${mode ?  1 : 0 }`,
 					transition : `${mode ?  "1.5s" : "0.2s" }`, 
 					textAlign : `${lateral ?  "start" : "center" }`,
-					marginLeft : `${lateral ?  "15px" : "0px" }` }
-	let categorieTitle = {visibility : `${lateral ? "visible" : "hidden" }` }
+					marginLeft : `${lateral ?  "30px" : "0px" }` ,
+					margin : `${lateral ?  "30px" : "100px" }` }
+					
+	let categorieTitle = {
+		visibility : `${lateral ? "visible" : "hidden" }`,
+		border : "solid 3.5px black",
+		borderRadius : "5px",
+		padding : "15px"
+	 }
 	
 	return (<div style={styling} className="sommaire" >
-	  	      <h1 style={categorieTitle} className="cursorDefault" >{data.title}</h1>
+	  	      <h1 style={categorieTitle} className="cursorDefault center" >{data.title}</h1>
 			 {recursive(data, lateral)}
 		    </div>)
 
