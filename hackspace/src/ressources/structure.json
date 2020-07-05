@@ -20,185 +20,14 @@
                                     "title": "ASCII",
                                     "key": "ascii42",
                                     "type": "code",
-                                    "keyWords" : "ascii art header bash banniere",
+                                    "keyWords": "ascii art header bash banniere",
                                     "description": "",
                                     "content": [
-                                        "Header",
-                                        "###################################################\n#*/=============================================\\*#\n# ||                      .__                  || #\n# ||   ____   ____   ____ |  |   ____   ____   || #\n# || _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  || #\n# || \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) || #\n# ||  \\___  >\\___  >___  /|____/\\____/ \\____/  || #\n# ||      \\/     \\/_____/                  2020|| #\n#.\\=============================================/.#\n###################################################",
-                                        "",
-                                        "/=============================================\\\n||                      .__                  ||\n||   ____   ____   ____ |  |   ____   ____   ||\n|| _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  ||\n|| \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) ||\n||  \\___  >\\___  >___  /|____/\\____/ \\____/  ||\n||      \\/     \\/_____/                  2020||\n\\=============================================/",
-                                        "BASH Escape Ascii-Art",
-                                        "cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF ",
-                                        ""
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "Squelette Html",
-                                    "key": "HTML042",
-                                    "type": "code",
-                                    "keyWords" : "html snippet script style css bootstrap",
-                                    "description": "",
-                                    "content": [
-                                        "HTML",
-                                        "<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n",
-                                        " Script JS",
-                                        "<script>\ndocument.getElementById('injectMe').innerHTML = 'Display my String!';\n</script>\n\n<script src='mySuperScript.js'></script>",
-                                        "Style CSS",
-                                        "<link rel='stylesheet' type='text/css' href='mySuperStyle.css'>",
-                                        "BOOTSTRAP CDN CSS",
-                                        "<link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">",
-                                        "BOOTSTRAP CDN  Javascript",
-                                        "<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\" integrity=\"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI\" crossorigin=\"anonymous\"></script>"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "Script Bash",
-                                    "key": "bash042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "",
-                                    "content": [
-                                        " ",
-                                        "#!/bin/bash"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "MediaQuery Css",
-                                    "key": "mdq042",
-                                    "type": "code",
-                                    "keyWords" : "media mediaquery smartphone mobile view screen css style adapte responsive",
-                                    "description": "",
-                                    "content": [
-                                        "",
-                                        "/* \n  ##Device = Desktops\n  ##Screen = 1281px to higher resolution desktops\n*/\n\n@media (min-width: 1281px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Laptops, Desktops\n  ##Screen = B/w 1025px to 1280px\n*/\n\n@media (min-width: 1025px) and (max-width: 1280px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (portrait)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (landscape)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n  \n  //CSS\n  \n}"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "ReactJs",
-                                    "key": "REACTJS042",
-                                    "type": "code",
-                                    "keyWords" : "react js component template reactjs javascript",
-                                    "description": "Squelette d'un composant react js.",
-                                    "content": [
-                                        "CLASS",
-                                        "import React, {Component} from 'react';\n\nclass ComponentClass extends Component {\n\n  constructor(props) {\n      super(props)\n      this.state = {\n      clef : 'valeur'\n  }\n\n      this.action = this.action.bind()\n  }\n\n action() {\n  const text = 'je lis'\n  return text\n }\n\n render() {\n   return (<div>\n             <h1>Ping!</h1>\n           </div>)\n }\n}\n\nexport default ComponentClass;",
-                                        "FONCTION",
-                                        "import React from 'react'\n\nconst ComponentName = () => {\n\n    return (<div>\n           <h1>Ping!</h1>\n         </div>)\n}\n\nexport default ComponentName"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "Lorem Ipsum",
-                                    "key": "LoremIp042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "Le passage de Lorem Ipsum standard, utilisé depuis 1500.",
-                                    "content": [
-                                        "LATIN",
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident,\n sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "SublimText",
-                                    "key": "sublim042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "Raccourcit Clavier & package",
-                                    "content": [
-                                        "Raccourcit",
-                                        "Ctrl+KB                 basculer la barre latérale\nCtrl+Shift+P            invite de commande\nShift+F11               mode « sans distraction »\nCtrl+Shift+T            ré-ouvrir le dernier fichier fermé\nCtrl+Shift+V            coller et indenter\nCtrl+Shift+J            sélectionne le contenu de l’indentation\nCtrl+Shift+[haut,bas]   inverser les lignes\nCtrl+ /                 commenter\nCtrl+Shift+ /           bloc de commentaire\nCtrl+KU                 mettre en majuscule\nCtrl+KL                 mettre en minuscule\nF12                     ouvrir dans le navigateur internet par défaut",
-                                        "Packages",
-                                        "JSON Reindent \n... "
-                                    ],
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Variables",
-                            "key": "Variables042",
-                            "type": "categorie",
-                            "children": [
-                                {
-                                    "title": "String",
-                                    "key": "string042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "Declaration d'une variable de type sting.",
-                                    "content": [
-                                        "JAVASCRIPT",
-                                        "let maVariable = 'hello World!'\nconst maVariableBis = 'byWorld'",
-                                        "PHP",
-                                        "<?php \n $myVariable =  \"ceci est une chaîne simple\";\n?>",
-                                        "C#",
-                                        "string maVariable = \"La string du C!\";",
-                                        "BASH",
-                                        "STR=\"Hello World!\"",
-                                        "PYTHON",
-                                        "maVariableString = 'Yo World!'"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "Number",
-                                    "key": "number042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "Declaration d'une variable de type integer.",
-                                    "content": [
-                                        "JAVASCRIPT",
-                                        "let maNbVariable = 42\nconst maNbVariableBis = 42",
-                                        "PHP",
-                                        "<?php \n $myNbVariable = 42;\n?>",
-                                        "C#",
-                                        "int myNbVariable ;\nmyNbVariable = 30;",
-                                        "PYTHON",
-                                        "myNbVariable = 42"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "Array & List",
-                                    "key": "array042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "Declaration d'un tableau index/element.",
-                                    "content": [
-                                        "JAVASCRIPT",
-                                        "const array = [42,\"element01\",\"element02\",true]\nconsole.log(array[0]) //========> 42",
-                                        "PHP",
-                                        "<?php\n    $numbers = array(1, 2, 3, 4, 5, 6);\n    $string = array(\"element00\",\"element01\",\"element02\",\"element03\");\n    echo $string[1];  // Affiche : 'element01'\n    echo $numbers[3];  // Affiche : 4\n?>\n",
-                                        "C#",
-                                        "string[] myArray = { \"element00\",\"element01\",\"element02\",\"element03\"};",
-                                        "BASH",
-                                        "myArray=(element00 element01 element02)\necho ${arr[1]} #========> element00\n\necho ${myArray[*]}  #========>  Tout les elements\necho ${!myArray[*]} #========>  Tout les index\necho ${#myArray[*]} #========>  Nb Elements\necho ${#myArray[0]} #========>  Length of item zero\n",
-                                        "PYTHON",
-                                        "from array import * #========> need lib , pas natif\nmy_array = array('i',[1,2,3,4]) #========> arrayIdentifierName = array(typecode, [Initializers]\n\n##typecode :\n#‘b’ : signed integer of size 1 byte\n#‘B’ : unsigned integer of size 1 byte\n#‘c’ : character of size 1 byte\n#‘u’ : unicode character of size 2 bytes\n#‘h’ : signed integer of size 2 bytes\n#‘H’ : unsigned integer of size 2 bytes\n#‘i’ : signed integer of size 2 bytes\n#‘I’ : unsigned integer of size 2 bytes\n#‘w’ : unicode character of size 4 bytes\n#‘l’ : signed integer of size 4 bytes\n#‘L’ : unsigned integer of size 4 bytes\n#‘f’ : floating point of size 4 bytes\n#‘d’ : floating point of size 8 bytes"
-                                    ],
-                                    "children": []
-                                },
-                                {
-                                    "title": "Object",
-                                    "key": "obj042",
-                                    "type": "code",
-                                    "keyWords" : "",
-                                    "description": "Declaration d'un objet clef/valeur ",
-                                    "content": [
-                                        "JAVASCRIPT",
-                                        "",
-                                        "PHP",
-                                        " ",
-                                        "C",
-                                        " ",
-                                        "BASH",
-                                        " ",
-                                        "PYTHON",
-                                        " "
+                                        "[cmt]Header",
+                                        "[cod]###################################################\n#*/=============================================\\*#\n# ||                      .__                  || #\n# ||   ____   ____   ____ |  |   ____   ____   || #\n# || _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  || #\n# || \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) || #\n# ||  \\___  >\\___  >___  /|____/\\____/ \\____/  || #\n# ||      \\/     \\/_____/                  2020|| #\n#.\\=============================================/.#\n###################################################",
+                                        "[cod]/=============================================\\\n||                      .__                  ||\n||   ____   ____   ____ |  |   ____   ____   ||\n|| _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  ||\n|| \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) ||\n||  \\___  >\\___  >___  /|____/\\____/ \\____/  ||\n||      \\/     \\/_____/                  2020||\n\\=============================================/",
+                                        "[cmt]BASH Escape Ascii-Art",
+                                        "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
                                     ],
                                     "children": []
                                 }
@@ -215,341 +44,18 @@
                             "title": "Boucles",
                             "key": "Boucle042",
                             "type": "code",
-                            "keyWords" : "",
+                            "keyWords": "",
                             "description": " ",
                             "content": [
-                                "JS",
-                                "let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
-                                "",
-                                "const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
-                                "PYTHON",
-                                "x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
-                                "",
-                                "for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
-                                "BASH",
-                                "while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
-                                "",
-                                "for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "Condition",
-                            "key": "condition042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": " ",
-                            "content": [
-                                "JS",
-                                "const expr = \"Papayas\"\n\nswitch (expr) {\n  case \"Oranges\":\n    console.log(\"Le prix des Oranges est de 1€.\")\n    break\n  case \"Mangoes\":\n  case \"Papayas\":\n    console.log(\"Le prix des Mangues et des Papayes est de 2€.\")\n    break\n  default:\n    console.log(`Dsl, aucun prix pour ${expr}.`)\n}",
-                                "PYTHON",
-                                "a = 43\n\nif a > 43:\n    a = a + 1\nelif a == 43:\n    a = a - 1\nelse:\n    a = a * 2\n\n//========> a\n//========> 42",
-                                "BASH",
-                                "echo -n \"Entre le nom d'un pays : \"\nread COUNTRY\n\necho -n \"La langue officiel en $COUNTRY is \"\n\ncase $COUNTRY in\n\n  Lithuania)\n    echo -n \"Lithuanian\"\n    ;;\n\n  Romania | Moldova)\n    echo -n \"Romanian\"\n    ;;\n\n  Italy | \"San Marino\" | Switzerland | \"Vatican City\")\n    echo -n \"Italian\"\n    ;;\n\n  *)\n    echo -n \"unknown\"\n    ;;\nesac",
-                                "",
-                                "nom=\"Jack\"\n\nif [ $nom = \"Jack\" ]\nthen\n        echo \"Salut Jack !\"\nelif [ encore_autre_test ]\nthen\n        echo \"Le deuxieme test a été vérifié\"\nelse\n        echo \"Aucun des tests précédents n'a été vérifié\"\nfi",
-                                "PHP",
-                                " "
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "Operateurs logiques",
-                            "key": "Operateur042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": " Logique de base pour articuler le code ",
-                            "content": [
-                                "SQL",
-                                "=           Égale\n<>          Pas égale\n!=          Pas égale\n>           Supérieur à\n<           Inférieur à\n>=          Supérieur ou égale à\n<=          Inférieur ou égale à\nIN          Liste de plusieurs valeurs possibles\nBETWEEN     Valeur comprise dans un intervalle donnée (utile pour les nombres ou dates)\nLIKE        Recherche en spécifiant le début, milieu ou fin d'un mot.\nIS NULL     Valeur est nulle\nIS NOT NULL Valeur n'est pas nulle",
-                                "PYTHON",
-                                "==      égal à \n!=      différent de (fonctionne aussi avec )\n>       strictement supérieur à \n>=      supérieur ou égal à\n<       strictement inférieur à \n<=      inférieur ou égal à",
-                                "BASH",
-                                "$variable1 = $variable2\n$variable1 == $variable2\n$variable1 != $variable2\n$variable1 < $variable2\n$variable1 > $variable2\n$variable1 >= $variable2\n$variable1 <= $variable2",
-                                ""
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Front",
-                    "key": "Front042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "GET",
-                            "key": "get042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Requete http type GET",
-                            "content": [
-                                "JS",
-                                " "
-                            ],
-                            "children": []
-                        },{
-                            "title": "POST",
-                            "key": "POST042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Requete http type POST",
-                            "content": [
-                                "JS",
-                                " "
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Back",
-                    "key": "Back042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "SQL",
-                            "key": "sql042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Syntax C.R.U.D pour les requetes SQL.",
-                            "content": [
-                                "CREATE",
-                                "CREATE DATABASE ma_base",
-                                "",
-                                "CREATE TABLE nom_de_la_table\n(\n    colonne1 type_donnees,\n    colonne2 type_donnees,\n    colonne3 type_donnees,\n    colonne4 type_donnees\n)",
-                                "",
-                                "INSERT INTO table VALUES ('valeur 1', 'valeur 2', ...)",
-                                "",
-                                "INSERT INTO table (nom_colonne_1, nom_colonne_2, ...\n VALUES ('valeur 1', 'valeur 2', ...)",
-                                "READ",
-                                " SELECT * FROM nom_table ",
-                                "",
-                                " SELECT nom_du_champ FROM nom_table ",
-                                "",
-                                "SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression",
-                                "",
-                                "SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression LIMIT 10 ",
-                                "UPDATE",
-                                "UPDATE table\nSET nom_colonne_1 = 'nouvelle valeur'\nWHERE condition",
-                                "DELETE",
-                                "DELETE FROM 'table'\nWHERE condition",
-                                "",
-                                "DELETE FROM 'utilisateur'",
-                                "",
-                                "TRUNCATE TABLE 'utilisateur'"
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "Serveur",
-                            "key": "serveur042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Serveur HTTP",
-                            "content": [
-                                "PYTHON",
-                                "python -m SimpleHTTPServer <PORT>",
-                                "server.py",
-                                "import http.server\n \nPORT = 8888\nserver_address = (\"\", PORT)\n\nserver = http.server.HTTPServer\nhandler = http.server.CGIHTTPRequestHandler\nhandler.cgi_directories = [\"/\"]\nprint(\"Serveur actif sur le port :\", PORT)\n\nhttpd = server(server_address, handler)\nhttpd.serve_forever()",
-                                "NODE JS",
-                                "echo '{ \"private\": true }' > package.json",
-                                "express",
-                                "const express = require('express')\n// const bodyParser = require('body-parser')\n// const cors = require('cors')\n\nconst app = express()\n\n// Middleware\n// app.use(bodyParser.urlencoded({ extended: true })) \n// app.use(cors())\n\napp.get('/', (req, res) => {\n\n    console.log(\"Ping\")\n\n   res.send('Pong' )\n\n})\n\napp.get('/data/:id', (request, res) => {\n   const argument = request.params\n\n console.log(\"data :\",argument)\n  res.json(argument)\n})\n\n app.post('/post', (req, res) => {\n  const argument = req.body.data\n\n  res.send(argument)\n    console.log('Data recus :', argument)\n\n})\n\napp.listen(8080, () => console.log('serveur sur le port 8080'))",
-                                "http",
-                                "const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)",
-                                ""
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Dbug",
-                    "key": "Dbug042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Check Point",
-                            "key": "checkPoint042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Afficher un signal lors de l'execution du programme , pour aider au Dbug",
-                            "content": [
-                                "JS",
-                                "console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' )",
-                                "",
-                                "try {\n  nonExistentFunction()\n} catch (error) {\n  console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' , error )\n}",
-                                "PHP",
-                                "<?php\n\n$b = 3.1;\n$c = true;\nvar_dump($b, $c);\n\n?>",
-                                "PYTHON",
-                                " ",
-                                "BASH",
-                                " "
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "CrossOrigin",
-                            "key": "crossorigin042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "L'origine de lq requete ne partage pas le meme domaine que celle du serveur,\n le serveur doit autoriser certains header.",
-                            "content": [
-                                "CLIENT header Javascript",
-                                " ",
-                                "SERVEUR nodejs",
-                                "const cors = require('cors')\napp.use(cors())",
-                                "SERVEUR HEADER",
-                                "app.use((request, response, next) => {\n   response.header('Acsess-Control-Allow-Origin','*')\n   response.header('Access-Control-Allow-Headers','Origin, X-Requested-With,Content-Type,Accept')\n})",
-                                " "
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "Méthodes",
-            "key": "Methodes042",
-            "type": "categorie",
-            "img": "",
-            "children": [
-                {
-                    "title": "Installation",
-                    "key": "Installation042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Linux Starter",
-                            "key": "linuxStarter042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Installation & Mise a jour packages post-formattage.",
-                            "content": [
-                                "Mise a jour",
-                                "sudo apt update",
-                                "",
-                                "sudo apt upgrade",
-                                "Installation packages",
-                                "sudo apt -y install zsh curl terminator vlc irssi git tig nodejs vim sublime-text jq cmatrix mplayer gimp firefox teamviewer wkhtmltopdf xpdf cowsay nmap htop",
-                                "ALIAS end of /.bashrc",
-                                "date\n\necho \"\"\n\nalias pong='ping -c 2 roiseux.fr'\nalias l='ls -la'\nalias c='clear'",
-                                "ALIAS end of /.zshrc",
-                                "source /home/${USER}/.bashrc  || source ~/.bashrc",
-                                ""
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "REACT JS",
-                            "key": "sqlInstall042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Start React project.",
-                            "content": [
-                                "Standard",
-                                "npx create-react-app mon-app",
-                                "",
-                                "npm start",
-                                "Minimal",
-                                "npm install minimal-react",
-                                "",
-                                "minimal-react my-simple-react-example",
-                                "",
-                                "npm run dev",
-                                "Style CSS for minimal react : 1 stall package u do & 2 webpack.config.js u put will code",
-                                "npm install style-loader",
-                                "",
-                                "{\n  test: /\\.css$/,\n  use: [ 'style-loader', 'css-loader' ]\n}",
-                                "Build",
-                                "npm run build"
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "DB SQL",
-                            "key": "sqlInstall042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Installation d'un Base de donnee SQL.",
-                            "content": [
-                                "Processus",
-                                " "
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Raspberry Pi",
-                    "key": "pi042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Installation Node Js",
-                            "key": "nodePi042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "Installation de NodeJs sur le raspberry Pi.",
-                            "content": [
-                                "MISE A JOUR",
-                                "sudo apt-get install -f",
-                                "",
-                                "sudo apt-get upgrade",
-                                "",
-                                "sudo apt-get update",
-                                "CHECK VERSION",
-                                "uname -m",
-                                "SI version \"armv6\"  === nodejs install will don't work...",
-                                "wget https://nodejs.org/dist/v8.9.0/node-v8.9.0-linux-armv6l.tar.gz",
-                                "",
-                                "tar -xzf node-v8.9.0-linux-armv6l.tar.gz",
-                                "",
-                                "cd node-v8.9.0-linux-armv6l/",
-                                "",
-                                "sudo cp -R * /usr/local/",
-                                "SInon download",
-                                "curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -",
-                                "INSTALLATION",
-                                "sudo apt install -y nodejs",
-                                "",
-                                "nodejs -v",
-                                "",
-                                "npm -v",
-                                ""
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "Connection",
-                            "key": "codcheck042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "",
-                            "content": [
-                                "SSH",
-                                "ssh pi@192.168.0.X",
-                                "SCP",
-                                "scp bundle.min.js pi@192.168.0.X",
-                                "background portal",
-                                "sudo nano /etc/motd",
-                                ""
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "Wifi",
-                            "key": "wifiPi042",
-                            "type": "code",
-                            "keyWords" : "",
-                            "description": "wifi params authentification ",
-                            "content": [
-                                "Open File",
-                                "sudo nano /etc/wpa_supplicant/wpa_supplicant.conf",
-                                "",
-                                "country=FR\nctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\n\nnetwork={\nssid=\"NOM2WIFI\"\npsk=\"MDPWIFI\"\nkey_mgmt=WPA-PSK\n}"
+                                "[cmt]JS",
+                                "[cod]let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
+                                "[cod]const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
+                                "[cmt]PYTHON",
+                                "[cod]x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
+                                "[cod]for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
+                                "[cmt]BASH",
+                                "[cod]while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
+                                "[code]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
                             ],
                             "children": []
                         }
@@ -564,20 +70,17 @@
                             "title": "IP",
                             "key": "scanIp042",
                             "type": "code",
-                            "keyWords" : "",
+                            "keyWords": "",
                             "description": "",
                             "content": [
-                                "IP PUBLIQUE",
-                                "ip a",
-                                "",
-                                "curl roiseux.fr",
-                                "IP LOCAL",
-                                "retrouver le script JS ",
-                                "Scanner les IP sur le reseau local",
-                                "sudo arp-scan 192.168.0.1/24",
-                                "",
-                                "nmap -sP 192.168.0.1/24",
-""
+                                "[cmt]IP PUBLIQUE",
+                                "[cod]ip a",
+                                "[cod]curl roiseux.fr",
+                                "[cmt]IP LOCAL",
+                                "[cmt]retrouver le script JS ",
+                                "[cmt]Scanner les IP sur le reseau local",
+                                "[cod]sudo arp-scan 192.168.0.1/24",
+                                "[cod]nmap -sP 192.168.0.1/24"
                             ],
                             "children": []
                         }
@@ -592,10 +95,69 @@
                             "title": "Coding Check",
                             "key": "codcheck042",
                             "type": "code",
-                            "keyWords" : "",
+                            "keyWords": "",
                             "description": "Outils de bonne pratique , verifie le code pondue.",
                             "content": [
-                                "Lint , travis .."
+                                "[cmt]Lint , travis .."
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Méthodes",
+            "key": "Methodes042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Webdddsaaa Design",
+                    "key": "FrameWordddkaaaa042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Intedddddgraaaation Graphique",
+                            "key": "IG0ddd42aaaaa",
+                            "type": "link",
+                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "content": [
+                                "[cmt]Kolor Palette & Nuances",
+                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
+                                "[cmt]Icone SVG",
+                                "[lnk]https://icones8.fr/",
+                                "[lnkhttps://www.flaticon.com/",
+                                "[cmt]BOOTSTAP CDN CSS",
+                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Scripts",
+            "key": "script042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Webddd Design",
+                    "key": "FrameWordddk042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Intedddddgration Graphique",
+                            "key": "IG0ddd42",
+                            "type": "link",
+                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "content": [
+                                "[cmt]Kolor Palette & Nuances",
+                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
+                                "[cmt]Icone SVG",
+                                "[lnk]https://icones8.fr/"
                             ],
                             "children": []
                         }
@@ -620,42 +182,17 @@
                             "type": "link",
                             "description": "Outils de developpements visuel, Images SVG, OpenSource",
                             "content": [
-                                "Kolor Palette & Nuances",
-                                "https://www.color-hex.com/color-palettes/popular.php",
-                                "Icone SVG",
-                                "https://icones8.fr/",
-                                "",
-                                "https://www.flaticon.com/",
-                                "BOOTSTAP CDN CSS",
-                                "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                                "[cmt]Kolor Palette & Nuances",
+                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
+                                "[cmt]Icone SVG",
+                                "[lnk]https://icones8.fr/",
+                                "[lnk]https://www.flaticon.com/",
+                                "[cmt]BOOTSTAP CDN CSS",
+                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                             ],
                             "children": []
                         }
                     ]
-                },
-                {
-                    "title": "Systéme",
-                    "key": "sys042",
-                    "type": "categorie",
-                    "children": []
-                },
-                {
-                    "title": "E-Learning",
-                    "key": "learning042",
-                    "type": "categorie",
-                    "children": []
-                },
-                {
-                    "title": "Online Tools",
-                    "key": "onlineTools042",
-                    "type": "categorie",
-                    "children": []
-                },
-                {
-                    "title": "Gouffre",
-                    "key": "Gouffre042",
-                    "type": "categorie",
-                    "children": []
                 }
             ]
         }

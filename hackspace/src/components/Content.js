@@ -3,6 +3,7 @@ import React from 'react'
 import Code from './Code.js'
 import Link from './Link.js'
 import GiveMeModal from './GiveMeModal.js'
+import Breek from './Breek.js'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -41,7 +42,7 @@ const recursive = (parents) => {
 									return <Link element={element} key={element.key} /> 
 								
 								} else {
-									return <Code element={element} key={element.key} />
+									return <Breek element={element} key={element.key} />
 								}
 							})
 		

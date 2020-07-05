@@ -19,20 +19,20 @@ class GiveMeModal extends Component {
 	open(e) {
 		e.preventDefault()
 
-		let key = e.target.id
-		let type
+		// let key = e.target.id
+		// let type
 
-		(this.props.code) ? type = "code" : type = e.target.title;
+		// (this.props.code) ? type = "code" : type = e.target.title;
 
-		this.setState({display : true, id : key, type : type })
+		// this.setState({display : true, id : key, type : type })
 
-		document.getElementById("header").style.opacity = 0
-		document.getElementById("header").style.height = "25px"
+		// document.getElementById("header").style.opacity = 0
+		// document.getElementById("header").style.height = "25px"
 	}
 
 	close(e) {
 		e.preventDefault()
-		this.setState({display : false})
+		// this.setState({display : false})
 	}
 
  render() {

@@ -19,7 +19,8 @@ class Header extends Component {
 		this.state = {
 			pages : [{title : "Loading...", key : 42}],
 			mode : true,
-			scrollPosition : 0
+			scrollPosition : 0,
+			current : ""
 		}
 	}
 
@@ -59,6 +60,7 @@ class Header extends Component {
 
 	changePage(event) {
 		this.props.onChange(event)
+		this.setState({current : event.target.id})
 		scrollPosition = 0
  		window.scroll(0, 0)
 	}
@@ -67,7 +69,10 @@ class Header extends Component {
 		return (<div className="header" id="header" 
 					onMouseEnter={() => this.display()} 
 					onMouseLeave={() => this.hidden()} >
-			  		{ 	this.state.pages.map(page => <h1 id={page.key} key={page.key} onClick={(event) => this.changePage(event)   } >{page.title}</h1>) }
+			  		{ 	this.state.pages.map(page => <h1 id={page.key} 
+			  											key={page.key} 
+			  											className={(this.state.selected == page.key) ? "dBug" : "" } 
+			  											onClick={(event) => this.changePage(event)   } >{page.title}</h1>) }
 			 	</div>)
 	}
 }

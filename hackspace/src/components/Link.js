@@ -28,11 +28,11 @@ const Link = ({element}) => {
 				  	{element.content.map((elt,index) => {
 
 						  	if (index % 2) {
-							    return (<a key={index + Math.random()} className="finger" href={elt} onClick={(event,elt)=> handleClick(event)} >
-								    		{elt}
+							    return (<a key={index + Math.random()} className="finger" href={elt.substr(5)} onClick={(event,elt)=> handleClick(event)} >
+								    		{elt.substr(5)}
 								    	</a>)
 						  	} else {
-					  			return <p key={index + Math.random()} className="ressource" >{elt}</p>
+					  			return <p key={index + Math.random()} className="ressource" >{elt.substr(5)}</p>
 						  	}
 						}) 
 				  	}
