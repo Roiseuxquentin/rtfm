@@ -47,12 +47,12 @@ const copyToClipboard = str => {                  //
 
 		return ( <figure id={element.key} key={element.key} >
 			<figcaption className="codeTitle purple" >{element.title}</figcaption>
-			<p className="codeDescription" >{element.description}</p>
+			<p className="codeDescription italic" >{element.description}</p>
 
 			{element.content.map((elt,index) => {
 
 				if (elt.includes('[cod]')) {
-					return (<pre key={index + Math.random()} >
+					return (<pre key={index + Math.random()} style={{marginTop : "6px"}} >
 						<code className="finger code" onClick={(event)=> copyToClipboard(elt.substr(5)) } >
 						{elt.substr(5)}
 						</code>
@@ -65,6 +65,8 @@ const copyToClipboard = str => {                  //
 					return <p key={index + Math.random()} className="codeStep" >{elt.substr(5)}</p>
 				} else if (elt.includes('[img]')) {
 		            return <GiveMeImg source={elt.substr(5)} />
+				} else if (elt.includes('[ssc]')) {
+		            return <p key={index + Math.random()} className="secondStep">{elt.substr(5)} </p>
 				} else {
 		  			return <div />
 				}

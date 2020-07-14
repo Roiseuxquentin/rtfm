@@ -6,7 +6,7 @@ import Content from './components/Content.js'
 import GiveMeImg from './components/GiveMeImg.js'
 import GiveMeModal from './components/GiveMeModal.js'
 
-import data from './ressources/structure.json'
+import data from './ressources/structureCode.json'
 
 import './styles/App.css';
 import './styles/text.css';
@@ -62,6 +62,7 @@ class App extends Component {
         <div className="corps fadeIn">
           <GiveMeImg source={data.axes[this.state.page].key} />
           <Sommaire data={data.axes[this.state.page]} mode />
+          <hr/>
           <Content data={data.axes[this.state.page]} />
         </div>
       </div>

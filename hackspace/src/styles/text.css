@@ -27,15 +27,13 @@
   
 }
 
-.codeTitle, .codeDescription, .codeStep , .categorie{
+.codeTitle, .codeStep, .secondStep, .categorie {
   font-family: 'Iceland', cursive;
-
   cursor: default;
 }
 .codeTitle {
   font-size: 22px;
   cursor: default;
-
 }
 .codeDescription {
   font-size : 14px;
@@ -43,8 +41,13 @@
 .codeStep {
   font-size : 15px;
   text-align: start;
-  padding-left: 15vw;
-
+  padding-left: 10vw;
+  font-weight: 600;
+}
+.secondStep {
+  font-size : 13px;
+  text-align: start;
+  padding-left: 15vw; 
 }
 
 .code {

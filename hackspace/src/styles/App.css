@@ -142,6 +142,9 @@ select {
 .purple {
   color:purple;
 }
+.blue {
+  color:#0265D6;
+}
 .black {
   color:black;
 }
@@ -177,4 +180,7 @@ select {
 }
 .noBorder {
   border:none !important;
+}
+.italic {
+  font-style: italic;
 }
