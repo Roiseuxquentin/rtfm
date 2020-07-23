@@ -58,7 +58,11 @@ const copyToClipboard = str => {                  //
 						</code>
 						</pre>)
 				} else if (elt.includes('[lnk]')) {
-					return (<a key={index + Math.random()} className="finger" href={elt.substr(5)} onClick={(event,elt)=> handleClick(event)} >
+					return (<a key={index + Math.random()}
+								className="finger"
+								style={{display : "flex",marginLeft : "15vw"}}
+							    href={elt.substr(5)}
+							    onClick={(event,elt)=> handleClick(event)} >
 						{elt.substr(5)}
 						</a>)
 				} else if (elt.includes('[cmt]')) {
