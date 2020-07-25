@@ -332,8 +332,27 @@
                                 "[cod]echo '{ \"private\": true }' > package.json",
                                 "[cmt]express",
                                 "[cod]const express = require('express')\n// const bodyParser = require('body-parser')\n// const cors = require('cors')\n\nconst app = express()\n\n// Middleware\n// app.use(bodyParser.urlencoded({ extended: true })) \n// app.use(cors())\n\napp.get('/', (req, res) => {\n\n    console.log(\"Ping\")\n\n   res.send('Pong' )\n\n})\n\napp.get('/data/:id', (request, res) => {\n   const argument = request.params\n\n console.log(\"data :\",argument)\n  res.json(argument)\n})\n\n app.post('/post', (req, res) => {\n  const argument = req.body.data\n\n  res.send(argument)\n    console.log('Data recus :', argument)\n\n})\n\napp.listen(8080, () => console.log('serveur sur le port 8080'))",
+                                "[ssc]Display react build :",
+                                "[cod]const express = require('express')\nconst path = require('path')\nconst app = express()\napp.use(express.static(path.join(__dirname, 'build')))\napp.get('/', function(req, res) {\n  res.sendFile(path.join(__dirname, 'build', 'index.html'))\n})\napp.listen(9000);",
                                 "[cmt]http",
-                                "[cod]const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)"
+                                "[cod]const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)",
+                                "[cmt]NGINX",
+                                "[ssc]Installation de la clef du dépôt Nginx",
+                                "[cod]wget http://nginx.org/keys/nginx_signing.key",
+                                "[cod]sudo apt-key add nginx_signing.key && rm nginx_signing.key",
+                                "[cod]sudo apt update",
+                                "[cod]sudo apt install nginx",
+                                "[ssc]Config",
+                                "[cod]sudo nano /etc/nginx/nginx.conf",
+                                "[ssc]Test du fichier de configuration",
+                                "[cod]/etc/init.d/nginx configtest",
+                                "[ssc]ou",
+                                "[cod]sudo nginx -t",
+                                "[ssc]Redémarrage du service",
+                                "[cod]service nginx reload",
+                                "[cod]service nginx restart",
+                                "[ssc]Start Service",
+                                "[cod]sudo /etc/init.d/nginx start"
                             ],
                             "children": []
                         }
@@ -571,18 +590,30 @@
                             "title": "IP",
                             "key": "scanIp042",
                             "type": "code",
-                            "keyWords": "",
+                            "keyWords": "scan scanner ip nmap lan reseau local information",
                             "description": "",
                             "content": [
                                 "[cmt]IP PUBLIQUE",
                                 "[cod]ip a",
                                 "[cod]curl roiseux.fr",
                                 "[cmt]IP LOCAL",
-                                "[cmt]retrouver le script JS ",
+                                "[cod]curl hostname -I",
+                                "[ssc]retrouver le script JS ",
                                 "[cmt]Scanner les IP sur le reseau local",
                                 "[cod]sudo arp-scan 192.168.0.1/24",
-                                "[cod]nmap -sP 192.168.0.1/24",
-                                ""
+                                "[cod]nmap -sP 192.168.0.1/24"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Redirect",
+                            "key": "redirection042",
+                            "type": "code",
+                            "keyWords": "host dns redirect",
+                            "description": "",
+                            "content": [
+                                "[cmt]HOST",
+                                "[cod]sudo nano /etc/hosts"
                             ],
                             "children": []
                         }

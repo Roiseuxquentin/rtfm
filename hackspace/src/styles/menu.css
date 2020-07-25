@@ -13,7 +13,7 @@
   height: 130px;
   z-index: 2;
 
-  border-bottom: solid black 0.8px;
+  border-bottom: solid black 2px;
   background: white;
   transition: 0.5s;
 }
@@ -25,7 +25,7 @@
 }
 .header *:hover {
   cursor: pointer; 
-  color: #9fc9e0;
+  color: purple;
   transition: 0.5s;
 }
 
@@ -51,4 +51,57 @@
 }
 .lateral .lasTitle, .lateral h1 {
   color: purple;
- }
+}
+
+/*FOOTER*/
+.footer, .footerLine, .firstFooter, .firstFooterLine {
+  z-index: 0;
+  width: 100%;
+  transition: 1s;
+}
+.firstFooterLine , .footerLine  {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background: black;
+}
+.footer:hover .footerLine {
+  height: 26px !important;
+}
+.footer:hover {
+  height: 60px !important;
+}
+.footer , .firstFooter {
+  height: 30px;
+  background: none;
+}
+
+.footerItem , .footerBack  {
+  z-index: 3;
+  border-radius: 360px;
+  border:solid transparent 1px;
+  background: white;
+  transition: 0.3s;
+  padding: 2px;
+}
+.footerBack:hover , .footerItem:hover  {
+  cursor: pointer;
+  border : solid 0.5px black;
+}
+.footerBack {
+  height: 42px;
+  width: 42px;
+  margin: 8px;
+}
+.footerItem {
+  height: 30px;
+  width: 30px; 
+  margin: 20px;
+}
+
+.firstFooterLine {
+  height: 26px !important;
+}
+.firstFooter {
+  height: 60px !important;
+}

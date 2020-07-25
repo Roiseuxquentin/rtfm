@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header.js'
 import Lateral from './Lateral.js'
+import uPage from '../ressources/uPage.png'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -13,7 +14,7 @@ import Lateral from './Lateral.js'
 // #.\=============================================/.#
 // ###################################################
 
-const Nav = ({pages, selected, onChange}) => {
+const Nav = ({pages, selectedIndex, selectedName, onChange }) => {
 
 	let scrollPosition = 0
 
@@ -25,7 +26,7 @@ const Nav = ({pages, selected, onChange}) => {
 
 	const scrollingButton = () => {
 		if ( window.scrollY > 300 ) {
-			document.getElementById("goTop").style.opacity = (0.7)
+			document.getElementById("goTop").style.opacity = 1
 		} else {
 			document.getElementById("goTop").style.opacity = 0
 		}
@@ -37,14 +38,15 @@ const Nav = ({pages, selected, onChange}) => {
 
 	return (<div>
 				
-				<Header axes={pages} onChange={onChange} />
+				<Header axes={pages} onChange={onChange} selected={selectedName} />
         		
-        		<Lateral axe={pages[selected]} />
+
+        		{selectedName ? <Lateral axe={pages[selectedIndex]} /> : true}
 
 				<div className="goTop" >
 	         		<img id="goTop"
 		         		onClick={goUp}
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Circle-icons-arrow-up.svg/600px-Circle-icons-arrow-up.svg.png" />
+						src={uPage} />
 	         	</div>
          	</div>)
 }

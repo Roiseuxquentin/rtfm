@@ -106,10 +106,18 @@ select {
 
 
 
-
-
-
-
+.lycosContainer {
+  justify-content: center;
+  display: flex;
+  padding-top: 35vh;
+  text-align: center;
+}
+#lycos {
+  border : solid 2px black;
+  border-radius: 3px;
+  width: 50vw;
+  height: 20px !important; 
+}
 
 
 
@@ -183,4 +191,8 @@ select {
 }
 .italic {
   font-style: italic;
+}
+.endStick {
+  position: fixed;
+  bottom: 0;
 }

@@ -136,34 +136,6 @@
             ]
         },
         {
-            "title": "Scripts",
-            "key": "script042",
-            "type": "categorie",
-            "img": "",
-            "children": [
-                {
-                    "title": "Webddd Design",
-                    "key": "FrameWordddk042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Intedddddgration Graphique",
-                            "key": "IG0ddd42",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
-                            "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/"
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "title": "Ressources",
             "key": "Ressources042",
             "type": "categorie",
@@ -187,6 +159,34 @@
                                 "[lnk]https://www.flaticon.com/",
                                 "[cmt]BOOTSTAP CDN CSS",
                                 "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Scripts",
+            "key": "Scripts042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Wtotoign",
+                    "key": "FrameWordddk042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Intedddddgration Graphique",
+                            "key": "IG0ddd42",
+                            "type": "link",
+                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "content": [
+                                "[cmt]Kolor PTOTOalette & Nuances",
+                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
+                                "[cmt]Icone SVG",
+                                "[lnk]https://icones8.fr/"
                             ],
                             "children": []
                         }
