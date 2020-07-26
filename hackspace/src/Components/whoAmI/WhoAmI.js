@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class ComponentClass extends Component {
+class WhoAmI extends Component {
 
   constructor(props) {
       super(props)
@@ -17,11 +17,10 @@ class ComponentClass extends Component {
  }
 
  render() {
-   return (<div className="lycosContainer center grid" >
-             <h1>Born2Cod</h1>            
-             <input type="text" id="lycos" />
+   return (<div>
+             <h1>Ping!</h1>
            </div>)
  }
 }
 
-export default ComponentClass;
+export default WhoAmI;

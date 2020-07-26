@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header.js'
-import Lateral from './Lateral.js'
+import Header from '../Components/Menu/Header.js'
+import Lateral from '../Components/Menu/Lateral.js'
 import uPage from '../ressources/uPage.png'
 
 // ################################################### 

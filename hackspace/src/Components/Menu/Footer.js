@@ -1,5 +1,5 @@
 import React from 'react'
-import gist from '../ressources/gist.png'
+import gist from '../../ressources/gist.png'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -31,7 +31,7 @@ const Footer = (obj) => {
 					name = "http://roiseux.fr"
     				className="footerItem" 
     				src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWoH1mBpYI0W9koIPeZi1X477y4ppIRjNJWg&usqp=CAU" />
-    		<img onClick={(event) => handleClick(event) } 
+    		<img onClick={(event) => document.location.reload(true) } 
     				id="back"
     				name={window.location.hostname}
     				className="footerBack" 

@@ -1,14 +1,17 @@
 import React, {Component} from 'react'
 
-import Nav from './components/Nav.js'
-import Footer from './components/Footer.js'
-import Sommaire from './components/Sommaire.js'
-import Content from './components/Content.js'
-import GiveMeImg from './components/GiveMeImg.js'
-import GiveMeModal from './components/GiveMeModal.js'
+import Nav from './Containers/Nav.js'
+import Sommaire from './Components/Menu/Sommaire.js'
+import Footer from './Components/Menu/Footer.js'
 
-import data from './ressources/structureCode.json'
-import Lycos from './components/Lycos.js'
+import Lycos from './Components/Search/Lycos.js'
+import Content from './Containers/Content.js'
+
+import GiveMeImg from './Components/GiveMeImg.js'
+
+import dataCode from './ressources/Data/structureCode.json'
+import dataRed from './ressources/Data/structureCode.json'
+import dataBlue from './ressources/Data/structureCode.json'
 
 import './styles/App.css';
 import './styles/text.css';
@@ -31,7 +34,7 @@ import './styles/phone.css';
 class App extends Component {
   state = {
     scrollPos : 0,
-    data : data,
+    data : dataCode,
     page : 0,
     selected : false
   }
@@ -66,15 +69,15 @@ class App extends Component {
    return (
       <div className="App">
        
-       <Nav pages={data.axes} selectedName={this.state.selected} selectedIndex={this.state.page} onChange={(event) => this.onChangePage(event)} />
+       <Nav pages={dataCode.axes} selectedName={this.state.selected} selectedIndex={this.state.page} onChange={(event) => this.onChangePage(event)} />
 
        {
         (this.state.selected) ?
         (<div className="corps fadeIn" >
-          <GiveMeImg source={data.axes[this.state.page].key} />
-          <Sommaire data={data.axes[this.state.page]} mode />
+          <GiveMeImg source={dataCode.axes[this.state.page].key} />
+          <Sommaire data={dataCode.axes[this.state.page]} mode />
           <hr/>
-          <Content data={data.axes[this.state.page]} />
+          <Content data={dataCode.axes[this.state.page]} />
         </div> ) : <Lycos />
        }
 

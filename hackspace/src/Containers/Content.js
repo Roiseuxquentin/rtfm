@@ -1,9 +1,7 @@
 import React from 'react'
 
-import Code from './Code.js'
-import Link from './Link.js'
-import GiveMeModal from './GiveMeModal.js'
-import Breek from './Breek.js'
+import Link from '../Components/Link.js'
+import Breek from '../Components/Breek.js'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -22,9 +20,9 @@ const recursive = (parents) => {
 
 			return parents.children.map(child => {
 				if ( child.children.length && ( child.type == "categorie" ) ) {
-					return <div key={child.key} > <GiveMeModal data={parents} id={child.key} title={child.title} />  {recursive(child.children)}</div>
+					return <div key={child.key} > <h3 className="codeTitle purple contentSpace" >{child.title}</h3>  {recursive(child.children)}</div>
 				} else {
-					return <div key={child.key} ><GiveMeModal data={parents} id={child.key} title={child.title} /> {recursive(child.children)}</div>
+					return <div key={child.key} ><h3 className="codeTitle purple contentSpace" >{child.title}</h3>  {recursive(child.children)}</div>
 				}
 			 })
 	}  else {
@@ -32,10 +30,8 @@ const recursive = (parents) => {
 								if (element.type == "categorie") {
 									return ( 
 										<div key={element.key} className="cursorDefault black ">
-											
-											<GiveMeModal data={parents} id={element.key} title={element.title} code />
+											<h3  className="codeTitle purple contentSpace" >{element.title}</h3> 
 											{recursive(element.children)}
-										
 										</div>)
 
 								} else if (element.type == "link") {

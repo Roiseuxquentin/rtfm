@@ -1,5 +1,4 @@
 import React from 'react'
-import GiveMeModal from './GiveMeModal.js'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -22,7 +21,6 @@ const Link = ({element}) => {
 	}
 	
 	return ( <div id={element.key} key={element.key} >
-			  	<GiveMeModal  type={element.type} id={element.key} data={element} title={element.title} />
 				  <p className="codeDescription" >{element.description}</p>
 				  
 				  	{element.content.map((elt,index) => {
