@@ -1,5 +1,4 @@
 import React from 'react'
-import GiveMeImg from './GiveMeImg.js'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -68,7 +67,7 @@ const copyToClipboard = str => {                  //
 				} else if (elt.includes('[cmt]')) {
 					return <p key={index + Math.random()} className="codeStep" >{elt.substr(5)}</p>
 				} else if (elt.includes('[img]')) {
-		            return <GiveMeImg source={elt.substr(5)} />
+		            return <img source={elt.substr(5)} />
 				} else if (elt.includes('[ssc]')) {
 		            return <p key={index + Math.random()} className="secondStep">{elt.substr(5)} </p>
 				} else {
