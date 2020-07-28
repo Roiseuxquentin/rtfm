@@ -653,7 +653,7 @@
                         {
                             "title": "Integration Graphique",
                             "key": "IG042",
-                            "type": "link",
+                            "type": "code",
                             "description": "Outils de developpements visuel, Images SVG, OpenSource",
                             "content": [
                                 "[cmt]Kolor Palette & Nuances",
@@ -661,8 +661,8 @@
                                 "[cmt]Icone SVG",
                                 "[lnk]https://icones8.fr/",
                                 "[lnk]https://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
-                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                                "[cmt]Inspiration Veille",
+                                "[lnk]https://www.awwwards.com"
                             ],
                             "children": []
                         }
