@@ -1,4 +1,5 @@
 import React from 'react'
+import Horloge from '../Horloge.js'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -13,25 +14,28 @@ import React from 'react'
 
 const HomeMenu = ({onSelected}) => {
 
-    return (<div className="vignetteContainer">
-        
-              <div id="code" className="vignette finger" onClick={(event) => onSelected(event)} >
-                <h1>Code</h1>
-              </div>
-              
-              <div id="hack" onClick={(event) => onSelected(event)} className="vignette finger">
-                <h1>H4ck</h1>
-              </div>
-              
-              <div id="armor" className="vignette finger" onClick={(event) => onSelected(event)}>
-                <h1>Armure</h1>
-              </div>
+return (<div class="body">
+  <Horloge />
+          <div class="card1 finger" onClick={(e) => onSelected(e)} >
+            <img src="https://image.flaticon.com/icons/svg/3221/3221631.svg" alt="hack" />
+            <h3 class="vignetteTitle">H4ck</h3>
+            <p class="vignetteTxt" >The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids.</p>
+          </div>
 
-              <div id="tools" className="vignette finger lastVignette " onClick={(event) => onSelected(event)}>
-                <h1>Tools</h1>
-              </div>
+          <div class="card2 finger" id="code" onClick={(event) => onSelected(event)} >
+            <img src="https://www.ultrasmarttech.com/wp-content/uploads/2020/03/download.png" alt="code" />
+            <h3 class="vignetteTitle">K0d3</h3>
+            <p class="vignetteTxt" >The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States.</p>
+          </div>
 
-            </div> )
+          <div class="card3 finger" >
+            <img src="https://image.flaticon.com/icons/svg/1065/1065435.svg" alt="" />
+            <h3 class="vignetteTitle">Armor</h3>
+            <p class="vignetteTxt" >The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor.</p>
+          </div>
+
+        </div>)
+
 }
 
 export default HomeMenu
