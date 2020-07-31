@@ -1,27 +1,49 @@
 import React, {Component} from 'react';
 
-class ComponentClass extends Component {
+class Lycos extends Component {
 
-  constructor(props) {
-      super(props)
-      this.state = {
-      clef : 'valeur'
+  state = {
+    displayBar : true,
+    mounted : true
+  }
+  
+  componentDidMount() {
+    // updated 2019
+    const input = document.getElementById("search-input");
+    const searchBtn = document.getElementById("search-btn");
+
+    const expand = () => {
+      searchBtn.classList.toggle("close");
+      input.classList.toggle("square");
+    };
+
+    searchBtn.addEventListener("click", expand);
   }
 
-      this.action = this.action.bind()
+  vaChercher() {
+    // this.setState({displayBar : !this.state.displayBar})
   }
+/*
+      <div>
+      <form id="content">
+        <input  id="lycosBar" type="text" name="input" 
+              className={(this.state.displayBar) ? "" : "square" } />
+        <button className={(this.state.displayBar) ? 'close' : "" }
+                onClick={() => this.vaChercher() }
+                type="reset" id="lycosBtn"></button>
+      </form>
+      </div> */
 
- action() {
-  const text = 'je lis'
-  return text
- }
-
- render() {
-   return (<div className="lycosContainer center grid" >
-             <input type="text" id="lycos" />
-             <h3>Born2Cod</h3>            
-           </div>)
- }
+  render() {
+    return (
+      <div className="div" > 
+            <form id="content">
+        <input type="text" name="input" class="input" id="search-input" />
+        <button type="reset" class="search" id="search-btn"></button>
+      </form>
+      </div>
+    )
+  }
 }
 
-export default ComponentClass;
+export default Lycos;

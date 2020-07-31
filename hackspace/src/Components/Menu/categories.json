@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "title": "Pentest",
+      "img": "/Img/hack.svg",
+      "txt": "The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids."
+    },
+    {
+      "title": "C0d3",
+      "img": "/Img/code.png",
+      "txt": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States."
+    },
+    {
+      "title": "Defense",
+      "img": "/Img/protect.svg",
+      "txt": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor."
+    }
+  ]
+}

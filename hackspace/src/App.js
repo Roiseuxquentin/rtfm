@@ -10,6 +10,7 @@ import dataBlue from './ressources/Data/structureBlue.json'
 import './styles/App.css';
 import './styles/text.css';
 import './styles/animate.css';
+import './styles/search.css';
 import './styles/pics.css';
 import './styles/menu.css';
 import './styles/phone.css';
@@ -41,13 +42,13 @@ class App extends Component {
 
   render() {
     switch (this.state.select) {
-      case "code" :
+      case "C0d3" :
         return <Wiki data={dataCode} select={this.state.select} />
         break
-      case "armor" :
+      case "Defense" :
         return <Wiki data={dataBlue} select={this.state.select} />
         break
-      case "hack" :
+      case "Pentest" :
         return <Wiki data={dataRed} select={this.state.select} />
         break
       case "tools" :
