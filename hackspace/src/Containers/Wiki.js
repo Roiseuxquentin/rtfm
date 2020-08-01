@@ -5,7 +5,8 @@ import Content from './Content.js'
 
 import Sommaire from '../Components/Menu/Sommaire.js'
 import Footer from '../Components/Menu/Footer.js'
-import Lycos from '../Components/Search/Lycos.js'
+
+import inProgress from '../ressources/inProgress.png'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -66,7 +67,7 @@ class Wiki extends Component {
             <Sommaire data={this.props.data.axes[this.state.page]} mode />
             <hr/>
             <Content data={this.props.data.axes[this.state.page]} />
-          </div> ) : <Lycos />
+          </div> ) : <div className="inMiddleScreen" ><img src={inProgress} /></div>
          }
 
 

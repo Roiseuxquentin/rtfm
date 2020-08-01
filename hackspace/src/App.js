@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import Wiki from './Containers/Wiki.js'
-import HomeMenu from './Components/Menu/HomeMenu.js'
+import HomePage from './Containers/HomePage.js'
 
 import dataCode from './ressources/Data/structureCode.json'
 import dataRed from './ressources/Data/structureRed.json'
@@ -45,17 +45,17 @@ class App extends Component {
       case "C0d3" :
         return <Wiki data={dataCode} select={this.state.select} />
         break
-      case "Defense" :
+      case "D3F" :
         return <Wiki data={dataBlue} select={this.state.select} />
         break
-      case "Pentest" :
+      case "H4ck" :
         return <Wiki data={dataRed} select={this.state.select} />
         break
       case "tools" :
         return <Wiki data={dataRed} select={this.state.select} />
         break
       default :
-        return <HomeMenu onSelected={(e) => this.onSelect(e)} />
+        return <HomePage onSelected={(e) => this.onSelect(e)} />
     }
   }
 }
