@@ -146,13 +146,35 @@
     										"[cmt]BASH",
     										"[cod]myArray=(element00 element01 element02)",
     										"[ssc]Tout les elements",
-    										"[code]${myArray[*]} ",
+    										"[cod]${myArray[*]} ",
     										"[ssc]Tout les index",
-    										"[code]${!myArray[*]}",
+    										"[cod]${!myArray[*]}",
     										"[ssc]Nb Elements",
-    										"[code]${#myArray[*]}",
+    										"[cod]${#myArray[*]}",
     										"[ssc]Length of item zero",
-    										"[code]${#myArray[0]}"
+    										"[cod]${#myArray[0]}"
+    									],
+    									"children": []
+    								},
+    								{
+    									"title": "Date & Time",
+    									"key": "dateTime042",
+    									"type": "code",
+    									"keyWords": "date time snippet heure minute seconde hour chronos",
+    									"description": "Declaration des objects DateTime.",
+    									"content": [
+    										"[cmt]JAVASCRIPT",
+    										"[cod]const date = new Date()\n\nconst heur = date.getHours()\nconst min = date.getMinutes()\nconst sec = date.getSeconds()\n\nconst horloge = heure+min+sec ",
+    										"[cod]In Progress...",
+    										"[ssc]FORMATAGE :",
+    										"[ssc]heure :",
+    										"[cod]const format = (nb) => {\n    if (nb < 10) return `0${nb}`\n    else return nb\n}",
+    										"[ssc]date :",
+    										"[cod]In progess...",
+    										"[cmt]C#",
+    										"[cod]DateTime thisDay = DateTime.Today;\nDateTime tomorrow = thisDay.AddDays(1);",
+    										"[cmt]BASH",
+    										"[cod]"
     									],
     									"children": []
     								}
@@ -241,10 +263,15 @@
     							"title": "POST",
     							"key": "POST042",
     							"type": "code",
-    							"keyWords": "http request requete post",
+    							"keyWords": "http request requete post json xml",
     							"description": "Requete http type POST",
     							"content": [
-    								"[cmt]JS"
+    								"[cmt]JS",
+    								"[ssc]fetch json",
+    								"[cod]const fetchMe = (jsObject) => {\n\n    const params = (requestType, jsObject) => {\n        let data\n        if (!!jsObject) {\n          data = new FormData()\n          data.append( \"json\", JSON.stringify(jsObject))   \n        }\n\n        const setting = { method: requestType,\n                        headers: { \"Content-type\": \"application/json\" ,\n                                    'Accept': \"application/json\",\n                                    \"Access-Control-Request-Method\" : requestType,\n                                    \"Access-Control-Request-Headers\" : \"Authorization, X-Requested-With, Content-Type, Accept\" },\n                        body: data,\n                        // mode: 'cors',\n                        cache: 'default' }\n\n        return setting\n    }\n\n    return fetch(URL, params('POST', jsObject))\n        .then(res => res.json())\n        .then( res => return res)\n}",
+    								"[ssc]xhr xml",
+
+    								"[cod]const getXDomainRequest = () => {\n    let xdr = null\n\n    if (window.XDomainRequest) {\n      xdr = new XDomainRequest() \n    } else if (window.XMLHttpRequest) {\n      xdr = new XMLHttpRequest() \n    } else {\n      alert(\"Votre navigateur web ne permet pas d'effectuer la communication avec Mercure, merci de le mettre à jour ou d'utiliser un navigateur alternatif\")\n    }\n    \n    return xdr        \n}\n\nconst postToMercure = (clientObject) => {\n\n    const url = \"http://LurlSurLaquelOnRequete.com/route\"\n\n    function promesse (Data) {\n      return new Promise(resolve => {\n        let xdr = getXDomainRequest()\n        xdr.contentType = \"application/xml\"\n\n        xdr.open(\"POST\", url )\n\n        xdr.onreadystatechange = (event) => {  \n          if (xdr.readyState === 4) {  \n              if (xdr.status != 200) {  \n                alert(`Une erreur est survenue')  \n              }  \n          }  \n        }\n\n        // ENVOIE XML INFORMATION\n        xdr.send(Data)\n\n        // GESTION RETOUR XML PARSING\n        xdr.onload = () => {\n          const reponseXML = xdr.responseText\n\n          if (window.DOMParser)\n          {\n              parser = new DOMParser()\n              xmlDoc = parser.parseFromString(reponseXML, \"text/xml\")\n          }\n          else // Internet Explorer\n          {\n              xmlDoc = new ActiveXObject(\"Microsoft.XMLDOM\")\n              xmlDoc.async = false\n              xmlDoc.loadXML(reponseXML)\n          }\n\n          const reponseParsed = xmlDoc.getElementsByTagName(\"return\")[0].childNodes[0].nodeValue\n          console.log('%c reponseParsed :','background:orange;color:white;', reponseParsed)\n\n          resolve(reponseParsed) \n        }\n      })\n    }\n\n    return promesse(clientObject)\n}"
     							],
     							"children": []
     						}
@@ -336,7 +363,6 @@
     								"[cod]console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' )",
     								"[cod]try {\n  nonExistentFunction()\n} catch (error) {\n  console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' , error )\n}",
     								"[cmt]PHP",
-
     								"[cod]<?php\n\n$b = 3.1;\n$c = true;\nvar_dump($b, $c);\n\n?>",
     								"[cmt]C#",
     								"[cod]throw new Exception(\"===========================\"+ refErpInstallateur.new_name.ToString() );"
@@ -521,10 +547,19 @@
     							"content": [
     								"[cmt]SSH",
     								"[cod]ssh pi@192.168.0.X",
-    								"[cmt]SCP",
-    								"[cod]scp bundle.min.js pi@192.168.0.X",
     								"[cmt]background portal",
-    								"[cod]sudo nano /etc/motd"
+    								"[cod]sudo nano /etc/motd",
+    								"[cmt]SCP",
+    								"[ssc]scp [source files] [user]@[host]:[path]",
+    								"[ssc]from",
+    								"[cod]scp pi@192.168.1.3:myfile.txt .",
+    								"[ssc]to",
+    								"[cod]scp file1.txt file2.txt pi@192.168.0.28:capsule/",
+    								"[ssc]Folder",
+    								"[ssc]from",
+    								"[cod]scp -r user@ssh.example.com:/path/to/remote/source /path/to/local/destination",
+    								"[ssc]to",
+    								"[cod]scp -r /path/to/local/source user@ssh.example.com:/path/to/remote/destination "
     							],
     							"children": []
     						},
@@ -537,7 +572,8 @@
     							"content": [
     								"[cmt]Open File",
     								"[cod]sudo nano /etc/wpa_supplicant/wpa_supplicant.conf",
-    								"[cod]country=FR\nctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\nupdate_config=1\n\nnetwork={\nssid=\"NOM2WIFI\"\npsk=\"MDPWIFI\"\nkey_mgmt=WPA-PSK\n}"
+    								"[cod]country=FR\n    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\n    update_config=1\n\n    network={\n    ssid=\"NOM2WIFI\"\n    psk=\"MDPWIFI\"\n    key_mgmt=WPA-PSK\n}"
+
     							],
     							"children": []
     						}
@@ -616,6 +652,7 @@
     						"description": "Outils de developpements visuel, Images SVG, OpenSource",
     						"content": [
     							"[cmt]Kolor Palette & Nuances",
+    							"[lnk]https://palette.ninja/",
     							"[lnk]https://www.color-hex.com/color-palettes/popular.php",
     							"[cmt]Icone SVG",
     							"[lnk]https://icones8.fr/",
@@ -625,36 +662,178 @@
     						],
     						"children": []
     					}]
+    				}, {
+    					"title": "Shell Style",
+    					"key": "ShellStyle042",
+    					"type": "categorie",
+    					"children": [{
+    							"title": "METEO",
+    							"key": "MeteoShell042",
+    							"keyWords": "meteo shell link cmd terminal",
+    							"type": "code",
+    							"description": "",
+    							"content": [
+    								"[cmt]LINK",
+    								"[lnk]http://wttr.in/",
+    								"[cod]curl http://wttr.in/"
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "Simulate typing",
+    							"key": "typingShell042",
+    							"keyWords": "shell cmd pimp style matrix type typing keyboard terminal",
+    							"type": "code",
+    							"description": "This will output the characters at 10 per second",
+    							"content": [
+    								"[cmt]pv",
+    								"[cod]sudo apt install pv",
+    								"[cod]echo \"No tech == No futur ! ! !\" | pv -qL 10"
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "Matrix Style",
+    							"key": "MatrixStyle042",
+    							"keyWords": "shell cmd pimp style matrix terminal",
+    							"type": "code",
+    							"description": "",
+    							"content": [
+    								"[cod]sudo apt install cmatrix",
+    								"[cod]tr -c \"[:digit:]\" \" \" < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR=\"1;32\" grep --color \"[^ ]\""
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "Google Translate",
+    							"key": "Translate042",
+    							"keyWords": "shell cmd terminal translate traduction google",
+    							"type": "code",
+    							"description": "",
+    							"content": [
+    								"[cod]translate(){ wget -qO- \"http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q=$1&langpair=$2|${3:-en}\" | sed 's/.*\"translatedText\":\"\\([^\"]*\\)\".*}/\\1\\n/'; }"
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "Shell Color",
+    							"key": "shellColor042",
+    							"keyWords": "shell cmd color pimp style terminal couleur",
+    							"type": "code",
+    							"description": "",
+    							"content": [
+    								"[scc][4;XXm : souligné\n[7;XXm : fond\n[9;XXm : barré",
+    								"[cod]#!/bin/bash\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\nNC='\\033[0m' # No Color\necho -e \"${GREEN}NO TECH ${NC} == ${RED} NO FUTUR\" "
+
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "Data simulation",
+    							"key": "SimuleDate042",
+    							"keyWords": "shell cmd troll fake terminal",
+    							"type": "code",
+    							"description": "just make some data scrolling off the terminal",
+    							"content": [
+    								"[cmt]Troll",
+    								"[cod]cat /dev/urandom | hexdump -C | grep \"ca fe\""
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "Shell Player",
+    							"key": "ShellPlayer042",
+    							"keyWords": "shell cmd terminal lecteur player vlc mplayer youtube",
+    							"type": "code",
+    							"description": "",
+    							"content": [
+    								"[cod]Read",
+    								"[ssc] Replace $i with any YouTube ID you want and this will scrape the site for the _real_ URL to the full quality .FLV file on Youtube's server and will then will hand that over player to be streamed",
+    								"[ssc]mplayer",
+    								"[cod]sudo apt install mplayer",
+    								"[cod]mplayer -fs $(echo \"http://youtube.com/get_video.php?$(curl -s $youtube_url | sed -n \"/watch_fullscreen/s;.*\\(video_id.\\+\\)&title.*;\\1;p\")\")\\ni=\"8uyxVmdaJ-w\";mplayer -fs $(curl -s \"http://www.youtube.com/get_video_info?&video_id=$i\" | echo -e $(sed 's/%/\\\\x/g;s/.*\\(v[0-9]\\.lscache.*\\)/http:\\/\\/\\1/g') | grep -oP '^[^|,]*')",
+    								"[ssc]vlc",
+    								"[cod]sudo apt install vlc",
+    								"[cod]vlc $(echo \"http://youtube.com/get_video.php?$(curl -s $youtube_url | sed -n \"/watch_fullscreen/s;.*\\(video_id.\\+\\)&title.*;\\1;p\")\")\\ni=\"8uyxVmdaJ-w\";mplayer -fs $(curl -s \"http://www.youtube.com/get_video_info?&video_id=$i\" | echo -e $(sed 's/%/\\\\x/g;s/.*\\(v[0-9]\\.lscache.*\\)/http:\\/\\/\\1/g') | grep -oP '^[^|,]*')",
+    								"[cod]Save",
+    								"[ssc]Record a screencast and convert it to an mpeg\nGrab X11 input and create an MPEG at 25 fps with the resolution 800x600",
+    								"[cod]ffmpeg -f x11grab -r 25 -s 800x600 -i :0.0 /tmp/outputFile.mpg"
+    							],
+    							"children": []
+    						}
+    					]
     				}
+
+
     			]
     		},
-        {
-            "title": "Modules",
-            "key": "Scripts042",
-            "type": "categorie",
-            "img": "",
-            "children": [
-                {
-                    "title": "Composants REACT",
-                    "key": "Component042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Horloge",
-                            "key": "horloge042",
-                            "type": "code",
-                            "keyWords": "horloge time chronos chronos react component js datetime date",
-                            "description": " ",
-                            "content": [
-                                "[cmt]ReactJs",
-                                "[ssc]Props : String upperCase",
-                               "[cod]import React, {Component} from 'react';\n\nclass Horloge extends Component {\nstate = { horloge : '00 : 00 : 00' }\n\ncomponentDidMount() {\nsetTimeout(() => this.chronos() , 1000)\n}\n\nchronos() {\nconst date = new Date()\nconst time = [ this.format(date.getHours()),\nthis.format(date.getMinutes()),\nthis.format(date.getSeconds())]\n\nconst horloge = time.join(\" : \")\n\nthis.setState({horloge : horloge})\nsetTimeout(() => this.chronos() , 1000)\n}\n\nformat(nb) {\nif (nb < 10) return `0${nb}`\nelse return nb\n}\n\nrender() {\nreturn (<div>{this.state.horloge}</div>)\n}\n}\nexport default Horloge;"
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        }
+    		{
+    			"title": "Modules",
+    			"key": "Scripts042",
+    			"type": "categorie",
+    			"img": "",
+    			"children": [{
+    					"title": "Composants REACT",
+    					"key": "Component042",
+    					"type": "categorie",
+    					"children": [{
+    						"title": "Horloge",
+    						"key": "horloge042",
+    						"type": "code",
+    						"keyWords": "horloge time chronos chronos react component js datetime date",
+    						"description": " ",
+    						"content": [
+    							"[cmt]ReactJs",
+    							"[ssc]Props : String upperCase",
+    							"[cod]import React, {Component} from 'react';\n\nclass Horloge extends Component {\nstate = { horloge : '00 : 00 : 00' }\n\ncomponentDidMount() {\nsetTimeout(() => this.chronos() , 1000)\n}\n\nchronos() {\nconst date = new Date()\nconst time = [ this.format(date.getHours()),\nthis.format(date.getMinutes()),\nthis.format(date.getSeconds())]\n\nconst horloge = time.join(\" : \")\n\nthis.setState({horloge : horloge})\nsetTimeout(() => this.chronos() , 1000)\n}\n\nformat(nb) {\nif (nb < 10) return `0${nb}`\nelse return nb\n}\n\nrender() {\nreturn (<div>{this.state.horloge}</div>)\n}\n}\nexport default Horloge;"
+    						],
+    						"children": []
+    					}, {
+    						"title": "Ip Info",
+    						"key": "ipInfoReact42",
+    						"type": "code",
+    						"keyWords": "ip info api react js",
+    						"description": " ",
+    						"content": [
+    							"[cmt]ReactJs",
+    							"[cod]componentDidMount() {\n    fetch('https://api.ipify.org?format=json')\n    .then(req => req.json())\n    .then(res => this.setState({ip:res.ip})\n    .then( res => {\n        fetch(`http://api.ipstack.com/${this.state.ip}?access_key=/* ICIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */`)\n        .then(req => req.json())\n        .then(res => this.setState({info:res}) )\n    })\n}"
+    						],
+    						"children": []
+    					}]
+    				},
+    				{
+    					"title": "Functions Js",
+    					"key": "Component042",
+    					"type": "categorie",
+    					"children": [{
+    							"title": "Browser",
+    							"key": "browser042",
+    							"type": "code",
+    							"keyWords": "js browser function navigator navigateur nav firefox chrome ie edge modzilla",
+    							"description": "Determine le navigateur utilisé",
+    							"content": [
+    								"[cmt]Javascript",
+    								"[cod]const navigateur = () => {\n\n  let browser\n  const sUsrAg = navigator.userAgent\n\n  if (sUsrAg.indexOf(\"Firefox\") > -1) {\n    browser = \"Mozilla Firefox\";\n    // \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\"\n  } else if (sUsrAg.indexOf(\"SamsungBrowser\") > -1) {\n    browser = \"Samsung Internet\";\n    // \"Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36\n  } else if (sUsrAg.indexOf(\"Opera\") > -1 || sUsrAg.indexOf(\"OPR\") > -1) {\n    browser = \"Opera\";\n    // \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106\"\n  } else if (sUsrAg.indexOf(\"Trident\") > -1) {\n    browser = \"Microsoft Internet Explorer\";\n    // \"Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko\"\n  } else if (sUsrAg.indexOf(\"Edge\") > -1) {\n    browser = \"Microsoft Edge\";\n    // \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299\"\n  } else if (sUsrAg.indexOf(\"Chrome\") > -1) {\n    browser = \"Google Chrome or Chromium\";\n    // \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36\"\n  } else if (sUsrAg.indexOf(\"Safari\") > -1) {\n    browser = \"Apple Safari\";\n    // \"Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306\"\n  } else {\n    browser = \"unknown\";\n  }\n  \n  return browser\n\n}"
+    							],
+    							"children": []
+    						},
+    						{
+    							"title": "convertisseur",
+    							"key": "converThis042",
+    							"type": "code",
+    							"keyWords": "js function convert binaire binary string",
+    							"description": "",
+    							"content": [
+    								"[cmt]Javascript",
+    								"[ssc]String to binary",
+    								"[cod]function convert(string) {\nlet binary\nfor (let i = 0; i < string.length; i++) {\nbinary += string[i].charCodeAt(0).toString(2)\n}\n}"
+    							],
+    							"children": []
+    						}
+    					]
+    				}
+    			]
+    		}
+
     	]
     }
