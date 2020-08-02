@@ -625,32 +625,36 @@
     						],
     						"children": []
     					}]
-    				},
-    				{
-    					"title": "Systéme",
-    					"key": "sys042",
-    					"type": "categorie",
-    					"children": []
-    				},
-    				{
-    					"title": "E-Learning",
-    					"key": "learning042",
-    					"type": "categorie",
-    					"children": []
-    				},
-    				{
-    					"title": "Online Tools",
-    					"key": "onlineTools042",
-    					"type": "categorie",
-    					"children": []
-    				},
-    				{
-    					"title": "Gouffre",
-    					"key": "Gouffre042",
-    					"type": "categorie",
-    					"children": []
     				}
     			]
-    		}
+    		},
+        {
+            "title": "Modules",
+            "key": "Scripts042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Composants REACT",
+                    "key": "Component042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Horloge",
+                            "key": "horloge042",
+                            "type": "code",
+                            "keyWords": "horloge time chronos chronos react component js datetime date",
+                            "description": " ",
+                            "content": [
+                                "[cmt]ReactJs",
+                                "[ssc]Props : String upperCase",
+                               "[cod]import React, {Component} from 'react';\n\nclass Horloge extends Component {\nstate = { horloge : '00 : 00 : 00' }\n\ncomponentDidMount() {\nsetTimeout(() => this.chronos() , 1000)\n}\n\nchronos() {\nconst date = new Date()\nconst time = [ this.format(date.getHours()),\nthis.format(date.getMinutes()),\nthis.format(date.getSeconds())]\n\nconst horloge = time.join(\" : \")\n\nthis.setState({horloge : horloge})\nsetTimeout(() => this.chronos() , 1000)\n}\n\nformat(nb) {\nif (nb < 10) return `0${nb}`\nelse return nb\n}\n\nrender() {\nreturn (<div>{this.state.horloge}</div>)\n}\n}\nexport default Horloge;"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
     	]
     }
