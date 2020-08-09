@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+  import React, {Component} from 'react'
 
 import Wiki from './Containers/Wiki.js'
 import HomePage from './Containers/HomePage.js'
@@ -45,10 +45,10 @@ class App extends Component {
       case "C0d3" :
         return <Wiki data={dataCode} select={this.state.select} />
         break
-      case "D3F" :
+      case "Defensif" :
         return <Wiki data={dataBlue} select={this.state.select} />
         break
-      case "H4ck" :
+      case "Offensif" :
         return <Wiki data={dataRed} select={this.state.select} />
         break
       case "tools" :

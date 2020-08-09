@@ -15,7 +15,7 @@ import data from '../ressources/Data/categories.json'
 
 const Vignettes = ({onSelected}) => {
 
-  const url = "http://localhost:3000/"
+  const url = "http://88.127.234.194/"
 
   const vignettes = (categories) => {
     return categories.map( (vignette,index) => {
@@ -29,7 +29,8 @@ const Vignettes = ({onSelected}) => {
           <h3 id={vignette.title}
              onClick={(e) => onSelected(e)} className="vignetteTitle dontouch finger">{vignette.title}</h3>
           <p id={vignette.title}
-             onClick={(e) => onSelected(e)} className="vignetteTxt dontouch finger" >{vignette.txt}</p>
+             onClick={(e) => onSelected(e)} className="vignetteTxt dontouch finger" >&nbsp;
+             {vignette.txt.split("[R]").map(e => <span>&nbsp;&nbsp;&nbsp;{e}<br/><br/></span>)}</p>
         </div>
       )}
     )

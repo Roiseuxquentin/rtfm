@@ -40,8 +40,8 @@ input {
   border-radius: 50%;
   background: none;
   color: orange;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
   font-family: Roboto;
   outline: 0;
   -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
@@ -136,8 +136,9 @@ input {
   background: none;
   color: orange;
   font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
   outline: 0;
   -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
     padding 0.2s;

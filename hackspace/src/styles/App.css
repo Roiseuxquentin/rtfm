@@ -103,6 +103,9 @@ select {
 .black {
   color:black;
 }
+.casperColor {
+  color : transparent;
+}
 .dbug {
   border : solid 4px red;
 }

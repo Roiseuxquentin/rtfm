@@ -17,6 +17,7 @@ import React, {Component} from 'react';
 class Lycos extends Component {
 
   state = {
+    input : "      Recherche...",
     displayBar : true,
     mounted : true
   }
@@ -29,8 +30,9 @@ class Lycos extends Component {
     return (
       <div className="lycos" > 
         <form id="lycosForm">
-          <input  type="text" id="lycosBar"
-                  className={(this.state.displayBar) ? "" : "square" } />
+          <input  type="text" id="lycosBar" value={this.state.input}
+                  onClick={() => this.setState({input : "" })}
+                  className={(this.state.displayBar) ? "casperColor" : "square" } />
           <button type="reset"  id="lycosBtn"
                   className={(this.state.displayBar) ? "search" : "search close" }
                   onClick={() => this.vaChercher()} ></button>

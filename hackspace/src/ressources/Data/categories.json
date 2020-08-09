@@ -1,19 +1,19 @@
 {
   "categories": [
     {
-      "title": "H4ck",
+      "title": "Offensif",
       "img": "/Img/hack.svg",
-      "txt": "The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids."
+      "txt": "« J'entends la grenaille des lignes de code que Zlich tape comme on mitraille.[...] Il a son armurerie de softs a lui, accumulee sur dix ans, un tresor de guerre d'appli, de vers et de routines agressives qui percent les boucliers de securite par des failles minuscules et penetrent les serveurs comme de l'acide; Il a surtout sa banque de donnees mentale, caffie d'algorithmes qu'enrichit sans cesse une intelligence ultravive. Et pour finir, il carbure a la neuroine, ce qui coupe tout lag, toute pause: il deteste. » Les furtifs  [R]#Damasio"
     },
     {
       "title": "C0d3",
       "img": "/Img/code.png",
-      "txt": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States."
+      "txt": "« 'La plupart des hommes ne veulent pas nager avant d'avoir appris à le faire'. Spirituel, n'est-ce pas ? Naturellement, ils refusent de nager ! Ils sont nés pour évoluer sur la terre ferme, non dans l'eau. Et naturellement, ils refusent aussi de penser; ils ont étés créés pour vivre, pas pour penser ! En effet, celui qui réfléchit, celui qui confère à la pensée une importance primordiale, peut certes aller très loin dans son domaine, mais il quitte alors la terre ferme pour rejoindre l'eau et se noiera un jour. » Le Loups des Steppes [R] #HermanHess "
     },
     {
-      "title": "D3F",
+      "title": "Defensif",
       "img": "/Img/protect.svg",
-      "txt": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor."
+      "txt": "Loi 1 : un robot ne peut porter atteinte à un être humain ni, restant passif, permettre qu'un être humain soit exposé au danger.[R]Loi 2 : un robot doit obéir aux ordres que lui donne un être humain, sauf si de tels ordres entrent en conflit avec la première loi.[R]Loi 3 : un robot doit protéger son existence tant que cette protection n'entre pas en conflit avec la première ou la deuxième loi.[R]#isaacAsimov"
     }
   ]
 }

@@ -32,7 +32,7 @@ const HomePage = ({onSelected}) => {
   return (<div className="grid">
             <div className="binary dontouch">{bin}</div>
             <Vignettes onSelected={(e) => onSelected(e)} />
-            <TextAnimated string=" no tech == no futur" up />
+            <TextAnimated string=" noTech , no future !" up />
             <Lycos />
           </div>)
 }

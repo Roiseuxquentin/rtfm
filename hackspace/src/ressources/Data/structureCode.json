@@ -1,839 +1,919 @@
-    {
-    	"axes": [{
-    			"title": "Syntax",
-    			"key": "syntax042",
-    			"type": "categorie",
-    			"img": "",
-    			"children": [{
-    					"title": "Structures",
-    					"key": "structures042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "Snippet",
-    							"key": "Snippet042",
-    							"type": "categorie",
-    							"children": [{
-    									"title": "ASCII",
-    									"key": "ascii42",
-    									"type": "code",
-    									"keyWords": "ascii art header bash banniere",
-    									"description": "",
-    									"content": [
-    										"[cmt]Header",
-    										"[cod]###################################################\n#*/=============================================\\*#\n# ||                      .__                  || #\n# ||   ____   ____   ____ |  |   ____   ____   || #\n# || _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  || #\n# || \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) || #\n# ||  \\___  >\\___  >___  /|____/\\____/ \\____/  || #\n# ||      \\/     \\/_____/                  2020|| #\n#.\\=============================================/.#\n###################################################",
-    										"[cod]/=============================================\\\n||                      .__                  ||\n||   ____   ____   ____ |  |   ____   ____   ||\n|| _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  ||\n|| \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) ||\n||  \\___  >\\___  >___  /|____/\\____/ \\____/  ||\n||      \\/     \\/_____/                  2020||\n\\=============================================/",
-    										"[cmt]BASH Escape Ascii-Art",
-    										"[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "Squelette Html",
-    									"key": "HTML042",
-    									"type": "code",
-    									"keyWords": "html snippet script style css bootstrap",
-    									"description": "",
-    									"content": [
-    										"[cmt]HTML",
-    										"[cod]<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n",
-    										"[cmt] Script JS",
-    										"[cod]<script>\ndocument.getElementById('injectMe').innerHTML = 'Display my String!';\n</script>\n\n<script src='mySuperScript.js'></script>",
-    										"[cmt]Style CSS",
-    										"[cod]<link rel='stylesheet' type='text/css' href='mySuperStyle.css'>"
-
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "Script Bash",
-    									"key": "bash042",
-    									"type": "code",
-    									"keyWords": "",
-    									"description": "",
-    									"content": [
-    										"[cod]#!/bin/bash"
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "MediaQuery Css",
-    									"key": "mdq042",
-    									"type": "code",
-    									"keyWords": "media mediaquery smartphone mobile view screen css style adapte responsive",
-    									"description": "",
-    									"content": [
-    										"[cod]/* \n  ##Device = Desktops\n  ##Screen = 1281px to higher resolution desktops\n*/\n\n@media (min-width: 1281px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Laptops, Desktops\n  ##Screen = B/w 1025px to 1280px\n*/\n\n@media (min-width: 1025px) and (max-width: 1280px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (portrait)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (landscape)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n  \n  //CSS\n  \n}"
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "ReactJs",
-    									"key": "REACTJS042",
-    									"type": "code",
-    									"keyWords": "react js component template reactjs javascript",
-    									"description": "Squelette d'un composant react js.",
-    									"content": [
-    										"[cmt]CLASS",
-    										"[cod]import React, {Component} from 'react';\n\nclass ComponentClass extends Component {\n\n  constructor(props) {\n      super(props)\n      this.state = {\n      clef : 'valeur'\n  }\n\n      this.action = this.action.bind()\n  }\n\n action() {\n  const text = 'je lis'\n  return text\n }\n\n render() {\n   return (<div>\n             <h1>Ping!</h1>\n           </div>)\n }\n}\n\nexport default ComponentClass;",
-    										"[cmt]FONCTION",
-    										"[cod]import React from 'react'\n\nconst ComponentName = () => {\n\n    return (<div>\n           <h1>Ping!</h1>\n         </div>)\n}\n\nexport default ComponentName"
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "Lorem Ipsum",
-    									"key": "LoremIp042",
-    									"type": "code",
-    									"keyWords": "",
-    									"description": "Le passage de Lorem Ipsum standard, utilisé depuis 1500.",
-    									"content": [
-    										"[cmt]LATIN",
-    										"[cod]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident,\n sunt in culpa qui officia deserunt mollit anim id est laborum."
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "SublimText",
-    									"key": "sublim042",
-    									"type": "code",
-    									"keyWords": "",
-    									"description": "Raccourcit Clavier & package",
-    									"content": [
-    										"[cmt]Raccourcit",
-    										"[ssc]Ctrl+KB                 basculer la barre latérale\nCtrl+Shift+P            invite de commande\nShift+F11               mode « sans distraction »\nCtrl+Shift+T            ré-ouvrir le dernier fichier fermé\nCtrl+Shift+V            coller et indenter\nCtrl+Shift+J            sélectionne le contenu de l’indentation\nCtrl+Shift+[haut,bas]   inverser les lignes\nCtrl+ /                 commenter\nCtrl+Shift+ /           bloc de commentaire\nCtrl+KU                 mettre en majuscule\nCtrl+KL                 mettre en minuscule\nF12                     ouvrir dans le navigateur internet par défaut",
-    										"[cmt]Packages",
-    										"[ssc]JSON Reindent "
-    									],
-    									"children": []
-    								}
-    							]
-    						},
-    						{
-    							"title": "Variables",
-    							"key": "Variables042",
-    							"type": "categorie",
-    							"children": [{
-    									"title": "String",
-    									"key": "string042",
-    									"type": "code",
-    									"keyWords": "",
-    									"description": "Declaration d'une variable de type sting.",
-    									"content": [
-    										"[cmt]JAVASCRIPT",
-    										"[cod]let maVariable = 'hello World!'\nconst maVariableBis = 'byWorld'",
-    										"[cmt]PHP",
-    										"[cod]<?php \n $myVariable =  \"ceci est une chaîne simple\";\n?>",
-    										"[cmt]C#",
-    										"[cod]string maVariable = \"La string du C!\";",
-    										"[cmt]BASH",
-    										"[cod]STR=\"Hello World!\"",
-    										"[cmt]PYTHON",
-    										"[cod]maVariableString = 'Yo World!'"
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "Array & List",
-    									"key": "array042",
-    									"type": "code",
-    									"keyWords": "",
-    									"description": "Declaration d'un tableau index/element.",
-    									"content": [
-    										"[cmt]JAVASCRIPT",
-    										"[cod]const array = [42,\"element01\",\"element02\",true]\nconsole.log(array[0]) //========> 42",
-    										"[cmt]C#",
-    										"[cod]string[] myArray = { \"element00\",\"element01\",\"element02\",\"element03\"};",
-    										"[cmt]BASH",
-    										"[cod]myArray=(element00 element01 element02)",
-    										"[ssc]Tout les elements",
-    										"[cod]${myArray[*]} ",
-    										"[ssc]Tout les index",
-    										"[cod]${!myArray[*]}",
-    										"[ssc]Nb Elements",
-    										"[cod]${#myArray[*]}",
-    										"[ssc]Length of item zero",
-    										"[cod]${#myArray[0]}"
-    									],
-    									"children": []
-    								},
-    								{
-    									"title": "Date & Time",
-    									"key": "dateTime042",
-    									"type": "code",
-    									"keyWords": "date time snippet heure minute seconde hour chronos",
-    									"description": "Declaration des objects DateTime.",
-    									"content": [
-    										"[cmt]JAVASCRIPT",
-    										"[cod]const date = new Date()\n\nconst heur = date.getHours()\nconst min = date.getMinutes()\nconst sec = date.getSeconds()\n\nconst horloge = heure+min+sec ",
-    										"[cod]In Progress...",
-    										"[ssc]FORMATAGE :",
-    										"[ssc]heure :",
-    										"[cod]const format = (nb) => {\n    if (nb < 10) return `0${nb}`\n    else return nb\n}",
-    										"[ssc]date :",
-    										"[cod]In progess...",
-    										"[cmt]C#",
-    										"[cod]DateTime thisDay = DateTime.Today;\nDateTime tomorrow = thisDay.AddDays(1);",
-    										"[cmt]BASH",
-    										"[cod]"
-    									],
-    									"children": []
-    								}
-    							]
-    						}
-    					]
-    				},
-    				{
-    					"title": "Algorithme",
-    					"key": "Algorithme042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "Boucles",
-    							"key": "Boucle042",
-    							"type": "code",
-    							"keyWords": "boucle loop algo",
-    							"description": " ",
-    							"content": [
-    								"[cmt]JS",
-    								"[cod]let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
-    								"[cod]const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
-    								"[cmt]PYTHON",
-    								"[cod]x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
-    								"for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
-    								"[cmt]BASH",
-    								"[cod]while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
-    								"[cod]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Condition",
-    							"key": "condition042",
-    							"type": "code",
-    							"keyWords": "condition if switch algo",
-    							"description": " ",
-    							"content": [
-    								"[cmt]JS",
-    								"[cod]const expr = \"Papayas\"\n\nswitch (expr) {\n  case \"Oranges\":\n    console.log(\"Le prix des Oranges est de 1€.\")\n    break\n  case \"Mangoes\":\n  case \"Papayas\":\n    console.log(\"Le prix des Mangues et des Papayes est de 2€.\")\n    break\n  default:\n    console.log(`Dsl, aucun prix pour ${expr}.`)\n}",
-    								"[cmt]PYTHON",
-    								"[cod]a = 43\n\nif a > 43:\n    a = a + 1\nelif a == 43:\n    a = a - 1\nelse:\n    a = a * 2\n\n//========> a\n//========> 42",
-    								"[cmt]BASH",
-    								"[cod]echo -n \"Entre le nom d'un pays : \"\nread COUNTRY\n\necho -n \"La langue officiel en $COUNTRY is \"\n\ncase $COUNTRY in\n\n  Lithuania)\n    echo -n \"Lithuanian\"\n    ;;\n\n  Romania | Moldova)\n    echo -n \"Romanian\"\n    ;;\n\n  Italy | \"San Marino\" | Switzerland | \"Vatican City\")\n    echo -n \"Italian\"\n    ;;\n\n  *)\n    echo -n \"unknown\"\n    ;;\nesac",
-    								"[cod]nom=\"Jack\"\n\nif [ $nom = \"Jack\" ]\nthen\n        echo \"Salut Jack !\"\nelif [ encore_autre_test ]\nthen\n        echo \"Le deuxieme test a été vérifié\"\nelse\n        echo \"Aucun des tests précédents n'a été vérifié\"\nfi",
-    								"[cmt]C#",
-    								"[cod]if (string.IsNullOrEmpty(OpportunityNumber) || (OpportunityNumber.Length > 100))\n{\n\n}",
-    								"[cod]if (float.IsNaN(montant))\n{\n\n}"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Operateurs logiques",
-    							"key": "Operateur042",
-    							"type": "code",
-    							"keyWords": "operateur logique algo et ou",
-    							"description": " Logique de base pour articuler le code ",
-    							"content": [
-    								"[cmt]SQL",
-    								"[ssc]=           Égale\n<>          Pas égale\n!=          Pas égale\n>           Supérieur à\n<           Inférieur à\n>=          Supérieur ou égale à\n<=          Inférieur ou égale à\nIN          Liste de plusieurs valeurs possibles\nBETWEEN     Valeur comprise dans un intervalle donnée (utile pour les nombres ou dates)\nLIKE        Recherche en spécifiant le début, milieu ou fin d'un mot.\nIS NULL     Valeur est nulle\nIS NOT NULL Valeur n'est pas nulle",
-    								"[cmt]PYTHON",
-    								"[ssc]==      égal à \n!=      différent de (fonctionne aussi avec )\n>       strictement supérieur à \n>=      supérieur ou égal à\n<       strictement inférieur à \n<=      inférieur ou égal à",
-    								"[cmt]BASH",
-    								"[ssc]$variable1 = $variable2\n$variable1 == $variable2\n$variable1 != $variable2\n$variable1 < $variable2\n$variable1 > $variable2\n$variable1 >= $variable2\n$variable1 <= $variable2"
-    							],
-    							"children": []
-    						}
-    					]
-    				},
-    				{
-    					"title": "Front",
-    					"key": "Front042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "GET",
-    							"key": "get042",
-    							"type": "code",
-    							"keyWords": "get requete request http",
-    							"description": "Requete http type GET",
-    							"content": [
-    								"[cmt]C#",
-    								"[cod]static Entity GetInfo(IOrganizationService Service, string nomTable, string[] ChampRecup, string champCondition, string variableCondition)\n        {\n            QueryExpression query = new QueryExpression();\n\n            query.ColumnSet = new ColumnSet(ChampRecup);\n            query.EntityName = nomTable;\n\n            FilterExpression Fe = new FilterExpression();\n\n            ConditionExpression Ce = new ConditionExpression();\n            Ce.AttributeName = champCondition;\n            Ce.Operator = ConditionOperator.Equal;\n            Ce.Values.Add(variableCondition);\n            Fe.AddCondition(Ce);\n\n            query.Criteria.AddFilter(Fe);\n\n            try\n            {\n                EntityCollection retrieve = Service.RetrieveMultiple(query);\n\n                return retrieve[0];\n            }\n            catch (Exception ex)\n            {\n                //throw new Exception(ex.Message);\n                Entity entity = new Entity();\n                return entity;\n            }\n        }"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "POST",
-    							"key": "POST042",
-    							"type": "code",
-    							"keyWords": "http request requete post json xml",
-    							"description": "Requete http type POST",
-    							"content": [
-    								"[cmt]JS",
-    								"[ssc]fetch json",
-    								"[cod]const fetchMe = (jsObject) => {\n\n    const params = (requestType, jsObject) => {\n        let data\n        if (!!jsObject) {\n          data = new FormData()\n          data.append( \"json\", JSON.stringify(jsObject))   \n        }\n\n        const setting = { method: requestType,\n                        headers: { \"Content-type\": \"application/json\" ,\n                                    'Accept': \"application/json\",\n                                    \"Access-Control-Request-Method\" : requestType,\n                                    \"Access-Control-Request-Headers\" : \"Authorization, X-Requested-With, Content-Type, Accept\" },\n                        body: data,\n                        // mode: 'cors',\n                        cache: 'default' }\n\n        return setting\n    }\n\n    return fetch(URL, params('POST', jsObject))\n        .then(res => res.json())\n        .then( res => return res)\n}",
-    								"[ssc]xhr xml",
-
-    								"[cod]const getXDomainRequest = () => {\n    let xdr = null\n\n    if (window.XDomainRequest) {\n      xdr = new XDomainRequest() \n    } else if (window.XMLHttpRequest) {\n      xdr = new XMLHttpRequest() \n    } else {\n      alert(\"Votre navigateur web ne permet pas d'effectuer la communication avec Mercure, merci de le mettre à jour ou d'utiliser un navigateur alternatif\")\n    }\n    \n    return xdr        \n}\n\nconst postToMercure = (clientObject) => {\n\n    const url = \"http://LurlSurLaquelOnRequete.com/route\"\n\n    function promesse (Data) {\n      return new Promise(resolve => {\n        let xdr = getXDomainRequest()\n        xdr.contentType = \"application/xml\"\n\n        xdr.open(\"POST\", url )\n\n        xdr.onreadystatechange = (event) => {  \n          if (xdr.readyState === 4) {  \n              if (xdr.status != 200) {  \n                alert(`Une erreur est survenue')  \n              }  \n          }  \n        }\n\n        // ENVOIE XML INFORMATION\n        xdr.send(Data)\n\n        // GESTION RETOUR XML PARSING\n        xdr.onload = () => {\n          const reponseXML = xdr.responseText\n\n          if (window.DOMParser)\n          {\n              parser = new DOMParser()\n              xmlDoc = parser.parseFromString(reponseXML, \"text/xml\")\n          }\n          else // Internet Explorer\n          {\n              xmlDoc = new ActiveXObject(\"Microsoft.XMLDOM\")\n              xmlDoc.async = false\n              xmlDoc.loadXML(reponseXML)\n          }\n\n          const reponseParsed = xmlDoc.getElementsByTagName(\"return\")[0].childNodes[0].nodeValue\n          console.log('%c reponseParsed :','background:orange;color:white;', reponseParsed)\n\n          resolve(reponseParsed) \n        }\n      })\n    }\n\n    return promesse(clientObject)\n}"
-    							],
-    							"children": []
-    						}
-    					]
-    				},
-    				{
-    					"title": "Back",
-    					"key": "Back042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "SQL",
-    							"key": "sql042",
-    							"type": "code",
-    							"keyWords": "crud sql create insert read delete database db back",
-    							"description": "Syntax C.R.U.D pour les requetes SQL.",
-    							"content": [
-    								"[cmt]CREATE",
-    								"[cod]CREATE DATABASE ma_base",
-    								"[cod]CREATE TABLE nom_de_la_table\n(\n    colonne1 type_donnees,\n    colonne2 type_donnees,\n    colonne3 type_donnees,\n    colonne4 type_donnees\n)",
-    								"[cod]INSERT INTO table VALUES ('valeur 1', 'valeur 2', ...)",
-    								"[cod]INSERT INTO table (nom_colonne_1, nom_colonne_2, ...\n VALUES ('valeur 1', 'valeur 2', ...)",
-    								"[cmt]READ",
-    								"[cod]SELECT * FROM nom_table ",
-    								"[cod]SELECT nom_du_champ FROM nom_table ",
-    								"[cod]SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression",
-    								"[cod]SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression LIMIT 10 ",
-    								"[cmt]UPDATE",
-    								"[cod]UPDATE table\nSET nom_colonne_1 = 'nouvelle valeur'\nWHERE condition",
-    								"[cmt]DELETE",
-    								"[cod]DELETE FROM 'table'\nWHERE condition",
-    								"[cod]DELETE FROM 'utilisateur'",
-    								"[cod]TRUNCATE TABLE 'utilisateur'"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Serveur",
-    							"key": "serveur042",
-    							"type": "code",
-    							"keyWords": "serveur http access serv localhost",
-    							"description": "Serveur HTTP",
-    							"content": [
-    								"[cmt]PYTHON",
-    								"[cod]python -m SimpleHTTPServer <PORT>",
-    								"[ssc]$python3 server.py",
-    								"[cod]import http.server\n \nPORT = 8888\nserver_address = (\"\", PORT)\n\nserver = http.server.HTTPServer\nhandler = http.server.CGIHTTPRequestHandler\nhandler.cgi_directories = [\"/\"]\nprint(\"Serveur actif sur le port :\", PORT)\n\nhttpd = server(server_address, handler)\nhttpd.serve_forever()",
-    								"[cmt]NODE JS",
-    								"[cod]echo '{ \"private\": true }' > package.json",
-    								"[cmt]express",
-    								"[cod]const express = require('express')\n// const bodyParser = require('body-parser')\n// const cors = require('cors')\n\nconst app = express()\n\n// Middleware\n// app.use(bodyParser.urlencoded({ extended: true })) \n// app.use(cors())\n\napp.get('/', (req, res) => {\n\n    console.log(\"Ping\")\n\n   res.send('Pong' )\n\n})\n\napp.get('/data/:id', (request, res) => {\n   const argument = request.params\n\n console.log(\"data :\",argument)\n  res.json(argument)\n})\n\n app.post('/post', (req, res) => {\n  const argument = req.body.data\n\n  res.send(argument)\n    console.log('Data recus :', argument)\n\n})\n\napp.listen(8080, () => console.log('serveur sur le port 8080'))",
-    								"[ssc]Display react build :",
-    								"[cod]const express = require('express')\nconst path = require('path')\nconst app = express()\napp.use(express.static(path.join(__dirname, 'build')))\napp.get('/', function(req, res) {\n  res.sendFile(path.join(__dirname, 'build', 'index.html'))\n})\napp.listen(9000);",
-    								"[cmt]http",
-    								"[cod]const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)",
-    								"[cmt]NGINX",
-    								"[ssc]Installation de la clef du dépôt Nginx",
-    								"[cod]wget http://nginx.org/keys/nginx_signing.key",
-    								"[cod]sudo apt-key add nginx_signing.key && rm nginx_signing.key",
-    								"[cod]sudo apt update",
-    								"[cod]sudo apt install nginx",
-    								"[ssc]Config",
-    								"[cod]sudo nano /etc/nginx/nginx.conf",
-    								"[ssc]Test du fichier de configuration",
-    								"[cod]/etc/init.d/nginx configtest",
-    								"[ssc]ou",
-    								"[cod]sudo nginx -t",
-    								"[ssc]Redémarrage du service",
-    								"[cod]service nginx reload",
-    								"[cod]service nginx restart",
-    								"[ssc]Start Service",
-    								"[cod]sudo /etc/init.d/nginx start"
-    							],
-    							"children": []
-    						}
-    					]
-    				},
-    				{
-    					"title": "Dbug",
-    					"key": "Dbug042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "Check Point",
-    							"key": "checkPoint042",
-    							"type": "code",
-    							"keyWords": "dbug bug depanage variable",
-    							"description": "Afficher un signal lors de l'execution du programme , pour aider au Dbug",
-    							"content": [
-    								"[cmt]JS",
-    								"[cod]console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' )",
-    								"[cod]try {\n  nonExistentFunction()\n} catch (error) {\n  console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' , error )\n}",
-    								"[cmt]PHP",
-    								"[cod]<?php\n\n$b = 3.1;\n$c = true;\nvar_dump($b, $c);\n\n?>",
-    								"[cmt]C#",
-    								"[cod]throw new Exception(\"===========================\"+ refErpInstallateur.new_name.ToString() );"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "CrossOrigin",
-    							"key": "crossorigin042",
-    							"type": "code",
-    							"keyWords": "dbug cors cross origin bug",
-    							"description": "L'origine de lq requete ne partage pas le meme domaine que celle du serveur,\n le serveur doit autoriser certains header.",
-    							"content": [
-    								"[cmt]CLIENT header Javascript",
-    								"[cmt]SERVEUR",
-    								"[ssc]nodeJs",
-    								"[cod]npm install cors",
-    								"[cod]const cors = require('cors')\napp.use(cors())",
-    								"[ssc]HEADER",
-    								"[cod]app.use((request, response, next) => {\n   response.header('Acsess-Control-Allow-Origin','*')\n   response.header('Access-Control-Allow-Headers','Origin, X-Requested-With,Content-Type,Accept')\n})"
-    							],
-    							"children": []
-    						}
-    					]
-    				}
-    			]
-    		},
-    		{
-    			"title": "Méthodes",
-    			"key": "Methodes042",
-    			"type": "categorie",
-    			"img": "",
-    			"children": [{
-    					"title": "Installation",
-    					"key": "Installation042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "USB boot",
-    							"key": "usboot042",
-    							"type": "code",
-    							"keyWords": "usb boot install iso linux",
-    							"description": "Configuration USB key pour boot sur Linux.",
-    							"content": [
-    								"[cmt]CHECK&DOWNLOAD Last VERSION",
-    								"[ssc]cf. rubrique RESSOURCES iso",
-    								"[cmt]LINUX",
-    								"[ssc]identifier le peripherique usb :",
-    								"[cod] lsblk",
-    								"[ssc]demonter la partition de la clef usb :",
-    								"[cod] sudo umount /dev/sd<?>",
-    								"[ssc]lancer le formatage :",
-    								"[cod] sudo dd bs=4M if=path/to/input.iso of=/dev/sd<?> conv=fdatasync  status=progress",
-    								"[ssc]pour MAC :",
-    								"[cod]sudo dd if=inputfile.img of=/dev/disk<?> bs=4m && sync",
-    								"[cmt]WINDOWS",
-    								"[ssc]Etcher ( nice 4 pi )",
-    								"[lnk]https://www.balena.io/etcher/",
-    								"[ssc]Rufus",
-    								"[lnk]https://rufus.ie"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Linux Starter",
-    							"key": "linuxStarter042",
-    							"type": "code",
-    							"keyWords": "format formattage install installation init start linux maj",
-    							"description": "Installation & Mise a jour packages post-formattage.",
-    							"content": [
-    								"[cmt]Mise a jour",
-    								"[cod]sudo apt update",
-    								"[cod]sudo apt upgrade",
-    								"[cmt]Installation packages",
-    								"[cod]sudo apt -y install zsh curl terminator vlc irssi git tig nodejs vim jq cmatrix mplayer gimp firefox teamviewer wkhtmltopdf cowsay nmap htop",
-    								"[cmt]Oh My ZsH !",
-    								"[cod]sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
-    								"[cmt]ALIAS end of /.bashrc",
-    								"[cod]date\n\necho \"\"\n\nalias pong='ping -c 2 roiseux.fr'\nalias l='ls -la'\nalias c='clear'",
-    								"[cmt]ALIAS end of /.zshrc",
-    								"[cod]source /home/${USER}/.bashrc  || source ~/.bashrc"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "SublimText",
-    							"key": "subl042",
-    							"type": "code",
-    							"keyWords": "subl sublim sublimtext ide editeur package",
-    							"description": "Procedure d'installation & packages pour sublimTxt.",
-    							"content": [
-    								"[cmt]Installation Linux",
-    								"[cod]wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -",
-    								"[cod]sudo apt-get install apt-transport-https",
-    								"[ssc]version Stable",
-    								"[cod]echo \"deb https://download.sublimetext.com/ apt/stable/\" | sudo tee /etc/apt/sources.list.d/sublime-text.list",
-    								"[cod]sudo apt update",
-    								"[cod]sudo apt-get install sublime-text",
-    								"[cmt]Download navigateur",
-    								"[lnk]https://www.sublimetext.com/3",
-    								"[cmt]PACKAGES",
-    								"[ssc]access to package manager 'CTRL+SHIFT+P' ",
-    								"[cmt] - JSON-ReIndent",
-    								"[cmt] - Babel",
-    								"[ssc]   Add Color syntax for React JSX",
-    								"[ssc]   View > Syntax > Babel > Javascript",
-    								"[ssc]   View > Syntax > Open all with current extension as..."
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "REACT JS",
-    							"key": "reactInstall042",
-    							"type": "code",
-    							"keyWords": "init react reactjs start npm build css dependance minimal",
-    							"description": "Start React project.",
-    							"content": [
-    								"[cmt]Standard",
-    								"[cod]npx create-react-app mon-app",
-    								"[cod]npm start",
-    								"[cmt]Minimal",
-    								"[cod]npm install minimal-react",
-    								"[cod]minimal-react my-simple-react-example",
-    								"[cod]npm run dev",
-    								"[cmt]Style CSS for minimal react : 1 stall package u do & 2 webpack.config.js u put will code",
-    								"[cod]npm install style-loader",
-    								"[cod]{\n  test: /\\.css$/,\n  use: [ 'style-loader', 'css-loader' ]\n}",
-    								"[cmt]Build",
-    								"[cod]npm run build"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "DB SQL",
-    							"key": "sqlInstall042",
-    							"type": "code",
-    							"keyWords": "sql init database db",
-    							"description": "Installation d'un Base de donnee SQL.",
-    							"content": [
-    								"[ssc]In progress"
-    							],
-    							"children": []
-    						}
-    					]
-    				},
-    				{
-    					"title": "Raspberry Pi",
-    					"key": "pi042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "Installation Node Js",
-    							"key": "nodePi042",
-    							"type": "code",
-    							"keyWords": "nodejs node pi raspberrypi raspi install maj",
-    							"description": "Installation de NodeJs sur le raspberry Pi.",
-    							"content": [
-    								"[cmt]MISE A JOUR",
-    								"[cod]sudo apt-get install -f",
-    								"[cod]sudo apt-get upgrade",
-    								"[cod]sudo apt-get update",
-    								"[cmt]CHECK VERSION",
-    								"[cod]uname -m",
-    								"[cmt]SI version \"armv6\"  === nodejs install will don't work...",
-    								"[cod]wget https://nodejs.org/dist/v8.9.0/node-v8.9.0-linux-armv6l.tar.gz",
-    								"[cod]tar -xzf node-v8.9.0-linux-armv6l.tar.gz",
-    								"[cod]cd node-v8.9.0-linux-armv6l/",
-    								"[cod]sudo cp -R * /usr/local/",
-    								"[cmt]SInon download",
-    								"[cod]curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -",
-    								"[cmt]INSTALLATION",
-    								"[cod]sudo apt install -y nodejs",
-    								"[cod]nodejs -v",
-    								"[cod]npm -v"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Connection",
-    							"key": "codcheck042",
-    							"type": "code",
-    							"keyWords": "",
-    							"description": "ssh scp connection secure custom background",
-    							"content": [
-    								"[cmt]SSH",
-    								"[cod]ssh pi@192.168.0.X",
-    								"[cmt]background portal",
-    								"[cod]sudo nano /etc/motd",
-    								"[cmt]SCP",
-    								"[ssc]scp [source files] [user]@[host]:[path]",
-    								"[ssc]from",
-    								"[cod]scp pi@192.168.1.3:myfile.txt .",
-    								"[ssc]to",
-    								"[cod]scp file1.txt file2.txt pi@192.168.0.28:capsule/",
-    								"[ssc]Folder",
-    								"[ssc]from",
-    								"[cod]scp -r user@ssh.example.com:/path/to/remote/source /path/to/local/destination",
-    								"[ssc]to",
-    								"[cod]scp -r /path/to/local/source user@ssh.example.com:/path/to/remote/destination "
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Wifi",
-    							"key": "wifiPi042",
-    							"type": "code",
-    							"keyWords": "wifi init config network wpa psk",
-    							"description": "wifi params authentification ",
-    							"content": [
-    								"[cmt]Open File",
-    								"[cod]sudo nano /etc/wpa_supplicant/wpa_supplicant.conf",
-    								"[cod]country=FR\n    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\n    update_config=1\n\n    network={\n    ssid=\"NOM2WIFI\"\n    psk=\"MDPWIFI\"\n    key_mgmt=WPA-PSK\n}"
-
-    							],
-    							"children": []
-    						}
-    					]
-    				},
-    				{
-    					"title": "Reseau",
-    					"key": "rzo042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "IP",
-    							"key": "scanIp042",
-    							"type": "code",
-    							"keyWords": "scan scanner ip nmap lan reseau local information",
-    							"description": "",
-    							"content": [
-    								"[cmt]IP PUBLIQUE",
-    								"[cod]ip a",
-    								"[cod]curl roiseux.fr",
-    								"[cmt]IP LOCAL",
-    								"[cod]curl hostname -I",
-    								"[ssc]retrouver le script JS ",
-    								"[cmt]Scanner les IP sur le reseau local",
-    								"[cod]sudo arp-scan 192.168.0.1/24",
-    								"[cod]nmap -sP 192.168.0.1/24"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Redirect",
-    							"key": "redirection042",
-    							"type": "code",
-    							"keyWords": "host dns redirect",
-    							"description": "",
-    							"content": [
-    								"[cmt]HOST redirection dhcp",
-    								"[cod]sudo nano /etc/hosts"
-    							],
-    							"children": []
-    						}
-    					]
-    				},
-    				{
-    					"title": "Tools",
-    					"key": "rTool042",
-    					"type": "categorie",
-    					"children": [{
-    						"title": "Coding Check",
-    						"key": "codcheck042",
-    						"type": "code",
-    						"keyWords": "eslint standar cleancode travis lint linter",
-    						"description": "Outils de bonne pratique , verifie le code pondue.",
-    						"content": [
-    							"[ssc]In progress"
-    						],
-    						"children": []
-    					}]
-    				}
-    			]
-    		},
-    		{
-    			"title": "Ressources",
-    			"key": "Ressources042",
-    			"type": "categorie",
-    			"img": "",
-    			"children": [{
-    					"title": "Web Design",
-    					"key": "FrameWork042",
-    					"type": "categorie",
-    					"children": [{
-    						"title": "Integration Graphique",
-    						"key": "IG042",
-    						"keyWords": "design color icon icone veille inspi front",
-
-    						"type": "code",
-    						"description": "Outils de developpements visuel, Images SVG, OpenSource",
-    						"content": [
-    							"[cmt]Kolor Palette & Nuances",
-    							"[lnk]https://palette.ninja/",
-    							"[lnk]https://www.color-hex.com/color-palettes/popular.php",
-    							"[cmt]Icone SVG",
-    							"[lnk]https://icones8.fr/",
-    							"[lnk]https://www.flaticon.com/",
-    							"[cmt]Inspiration Veille",
-    							"[lnk]https://www.awwwards.com"
-    						],
-    						"children": []
-    					}]
-    				}, {
-    					"title": "Shell Style",
-    					"key": "ShellStyle042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "METEO",
-    							"key": "MeteoShell042",
-    							"keyWords": "meteo shell link cmd terminal",
-    							"type": "code",
-    							"description": "",
-    							"content": [
-    								"[cmt]LINK",
-    								"[lnk]http://wttr.in/",
-    								"[cod]curl http://wttr.in/"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Simulate typing",
-    							"key": "typingShell042",
-    							"keyWords": "shell cmd pimp style matrix type typing keyboard terminal",
-    							"type": "code",
-    							"description": "This will output the characters at 10 per second",
-    							"content": [
-    								"[cmt]pv",
-    								"[cod]sudo apt install pv",
-    								"[cod]echo \"No tech == No futur ! ! !\" | pv -qL 10"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Matrix Style",
-    							"key": "MatrixStyle042",
-    							"keyWords": "shell cmd pimp style matrix terminal",
-    							"type": "code",
-    							"description": "",
-    							"content": [
-    								"[cod]sudo apt install cmatrix",
-    								"[cod]tr -c \"[:digit:]\" \" \" < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR=\"1;32\" grep --color \"[^ ]\""
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Google Translate",
-    							"key": "Translate042",
-    							"keyWords": "shell cmd terminal translate traduction google",
-    							"type": "code",
-    							"description": "",
-    							"content": [
-    								"[cod]translate(){ wget -qO- \"http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q=$1&langpair=$2|${3:-en}\" | sed 's/.*\"translatedText\":\"\\([^\"]*\\)\".*}/\\1\\n/'; }"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Shell Color",
-    							"key": "shellColor042",
-    							"keyWords": "shell cmd color pimp style terminal couleur",
-    							"type": "code",
-    							"description": "",
-    							"content": [
-    								"[scc][4;XXm : souligné\n[7;XXm : fond\n[9;XXm : barré",
-    								"[cod]#!/bin/bash\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\nNC='\\033[0m' # No Color\necho -e \"${GREEN}NO TECH ${NC} == ${RED} NO FUTUR\" "
-
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Data simulation",
-    							"key": "SimuleDate042",
-    							"keyWords": "shell cmd troll fake terminal",
-    							"type": "code",
-    							"description": "just make some data scrolling off the terminal",
-    							"content": [
-    								"[cmt]Troll",
-    								"[cod]cat /dev/urandom | hexdump -C | grep \"ca fe\""
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "Shell Player",
-    							"key": "ShellPlayer042",
-    							"keyWords": "shell cmd terminal lecteur player vlc mplayer youtube",
-    							"type": "code",
-    							"description": "",
-    							"content": [
-    								"[cod]Read",
-    								"[ssc] Replace $i with any YouTube ID you want and this will scrape the site for the _real_ URL to the full quality .FLV file on Youtube's server and will then will hand that over player to be streamed",
-    								"[ssc]mplayer",
-    								"[cod]sudo apt install mplayer",
-    								"[cod]mplayer -fs $(echo \"http://youtube.com/get_video.php?$(curl -s $youtube_url | sed -n \"/watch_fullscreen/s;.*\\(video_id.\\+\\)&title.*;\\1;p\")\")\\ni=\"8uyxVmdaJ-w\";mplayer -fs $(curl -s \"http://www.youtube.com/get_video_info?&video_id=$i\" | echo -e $(sed 's/%/\\\\x/g;s/.*\\(v[0-9]\\.lscache.*\\)/http:\\/\\/\\1/g') | grep -oP '^[^|,]*')",
-    								"[ssc]vlc",
-    								"[cod]sudo apt install vlc",
-    								"[cod]vlc $(echo \"http://youtube.com/get_video.php?$(curl -s $youtube_url | sed -n \"/watch_fullscreen/s;.*\\(video_id.\\+\\)&title.*;\\1;p\")\")\\ni=\"8uyxVmdaJ-w\";mplayer -fs $(curl -s \"http://www.youtube.com/get_video_info?&video_id=$i\" | echo -e $(sed 's/%/\\\\x/g;s/.*\\(v[0-9]\\.lscache.*\\)/http:\\/\\/\\1/g') | grep -oP '^[^|,]*')",
-    								"[cod]Save",
-    								"[ssc]Record a screencast and convert it to an mpeg\nGrab X11 input and create an MPEG at 25 fps with the resolution 800x600",
-    								"[cod]ffmpeg -f x11grab -r 25 -s 800x600 -i :0.0 /tmp/outputFile.mpg"
-    							],
-    							"children": []
-    						}
-    					]
-    				}
-
-
-    			]
-    		},
-    		{
-    			"title": "Modules",
-    			"key": "Scripts042",
-    			"type": "categorie",
-    			"img": "",
-    			"children": [{
-    					"title": "Composants REACT",
-    					"key": "Component042",
-    					"type": "categorie",
-    					"children": [{
-    						"title": "Horloge",
-    						"key": "horloge042",
-    						"type": "code",
-    						"keyWords": "horloge time chronos chronos react component js datetime date",
-    						"description": " ",
-    						"content": [
-    							"[cmt]ReactJs",
-    							"[ssc]Props : String upperCase",
-    							"[cod]import React, {Component} from 'react';\n\nclass Horloge extends Component {\nstate = { horloge : '00 : 00 : 00' }\n\ncomponentDidMount() {\nsetTimeout(() => this.chronos() , 1000)\n}\n\nchronos() {\nconst date = new Date()\nconst time = [ this.format(date.getHours()),\nthis.format(date.getMinutes()),\nthis.format(date.getSeconds())]\n\nconst horloge = time.join(\" : \")\n\nthis.setState({horloge : horloge})\nsetTimeout(() => this.chronos() , 1000)\n}\n\nformat(nb) {\nif (nb < 10) return `0${nb}`\nelse return nb\n}\n\nrender() {\nreturn (<div>{this.state.horloge}</div>)\n}\n}\nexport default Horloge;"
-    						],
-    						"children": []
-    					}, {
-    						"title": "Ip Info",
-    						"key": "ipInfoReact42",
-    						"type": "code",
-    						"keyWords": "ip info api react js",
-    						"description": " ",
-    						"content": [
-    							"[cmt]ReactJs",
-    							"[cod]componentDidMount() {\n    fetch('https://api.ipify.org?format=json')\n    .then(req => req.json())\n    .then(res => this.setState({ip:res.ip})\n    .then( res => {\n        fetch(`http://api.ipstack.com/${this.state.ip}?access_key=/* ICIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */`)\n        .then(req => req.json())\n        .then(res => this.setState({info:res}) )\n    })\n}"
-    						],
-    						"children": []
-    					}]
-    				},
-    				{
-    					"title": "Functions Js",
-    					"key": "Component042",
-    					"type": "categorie",
-    					"children": [{
-    							"title": "Browser",
-    							"key": "browser042",
-    							"type": "code",
-    							"keyWords": "js browser function navigator navigateur nav firefox chrome ie edge modzilla",
-    							"description": "Determine le navigateur utilisé",
-    							"content": [
-    								"[cmt]Javascript",
-    								"[cod]const navigateur = () => {\n\n  let browser\n  const sUsrAg = navigator.userAgent\n\n  if (sUsrAg.indexOf(\"Firefox\") > -1) {\n    browser = \"Mozilla Firefox\";\n    // \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\"\n  } else if (sUsrAg.indexOf(\"SamsungBrowser\") > -1) {\n    browser = \"Samsung Internet\";\n    // \"Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36\n  } else if (sUsrAg.indexOf(\"Opera\") > -1 || sUsrAg.indexOf(\"OPR\") > -1) {\n    browser = \"Opera\";\n    // \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106\"\n  } else if (sUsrAg.indexOf(\"Trident\") > -1) {\n    browser = \"Microsoft Internet Explorer\";\n    // \"Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko\"\n  } else if (sUsrAg.indexOf(\"Edge\") > -1) {\n    browser = \"Microsoft Edge\";\n    // \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299\"\n  } else if (sUsrAg.indexOf(\"Chrome\") > -1) {\n    browser = \"Google Chrome or Chromium\";\n    // \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36\"\n  } else if (sUsrAg.indexOf(\"Safari\") > -1) {\n    browser = \"Apple Safari\";\n    // \"Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306\"\n  } else {\n    browser = \"unknown\";\n  }\n  \n  return browser\n\n}"
-    							],
-    							"children": []
-    						},
-    						{
-    							"title": "convertisseur",
-    							"key": "converThis042",
-    							"type": "code",
-    							"keyWords": "js function convert binaire binary string",
-    							"description": "",
-    							"content": [
-    								"[cmt]Javascript",
-    								"[ssc]String to binary",
-    								"[cod]function convert(string) {\nlet binary\nfor (let i = 0; i < string.length; i++) {\nbinary += string[i].charCodeAt(0).toString(2)\n}\n}"
-    							],
-    							"children": []
-    						}
-    					]
-    				}
-    			]
-    		}
-
-    	]
-    }
+{
+    "axes": [
+        {
+            "title": "Syntax",
+            "key": "syntax042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Structures",
+                    "key": "structures042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Snippet",
+                            "key": "Snippet042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "ASCII",
+                                    "key": "ascii42",
+                                    "type": "code",
+                                    "keyWords": "ascii art header bash banniere",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]Header",
+                                        "[cod]###################################################\n#*/=============================================\\*#\n# ||                      .__                  || #\n# ||   ____   ____   ____ |  |   ____   ____   || #\n# || _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  || #\n# || \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) || #\n# ||  \\___  >\\___  >___  /|____/\\____/ \\____/  || #\n# ||      \\/     \\/_____/                  2020|| #\n#.\\=============================================/.#\n###################################################",
+                                        "[cod]/=============================================\\\n||                      .__                  ||\n||   ____   ____   ____ |  |   ____   ____   ||\n|| _/ __ \\_/ __ \\ / ___\\|  |  /  _ \\ /  _ \\  ||\n|| \\  ___/\\  ___// /_/  >  |_(  <_> |  <_> ) ||\n||  \\___  >\\___  >___  /|____/\\____/ \\____/  ||\n||      \\/     \\/_____/                  2020||\n\\=============================================/",
+                                        "[cmt]BASH Escape Ascii-Art",
+                                        "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Squelette Html",
+                                    "key": "HTML042",
+                                    "type": "code",
+                                    "keyWords": "html snippet script style css bootstrap",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]HTML",
+                                        "[cod]<!DOCTYPE html>\n<html>\n <head>\n  <title>\n </title>\n </head>\n <body>\n\n </body>\n</html>\n",
+                                        "[cmt] Script JS",
+                                        "[cod]<script>\ndocument.getElementById('injectMe').innerHTML = 'Display my String!';\n</script>\n\n<script src='mySuperScript.js'></script>",
+                                        "[cmt]Style CSS",
+                                        "[cod]<link rel='stylesheet' type='text/css' href='mySuperStyle.css'>"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Script Bash",
+                                    "key": "bash042",
+                                    "type": "code",
+                                    "keyWords": "",
+                                    "description": "",
+                                    "content": [
+                                        "[cod]#!/bin/bash"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "MediaQuery Css",
+                                    "key": "mdq042",
+                                    "type": "code",
+                                    "keyWords": "media mediaquery smartphone mobile view screen css style adapte responsive",
+                                    "description": "",
+                                    "content": [
+                                        "[cod]/* \n  ##Device = Desktops\n  ##Screen = 1281px to higher resolution desktops\n*/\n\n@media (min-width: 1281px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Laptops, Desktops\n  ##Screen = B/w 1025px to 1280px\n*/\n\n@media (min-width: 1025px) and (max-width: 1280px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (portrait)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) {\n  \n  //CSS\n  \n}\n\n/* \n  ##Device = Tablets, Ipads (landscape)\n  ##Screen = B/w 768px to 1024px\n*/\n\n@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {\n  \n  //CSS\n  \n}"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "ReactJs",
+                                    "key": "REACTJS042",
+                                    "type": "code",
+                                    "keyWords": "react js component template reactjs javascript",
+                                    "description": "Squelette d'un composant react js.",
+                                    "content": [
+                                        "[cmt]CLASS",
+                                        "[cod]import React, {Component} from 'react';\n\nclass ComponentClass extends Component {\n\n  constructor(props) {\n      super(props)\n      this.state = {\n      clef : 'valeur'\n  }\n\n      this.action = this.action.bind()\n  }\n\n action() {\n  const text = 'je lis'\n  return text\n }\n\n render() {\n   return (<div>\n             <h1>Ping!</h1>\n           </div>)\n }\n}\n\nexport default ComponentClass;",
+                                        "[cmt]FONCTION",
+                                        "[cod]import React from 'react'\n\nconst ComponentName = () => {\n\n    return (<div>\n           <h1>Ping!</h1>\n         </div>)\n}\n\nexport default ComponentName"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Lorem Ipsum",
+                                    "key": "LoremIp042",
+                                    "type": "code",
+                                    "keyWords": "",
+                                    "description": "Le passage de Lorem Ipsum standard, utilisé depuis 1500.",
+                                    "content": [
+                                        "[cmt]LATIN",
+                                        "[cod]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n Excepteur sint occaecat cupidatat non proident,\n sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "SublimText",
+                                    "key": "sublim042",
+                                    "type": "code",
+                                    "keyWords": "",
+                                    "description": "Raccourcit Clavier & package",
+                                    "content": [
+                                        "[cmt]Raccourcit",
+                                        "[ssc]Ctrl+KB                 basculer la barre latérale\nCtrl+Shift+P            invite de commande\nShift+F11               mode « sans distraction »\nCtrl+Shift+T            ré-ouvrir le dernier fichier fermé\nCtrl+Shift+V            coller et indenter\nCtrl+Shift+J            sélectionne le contenu de l’indentation\nCtrl+Shift+[haut,bas]   inverser les lignes\nCtrl+ /                 commenter\nCtrl+Shift+ /           bloc de commentaire\nCtrl+KU                 mettre en majuscule\nCtrl+KL                 mettre en minuscule\nF12                     ouvrir dans le navigateur internet par défaut",
+                                        "[cmt]Packages",
+                                        "[ssc]JSON Reindent "
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Variables",
+                            "key": "Variables042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "String",
+                                    "key": "string042",
+                                    "type": "code",
+                                    "keyWords": "",
+                                    "description": "Declaration d'une variable de type sting.",
+                                    "content": [
+                                        "[cmt]JAVASCRIPT",
+                                        "[cod]let maVariable = 'hello World!'\nconst maVariableBis = 'byWorld'",
+                                        "[cmt]PHP",
+                                        "[cod]<?php \n $myVariable =  \"ceci est une chaîne simple\";\n?>",
+                                        "[cmt]C#",
+                                        "[cod]string maVariable = \"La string du C!\";",
+                                        "[cmt]BASH",
+                                        "[cod]STR=\"Hello World!\"",
+                                        "[cmt]PYTHON",
+                                        "[cod]maVariableString = 'Yo World!'"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Array & List",
+                                    "key": "array042",
+                                    "type": "code",
+                                    "keyWords": "",
+                                    "description": "Declaration d'un tableau index/element.",
+                                    "content": [
+                                        "[cmt]JAVASCRIPT",
+                                        "[cod]const array = [42,\"element01\",\"element02\",true]\nconsole.log(array[0]) //========> 42",
+                                        "[cmt]C#",
+                                        "[cod]string[] myArray = { \"element00\",\"element01\",\"element02\",\"element03\"};",
+                                        "[cmt]BASH",
+                                        "[cod]myArray=(element00 element01 element02)",
+                                        "[ssc]Tout les elements",
+                                        "[cod]${myArray[*]} ",
+                                        "[ssc]Tout les index",
+                                        "[cod]${!myArray[*]}",
+                                        "[ssc]Nb Elements",
+                                        "[cod]${#myArray[*]}",
+                                        "[ssc]Length of item zero",
+                                        "[cod]${#myArray[0]}"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Date & Time",
+                                    "key": "dateTime042",
+                                    "type": "code",
+                                    "keyWords": "date time snippet heure minute seconde hour chronos",
+                                    "description": "Declaration des objects DateTime.",
+                                    "content": [
+                                        "[cmt]JAVASCRIPT",
+                                        "[cod]const date = new Date()\n\nconst heur = date.getHours()\nconst min = date.getMinutes()\nconst sec = date.getSeconds()\n\nconst horloge = heure+min+sec ",
+                                        "[cod]In Progress...",
+                                        "[ssc]FORMATAGE :",
+                                        "[ssc]heure :",
+                                        "[cod]const format = (nb) => {\n    if (nb < 10) return `0${nb}`\n    else return nb\n}",
+                                        "[ssc]date :",
+                                        "[cod]In progess...",
+                                        "[cmt]C#",
+                                        "[cod]DateTime thisDay = DateTime.Today;\nDateTime tomorrow = thisDay.AddDays(1);",
+                                        "[cmt]BASH",
+                                        "[cod]"
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Algorithme",
+                            "key": "Algorithme042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "Boucles",
+                                    "key": "Boucle042",
+                                    "type": "code",
+                                    "keyWords": "boucle loop algo",
+                                    "description": " ",
+                                    "content": [
+                                        "[cmt]JS",
+                                        "[cod]let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
+                                        "[cod]const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
+                                        "[cmt]PYTHON",
+                                        "[cod]x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
+                                        "for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
+                                        "[cmt]BASH",
+                                        "[cod]while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
+                                        "[cod]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Condition",
+                                    "key": "condition042",
+                                    "type": "code",
+                                    "keyWords": "condition if switch algo",
+                                    "description": " ",
+                                    "content": [
+                                        "[cmt]JS",
+                                        "[cod]const expr = \"Papayas\"\n\nswitch (expr) {\n  case \"Oranges\":\n    console.log(\"Le prix des Oranges est de 1€.\")\n    break\n  case \"Mangoes\":\n  case \"Papayas\":\n    console.log(\"Le prix des Mangues et des Papayes est de 2€.\")\n    break\n  default:\n    console.log(`Dsl, aucun prix pour ${expr}.`)\n}",
+                                        "[cmt]PYTHON",
+                                        "[cod]a = 43\n\nif a > 43:\n    a = a + 1\nelif a == 43:\n    a = a - 1\nelse:\n    a = a * 2\n\n//========> a\n//========> 42",
+                                        "[cmt]BASH",
+                                        "[cod]echo -n \"Entre le nom d'un pays : \"\nread COUNTRY\n\necho -n \"La langue officiel en $COUNTRY is \"\n\ncase $COUNTRY in\n\n  Lithuania)\n    echo -n \"Lithuanian\"\n    ;;\n\n  Romania | Moldova)\n    echo -n \"Romanian\"\n    ;;\n\n  Italy | \"San Marino\" | Switzerland | \"Vatican City\")\n    echo -n \"Italian\"\n    ;;\n\n  *)\n    echo -n \"unknown\"\n    ;;\nesac",
+                                        "[cod]nom=\"Jack\"\n\nif [ $nom = \"Jack\" ]\nthen\n        echo \"Salut Jack !\"\nelif [ encore_autre_test ]\nthen\n        echo \"Le deuxieme test a été vérifié\"\nelse\n        echo \"Aucun des tests précédents n'a été vérifié\"\nfi",
+                                        "[cmt]C#",
+                                        "[cod]if (string.IsNullOrEmpty(OpportunityNumber) || (OpportunityNumber.Length > 100))\n{\n\n}",
+                                        "[cod]if (float.IsNaN(montant))\n{\n\n}"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Operateurs logiques",
+                                    "key": "Operateur042",
+                                    "type": "code",
+                                    "keyWords": "operateur logique algo et ou",
+                                    "description": " Logique de base pour articuler le code ",
+                                    "content": [
+                                        "[cmt]SQL",
+                                        "[ssc]=           Égale\n<>          Pas égale\n!=          Pas égale\n>           Supérieur à\n<           Inférieur à\n>=          Supérieur ou égale à\n<=          Inférieur ou égale à\nIN          Liste de plusieurs valeurs possibles\nBETWEEN     Valeur comprise dans un intervalle donnée (utile pour les nombres ou dates)\nLIKE        Recherche en spécifiant le début, milieu ou fin d'un mot.\nIS NULL     Valeur est nulle\nIS NOT NULL Valeur n'est pas nulle",
+                                        "[cmt]PYTHON",
+                                        "[ssc]==      égal à \n!=      différent de (fonctionne aussi avec )\n>       strictement supérieur à \n>=      supérieur ou égal à\n<       strictement inférieur à \n<=      inférieur ou égal à",
+                                        "[cmt]BASH",
+                                        "[ssc]$variable1 = $variable2\n$variable1 == $variable2\n$variable1 != $variable2\n$variable1 < $variable2\n$variable1 > $variable2\n$variable1 >= $variable2\n$variable1 <= $variable2"
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "WEB",
+                    "key": "Web042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Front",
+                            "key": "Front042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "GET",
+                                    "key": "get042",
+                                    "type": "code",
+                                    "keyWords": "get requete request http",
+                                    "description": "Requete http type GET",
+                                    "content": [
+                                        "[cmt]C#",
+                                        "[cod]static Entity GetInfo(IOrganizationService Service, string nomTable, string[] ChampRecup, string champCondition, string variableCondition)\n        {\n            QueryExpression query = new QueryExpression();\n\n            query.ColumnSet = new ColumnSet(ChampRecup);\n            query.EntityName = nomTable;\n\n            FilterExpression Fe = new FilterExpression();\n\n            ConditionExpression Ce = new ConditionExpression();\n            Ce.AttributeName = champCondition;\n            Ce.Operator = ConditionOperator.Equal;\n            Ce.Values.Add(variableCondition);\n            Fe.AddCondition(Ce);\n\n            query.Criteria.AddFilter(Fe);\n\n            try\n            {\n                EntityCollection retrieve = Service.RetrieveMultiple(query);\n\n                return retrieve[0];\n            }\n            catch (Exception ex)\n            {\n                //throw new Exception(ex.Message);\n                Entity entity = new Entity();\n                return entity;\n            }\n        }"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "POST",
+                                    "key": "POST042",
+                                    "type": "code",
+                                    "keyWords": "http request requete post json xml",
+                                    "description": "Requete http type POST",
+                                    "content": [
+                                        "[cmt]JS",
+                                        "[ssc]fetch json",
+                                        "[cod]const fetchMe = (jsObject) => {\n\n    const params = (requestType, jsObject) => {\n        let data\n        if (!!jsObject) {\n          data = new FormData()\n          data.append( \"json\", JSON.stringify(jsObject))   \n        }\n\n        const setting = { method: requestType,\n                        headers: { \"Content-type\": \"application/json\" ,\n                                    'Accept': \"application/json\",\n                                    \"Access-Control-Request-Method\" : requestType,\n                                    \"Access-Control-Request-Headers\" : \"Authorization, X-Requested-With, Content-Type, Accept\" },\n                        body: data,\n                        // mode: 'cors',\n                        cache: 'default' }\n\n        return setting\n    }\n\n    return fetch(URL, params('POST', jsObject))\n        .then(res => res.json())\n        .then( res => return res)\n}",
+                                        "[ssc]xhr xml",
+                                        "[cod]const getXDomainRequest = () => {\n    let xdr = null\n\n    if (window.XDomainRequest) {\n      xdr = new XDomainRequest() \n    } else if (window.XMLHttpRequest) {\n      xdr = new XMLHttpRequest() \n    } else {\n      alert(\"Votre navigateur web ne permet pas d'effectuer la communication avec Mercure, merci de le mettre à jour ou d'utiliser un navigateur alternatif\")\n    }\n    \n    return xdr        \n}\n\nconst postToMercure = (clientObject) => {\n\n    const url = \"http://LurlSurLaquelOnRequete.com/route\"\n\n    function promesse (Data) {\n      return new Promise(resolve => {\n        let xdr = getXDomainRequest()\n        xdr.contentType = \"application/xml\"\n\n        xdr.open(\"POST\", url )\n\n        xdr.onreadystatechange = (event) => {  \n          if (xdr.readyState === 4) {  \n              if (xdr.status != 200) {  \n                alert(`Une erreur est survenue')  \n              }  \n          }  \n        }\n\n        // ENVOIE XML INFORMATION\n        xdr.send(Data)\n\n        // GESTION RETOUR XML PARSING\n        xdr.onload = () => {\n          const reponseXML = xdr.responseText\n\n          if (window.DOMParser)\n          {\n              parser = new DOMParser()\n              xmlDoc = parser.parseFromString(reponseXML, \"text/xml\")\n          }\n          else // Internet Explorer\n          {\n              xmlDoc = new ActiveXObject(\"Microsoft.XMLDOM\")\n              xmlDoc.async = false\n              xmlDoc.loadXML(reponseXML)\n          }\n\n          const reponseParsed = xmlDoc.getElementsByTagName(\"return\")[0].childNodes[0].nodeValue\n          console.log('%c reponseParsed :','background:orange;color:white;', reponseParsed)\n\n          resolve(reponseParsed) \n        }\n      })\n    }\n\n    return promesse(clientObject)\n}"
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Back",
+                            "key": "Back042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "SQL",
+                                    "key": "sql042",
+                                    "type": "code",
+                                    "keyWords": "crud sql create insert read delete database db back",
+                                    "description": "Syntax C.R.U.D pour les requetes SQL.",
+                                    "content": [
+                                        "[cmt]CREATE",
+                                        "[cod]CREATE DATABASE ma_base",
+                                        "[cod]CREATE TABLE nom_de_la_table\n(\n    colonne1 type_donnees,\n    colonne2 type_donnees,\n    colonne3 type_donnees,\n    colonne4 type_donnees\n)",
+                                        "[cod]INSERT INTO table VALUES ('valeur 1', 'valeur 2', ...)",
+                                        "[cod]INSERT INTO table (nom_colonne_1, nom_colonne_2, ...\n VALUES ('valeur 1', 'valeur 2', ...)",
+                                        "[cmt]READ",
+                                        "[cod]SELECT * FROM nom_table ",
+                                        "[cod]SELECT nom_du_champ FROM nom_table ",
+                                        "[cod]SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression",
+                                        "[cod]SELECT nom_colonnes FROM nom_table WHERE condition ORDER BY expression LIMIT 10 ",
+                                        "[cmt]UPDATE",
+                                        "[cod]UPDATE table\nSET nom_colonne_1 = 'nouvelle valeur'\nWHERE condition",
+                                        "[cmt]DELETE",
+                                        "[cod]DELETE FROM 'table'\nWHERE condition",
+                                        "[cod]DELETE FROM 'utilisateur'",
+                                        "[cod]TRUNCATE TABLE 'utilisateur'"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Serveur",
+                                    "key": "serveur042",
+                                    "type": "code",
+                                    "keyWords": "serveur http access serv localhost",
+                                    "description": "Serveur HTTP",
+                                    "content": [
+                                        "[cmt]PYTHON",
+                                        "[cod]python -m SimpleHTTPServer <PORT>",
+                                        "[ssc]$python3 server.py",
+                                        "[cod]import http.server\n \nPORT = 8888\nserver_address = (\"\", PORT)\n\nserver = http.server.HTTPServer\nhandler = http.server.CGIHTTPRequestHandler\nhandler.cgi_directories = [\"/\"]\nprint(\"Serveur actif sur le port :\", PORT)\n\nhttpd = server(server_address, handler)\nhttpd.serve_forever()",
+                                        "[cmt]NODE JS",
+                                        "[cod]echo '{ \"private\": true }' > package.json",
+                                        "[cmt]express",
+                                        "[cod]const express = require('express')\n// const bodyParser = require('body-parser')\n// const cors = require('cors')\n\nconst app = express()\n\n// Middleware\n// app.use(bodyParser.urlencoded({ extended: true })) \n// app.use(cors())\n\napp.get('/', (req, res) => {\n\n    console.log(\"Ping\")\n\n   res.send('Pong' )\n\n})\n\napp.get('/data/:id', (request, res) => {\n   const argument = request.params\n\n console.log(\"data :\",argument)\n  res.json(argument)\n})\n\n app.post('/post', (req, res) => {\n  const argument = req.body.data\n\n  res.send(argument)\n    console.log('Data recus :', argument)\n\n})\n\napp.listen(8080, () => console.log('serveur sur le port 8080'))",
+                                        "[ssc]Display react build :",
+                                        "[cod]const express = require('express')\nconst path = require('path')\nconst app = express()\napp.use(express.static(path.join(__dirname, 'build')))\napp.get('/', function(req, res) {\n  res.sendFile(path.join(__dirname, 'build', 'index.html'))\n})\napp.listen(9000);",
+                                        "[cmt]http",
+                                        "[cod]const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)",
+                                        "[cmt]NGINX",
+                                        "[ssc]Installation de la clef du dépôt Nginx",
+                                        "[cod]wget http://nginx.org/keys/nginx_signing.key",
+                                        "[cod]sudo apt-key add nginx_signing.key && rm nginx_signing.key",
+                                        "[cod]sudo apt update",
+                                        "[cod]sudo  apt install nginx",
+                                        "[ssc]Config",
+                                        "[cod]sudo nano /etc/nginx/nginx.conf",
+                                        "[ssc]Test du fichier de configuration",
+                                        "[cod]/etc/init.d/nginx configtest",
+                                        "[ssc]ou",
+                                        "[cod]sudo nginx -t",
+                                        "[ssc]Redémarrage du service",
+                                        "[cod]service nginx reload",
+                                        "[cod]service nginx restart",
+                                        "[ssc]Start Service",
+                                        "[cod]sudo /etc/init.d/nginx start"
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Dbug",
+                            "key": "Dbug042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "Check Point",
+                                    "key": "checkPoint042",
+                                    "type": "code",
+                                    "keyWords": "dbug bug depanage variable",
+                                    "description": "Afficher un signal lors de l'execution du programme , pour aider au Dbug",
+                                    "content": [
+                                        "[cmt]JS",
+                                        "[cod]console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' )",
+                                        "[cod]try {\n  nonExistentFunction()\n} catch (error) {\n  console.log('%c /!\\ DebuGg /!\\ ', 'background: orange; color: red' , error )\n}",
+                                        "[cmt]PHP",
+                                        "[cod]<?php\n\n$b = 3.1;\n$c = true;\nvar_dump($b, $c);\n\n?>",
+                                        "[cmt]C#",
+                                        "[cod]throw new Exception(\"===========================\"+ refErpInstallateur.new_name.ToString() );"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "CrossOrigin",
+                                    "key": "crossorigin042",
+                                    "type": "code",
+                                    "keyWords": "dbug cors cross origin bug",
+                                    "description": "L'origine de lq requete ne partage pas le meme domaine que celle du serveur,\n le serveur doit autoriser certains header.",
+                                    "content": [
+                                        "[cmt]CLIENT header Javascript",
+                                        "[cmt]SERVEUR",
+                                        "[ssc]nodeJs",
+                                        "[cod]npm install cors",
+                                        "[cod]const cors = require('cors')\napp.use(cors())",
+                                        "[ssc]HEADER",
+                                        "[cod]app.use((request, response, next) => {\n   response.header('Acsess-Control-Allow-Origin','*')\n   response.header('Access-Control-Allow-Headers','Origin, X-Requested-With,Content-Type,Accept')\n})"
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "OS",
+                    "key": "SystemOs042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "linux Ba$h",
+                            "key": "linuxBash042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "SED",
+                                    "key": "sed042",
+                                    "type": "code",
+                                    "keyWords": "bash linux sed replace pattern change",
+                                    "description": "",
+                                    "content": [
+                                        "[scc]replace occurance",
+                                        "[cod]In Progress.."
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "GREP",
+                                    "key": "grep042",
+                                    "type": "code",
+                                    "keyWords": "bash linux find extract extraire filtre filter",
+                                    "description": "",
+                                    "content": [
+                                        "[scc]find occurance",
+                                        "[cod]In Progress.."
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "title": "windows PowerShell",
+                            "key": "windowsPowershell042",
+                            "type": "categorie",
+                            "children": [
+                                {
+                                    "title": "ping",
+                                    "key": "pingWin042",
+                                    "type": "code",
+                                    "keyWords": "microsoft windows powershell",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]In Progress.."
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Méthodes",
+            "key": "Methodes042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Installation",
+                    "key": "Installation042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "USB boot",
+                            "key": "usboot042",
+                            "type": "code",
+                            "keyWords": "usb boot install iso linux",
+                            "description": "Configuration USB key pour boot sur Linux.",
+                            "content": [
+                                "[cmt]CHECK&DOWNLOAD Last VERSION",
+                                "[ssc]cf. rubrique RESSOURCES iso",
+                                "[cmt]LINUX",
+                                "[ssc]identifier le peripherique usb :",
+                                "[cod] lsblk",
+                                "[ssc]demonter la partition de la clef usb :",
+                                "[cod] sudo umount /dev/sd<?>",
+                                "[ssc]lancer le formatage :",
+                                "[cod] sudo dd bs=4M if=path/to/input.iso of=/dev/sd<?> conv=fdatasync  status=progress",
+                                "[ssc]pour MAC :",
+                                "[cod]sudo dd if=inputfile.img of=/dev/disk<?> bs=4m && sync",
+                                "[cmt]WINDOWS",
+                                "[ssc]Etcher ( nice 4 pi )",
+                                "[lnk]https://www.balena.io/etcher/",
+                                "[ssc]Rufus",
+                                "[lnk]https://rufus.ie"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Linux Starter",
+                            "key": "linuxStarter042",
+                            "type": "code",
+                            "keyWords": "format formattage install installation init start linux maj",
+                            "description": "Installation & Mise a jour packages post-formattage.",
+                            "content": [
+                                "[cmt]Mise a jour",
+                                "[cod]sudo apt update",
+                                "[cod]sudo apt upgrade",
+                                "[cmt]Installation packages",
+                                "[cod]sudo apt -y install zsh curl terminator vlc irssi git tig nodejs vim jq cmatrix mplayer gimp firefox teamviewer wkhtmltopdf cowsay nmap htop",
+                                "[cmt]Oh My ZsH !",
+                                "[cod]sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"",
+                                "[cmt]ALIAS end of /.bashrc",
+                                "[cod]date\n\necho \"\"\n\nalias pong='ping -c 2 roiseux.fr'\nalias l='ls -la'\nalias c='clear'",
+                                "[cmt]ALIAS end of /.zshrc",
+                                "[cod]source /home/${USER}/.bashrc  || source ~/.bashrc"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "SublimText",
+                            "key": "subl042",
+                            "type": "code",
+                            "keyWords": "subl sublim sublimtext ide editeur package",
+                            "description": "Procedure d'installation & packages pour sublimTxt.",
+                            "content": [
+                                "[cmt]Installation Linux",
+                                "[cod]wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -",
+                                "[cod]sudo apt-get install apt-transport-https",
+                                "[ssc]version Stable",
+                                "[cod]echo \"deb https://download.sublimetext.com/ apt/stable/\" | sudo tee /etc/apt/sources.list.d/sublime-text.list",
+                                "[cod]sudo apt update",
+                                "[cod]sudo apt-get install sublime-text",
+                                "[cmt]Download navigateur",
+                                "[lnk]https://www.sublimetext.com/3",
+                                "[cmt]PACKAGES",
+                                "[ssc]access to package manager 'CTRL+SHIFT+P' ",
+                                "[cmt] - JSON-ReIndent",
+                                "[cmt] - Babel",
+                                "[ssc]   Add Color syntax for React JSX",
+                                "[ssc]   View > Syntax > Babel > Javascript",
+                                "[ssc]   View > Syntax > Open all with current extension as..."
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "REACT JS",
+                            "key": "reactInstall042",
+                            "type": "code",
+                            "keyWords": "init react reactjs start npm build css dependance minimal",
+                            "description": "Start React project.",
+                            "content": [
+                                "[cmt]Standard",
+                                "[cod]npx create-react-app mon-app",
+                                "[cod]npm start",
+                                "[cmt]Minimal",
+                                "[cod]npm install minimal-react",
+                                "[cod]minimal-react my-simple-react-example",
+                                "[cod]npm run dev",
+                                "[cmt]Style CSS for minimal react : 1 stall package u do & 2 webpack.config.js u put will code",
+                                "[cod]npm install style-loader",
+                                "[cod]{\n  test: /\\.css$/,\n  use: [ 'style-loader', 'css-loader' ]\n}",
+                                "[cmt]Build",
+                                "[cod]npm run build"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "DB SQL",
+                            "key": "sqlInstall042",
+                            "type": "code",
+                            "keyWords": "sql init database db",
+                            "description": "Installation d'un Base de donnee SQL.",
+                            "content": [
+                                "[ssc]In progress"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Raspberry Pi",
+                    "key": "pi042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Installation Node Js",
+                            "key": "nodePi042",
+                            "type": "code",
+                            "keyWords": "nodejs node pi raspberrypi raspi install maj",
+                            "description": "Installation de NodeJs sur le raspberry Pi.",
+                            "content": [
+                                "[cmt]MISE A JOUR",
+                                "[cod]sudo apt-get install -f",
+                                "[cod]sudo apt-get upgrade",
+                                "[cod]sudo apt-get update",
+                                "[cmt]CHECK VERSION",
+                                "[cod]uname -m",
+                                "[cmt]SI version \"armv6\"  === nodejs install will don't work...",
+                                "[cod]wget https://nodejs.org/dist/v8.9.0/node-v8.9.0-linux-armv6l.tar.gz",
+                                "[cod]tar -xzf node-v8.9.0-linux-armv6l.tar.gz",
+                                "[cod]cd node-v8.9.0-linux-armv6l/",
+                                "[cod]sudo cp -R * /usr/local/",
+                                "[cmt]SInon download",
+                                "[cod]curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -",
+                                "[cmt]INSTALLATION",
+                                "[cod]sudo apt install -y nodejs",
+                                "[cod]nodejs -v",
+                                "[cod]npm -v"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "SSH",
+                            "key": "sshPi042",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "ssh scp connection secure custom background",
+                            "content": [
+                                "[cmt]SSH",
+                                "[cod]ssh pi@192.168.0.X",
+                                "[cmt]background portal",
+                                "[cod]sudo nano /etc/motd",
+                                "[cmt]SCP",
+                                "[ssc]scp [source files] [user]@[host]:[path]",
+                                "[cmt]from",
+                                "[cod]scp pi@192.168.1.3:myfile.txt .",
+                                "[cmt]to",
+                                "[cod]scp file1.txt file2.txt pi@192.168.0.28:capsule/",
+                                "[ssc]For Folder",
+                                "[cmt]from",
+                                "[cod]scp -r user@ssh.example.com:/path/to/remote/source /path/to/local/destination",
+                                "[cmt]to",
+                                "[cod]scp -r /path/to/local/source user@ssh.example.com:/path/to/remote/destination "
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Wifi",
+                            "key": "wifiPi042",
+                            "type": "code",
+                            "keyWords": "wifi init config network wpa psk",
+                            "description": "wifi params authentification ",
+                            "content": [
+                                "[cmt]Open File",
+                                "[cod]sudo nano /etc/wpa_supplicant/wpa_supplicant.conf",
+                                "[cod]country=FR\n    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev\n    update_config=1\n\n    network={\n    ssid=\"NOM2WIFI\"\n    psk=\"MDPWIFI\"\n    key_mgmt=WPA-PSK\n}"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Reseau",
+                    "key": "rzo042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "IP",
+                            "key": "scanIp042",
+                            "type": "code",
+                            "keyWords": "scan scanner ip nmap lan reseau local information",
+                            "description": "",
+                            "content": [
+                                "[cmt]IP PUBLIQUE",
+                                "[cod]ip a",
+                                "[cod]curl roiseux.fr",
+                                "[cmt]IP LOCAL",
+                                "[cod]curl hostname -I",
+                                "[ssc]retrouver le script JS ",
+                                "[cmt]Scanner les IP sur le reseau local",
+                                "[cod]sudo arp-scan 192.168.0.1/24",
+                                "[cod]nmap -sP 192.168.0.1/24"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Redirect",
+                            "key": "redirection042",
+                            "type": "code",
+                            "keyWords": "host dns redirect",
+                            "description": "",
+                            "content": [
+                                "[cmt]HOST redirection dhcp",
+                                "[cod]sudo nano /etc/hosts"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Tools",
+                    "key": "rTool042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Coding Check",
+                            "key": "codcheck042",
+                            "type": "code",
+                            "keyWords": "eslint standar cleancode travis lint linter",
+                            "description": "Outils de bonne pratique , verifie le code pondue.",
+                            "content": [
+                                "[ssc]In progress"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Ressources",
+            "key": "Ressources042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Web Design",
+                    "key": "FrameWork042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Integration Graphique",
+                            "key": "IG042",
+                            "keyWords": "design color icon icone veille inspi front",
+                            "type": "code",
+                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "content": [
+                                "[cmt]Kolor Palette & Nuances",
+                                "[lnk]https://palette.ninja/",
+                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
+                                "[cmt]Icone SVG",
+                                "[lnk]https://icones8.fr/",
+                                "[lnk]https://www.flaticon.com/",
+                                "[cmt]Inspiration Veille",
+                                "[lnk]https://www.awwwards.com"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Shell Style",
+                    "key": "ShellStyle042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "METEO",
+                            "key": "MeteoShell042",
+                            "keyWords": "meteo shell link cmd terminal",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cmt]LINK",
+                                "[lnk]http://wttr.in/",
+                                "[cod]curl http://wttr.in/"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Simulate typing",
+                            "key": "typingShell042",
+                            "keyWords": "shell cmd pimp style matrix type typing keyboard terminal",
+                            "type": "code",
+                            "description": "This will output the characters at 10 per second",
+                            "content": [
+                                "[cmt]pv",
+                                "[cod]sudo apt install pv",
+                                "[cod]echo \"No tech == No futur ! ! !\" | pv -qL 10"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Matrix Style",
+                            "key": "MatrixStyle042",
+                            "keyWords": "shell cmd pimp style matrix terminal",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cod]sudo apt install cmatrix",
+                                "[cod]tr -c \"[:digit:]\" \" \" < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR=\"1;32\" grep --color \"[^ ]\""
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Google Translate",
+                            "key": "Translate042",
+                            "keyWords": "shell cmd terminal translate traduction google",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cod]translate(){ wget -qO- \"http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q=$1&langpair=$2|${3:-en}\" | sed 's/.*\"translatedText\":\"\\([^\"]*\\)\".*}/\\1\\n/'; }"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Shell Color",
+                            "key": "shellColor042",
+                            "keyWords": "shell cmd color pimp style terminal couleur",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[scc][4;XXm : souligné\n[7;XXm : fond\n[9;XXm : barré",
+                                "[cod]#!/bin/bash\nGREEN='\\033[0;32m'\nRED='\\033[0;31m'\nNC='\\033[0m' # No Color\necho -e \"${GREEN}NO TECH ${NC} == ${RED} NO FUTUR\" "
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Data simulation",
+                            "key": "SimuleDate042",
+                            "keyWords": "shell cmd troll fake terminal",
+                            "type": "code",
+                            "description": "just make some data scrolling off the terminal",
+                            "content": [
+                                "[cmt]Troll",
+                                "[cod]cat /dev/urandom | hexdump -C | grep \"ca fe\""
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Shell Player",
+                            "key": "ShellPlayer042",
+                            "keyWords": "shell cmd terminal lecteur player vlc mplayer youtube",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cod]Read",
+                                "[ssc] Replace $i with any YouTube ID you want and this will scrape the site for the _real_ URL to the full quality .FLV file on Youtube's server and will then will hand that over player to be streamed",
+                                "[ssc]mplayer",
+                                "[cod]sudo apt install mplayer",
+                                "[cod]mplayer -fs $(echo \"http://youtube.com/get_video.php?$(curl -s $youtube_url | sed -n \"/watch_fullscreen/s;.*\\(video_id.\\+\\)&title.*;\\1;p\")\")\\ni=\"8uyxVmdaJ-w\";mplayer -fs $(curl -s \"http://www.youtube.com/get_video_info?&video_id=$i\" | echo -e $(sed 's/%/\\\\x/g;s/.*\\(v[0-9]\\.lscache.*\\)/http:\\/\\/\\1/g') | grep -oP '^[^|,]*')",
+                                "[ssc]vlc",
+                                "[cod]sudo apt install vlc",
+                                "[cod]vlc $(echo \"http://youtube.com/get_video.php?$(curl -s $youtube_url | sed -n \"/watch_fullscreen/s;.*\\(video_id.\\+\\)&title.*;\\1;p\")\")\\ni=\"8uyxVmdaJ-w\";mplayer -fs $(curl -s \"http://www.youtube.com/get_video_info?&video_id=$i\" | echo -e $(sed 's/%/\\\\x/g;s/.*\\(v[0-9]\\.lscache.*\\)/http:\\/\\/\\1/g') | grep -oP '^[^|,]*')",
+                                "[cod]Save",
+                                "[ssc]Record a screencast and convert it to an mpeg\nGrab X11 input and create an MPEG at 25 fps with the resolution 800x600",
+                                "[cod]ffmpeg -f x11grab -r 25 -s 800x600 -i :0.0 /tmp/outputFile.mpg"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Modules",
+            "key": "Scripts042",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Composants REACT",
+                    "key": "Component042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Horloge",
+                            "key": "horloge042",
+                            "type": "code",
+                            "keyWords": "horloge time chronos chronos react component js datetime date",
+                            "description": " ",
+                            "content": [
+                                "[cmt]ReactJs",
+                                "[ssc]Props : String upperCase",
+                                "[cod]import React, {Component} from 'react';\n\nclass Horloge extends Component {\nstate = { horloge : '00 : 00 : 00' }\n\ncomponentDidMount() {\nsetTimeout(() => this.chronos() , 1000)\n}\n\nchronos() {\nconst date = new Date()\nconst time = [ this.format(date.getHours()),\nthis.format(date.getMinutes()),\nthis.format(date.getSeconds())]\n\nconst horloge = time.join(\" : \")\n\nthis.setState({horloge : horloge})\nsetTimeout(() => this.chronos() , 1000)\n}\n\nformat(nb) {\nif (nb < 10) return `0${nb}`\nelse return nb\n}\n\nrender() {\nreturn (<div>{this.state.horloge}</div>)\n}\n}\nexport default Horloge;"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Ip Info",
+                            "key": "ipInfoReact42",
+                            "type": "code",
+                            "keyWords": "ip info api react js",
+                            "description": " ",
+                            "content": [
+                                "[cmt]ReactJs",
+                                "[cod]componentDidMount() {\n    fetch('https://api.ipify.org?format=json')\n    .then(req => req.json())\n    .then(res => this.setState({ip:res.ip})\n    .then( res => {\n        fetch(`http://api.ipstack.com/${this.state.ip}?access_key=/* ICIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */`)\n        .then(req => req.json())\n        .then(res => this.setState({info:res}) )\n    })\n}"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Functions Js",
+                    "key": "Component042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Browser",
+                            "key": "browser042",
+                            "type": "code",
+                            "keyWords": "js browser function navigator navigateur nav firefox chrome ie edge modzilla",
+                            "description": "Determine le navigateur utilisé",
+                            "content": [
+                                "[cmt]Javascript",
+                                "[cod]const navigateur = () => {\n\n  let browser\n  const sUsrAg = navigator.userAgent\n\n  if (sUsrAg.indexOf(\"Firefox\") > -1) {\n    browser = \"Mozilla Firefox\";\n    // \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\"\n  } else if (sUsrAg.indexOf(\"SamsungBrowser\") > -1) {\n    browser = \"Samsung Internet\";\n    // \"Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36\n  } else if (sUsrAg.indexOf(\"Opera\") > -1 || sUsrAg.indexOf(\"OPR\") > -1) {\n    browser = \"Opera\";\n    // \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106\"\n  } else if (sUsrAg.indexOf(\"Trident\") > -1) {\n    browser = \"Microsoft Internet Explorer\";\n    // \"Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko\"\n  } else if (sUsrAg.indexOf(\"Edge\") > -1) {\n    browser = \"Microsoft Edge\";\n    // \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299\"\n  } else if (sUsrAg.indexOf(\"Chrome\") > -1) {\n    browser = \"Google Chrome or Chromium\";\n    // \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36\"\n  } else if (sUsrAg.indexOf(\"Safari\") > -1) {\n    browser = \"Apple Safari\";\n    // \"Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306\"\n  } else {\n    browser = \"unknown\";\n  }\n  \n  return browser\n\n}"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "convertisseur",
+                            "key": "converThis042",
+                            "type": "code",
+                            "keyWords": "js function convert binaire binary string",
+                            "description": "",
+                            "content": [
+                                "[cmt]Javascript",
+                                "[ssc]String to binary",
+                                "[cod]function convert(string) {\nlet binary\nfor (let i = 0; i < string.length; i++) {\nbinary += string[i].charCodeAt(0).toString(2)\n}\n}"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
