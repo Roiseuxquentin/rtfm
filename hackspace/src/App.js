@@ -45,10 +45,10 @@ class App extends Component {
       case "C0d3" :
         return <Wiki data={dataCode} select={this.state.select} />
         break
-      case "Defensif" :
+      case "Secu" :
         return <Wiki data={dataBlue} select={this.state.select} />
         break
-      case "Offensif" :
+      case "Hack" :
         return <Wiki data={dataRed} select={this.state.select} />
         break
       case "tools" :

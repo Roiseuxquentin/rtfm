@@ -413,14 +413,71 @@
                             "type": "categorie",
                             "children": [
                                 {
+                                    "title": "Information Machine",
+                                    "key": "infoMachine042",
+                                    "type": "code",
+                                    "keyWords": "bash linux cmd info information system os",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]OS",
+                                        "[cod]cat /etc/issue",
+                                        "[cmt]OS",
+                                        "[cod]"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Launcher",
+                                    "key": "launcher042",
+                                    "type": "code",
+                                    "keyWords": "bash linux cmd launcher starter start",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]Start COMMAND, and kill it if still running after 5 seconds",
+                                        "[cod]timeout 5s COMMAND"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Rated",
+                                    "key": "mostUsed042",
+                                    "type": "code",
+                                    "keyWords": "bash linux cmd most frequence rate process",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]CMD rating",
+                                        "[lnk]https://www.commandlinefu.com/commands/browse/sort-by-votes",
+                                        "[cmt]Commandes les plus utilisé dans le terminal.",
+                                        "[cod]history | awk '{a[$2]++}END{for(i in a){print a[i] \" \" i}}' | sort -rn | head",
+                                        "[cmt]Display the top ten running processes - sorted by memory usage",
+                                        "[cod]ps aux | sort -nk +4 | tail"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "DELETE",
+                                    "key": "deleted042",
+                                    "type": "code",
+                                    "keyWords": "bash linux cmd supression delete kill",
+                                    "description": "",
+                                    "content": [
+                                        "[cmt]Delete all files in a folder that don't match a certain file extension",
+                                        "[cod]rm !(*.foo|*.bar|*.baz)",
+                                        "[cmt]Delete les dossiers vident",
+                                        "[cod]find . -type d -empty -delete"
+                                    ],
+                                    "children": []
+                                },
+                                {
                                     "title": "SED",
                                     "key": "sed042",
                                     "type": "code",
-                                    "keyWords": "bash linux sed replace pattern change",
+                                    "keyWords": "line bash linux sed replace pattern change",
                                     "description": "",
                                     "content": [
-                                        "[scc]replace occurance",
-                                        "[cod]In Progress.."
+                                        "[scc]print une ligne",
+                                        "[cod]sed -n 5p <file>",
+                                        "[ssc]in progress"
                                     ],
                                     "children": []
                                 },
@@ -431,8 +488,9 @@
                                     "keyWords": "bash linux find extract extraire filtre filter",
                                     "description": "",
                                     "content": [
-                                        "[scc]find occurance",
-                                        "[cod]In Progress.."
+                                        "[scc]Cherche un pattern dans tous le dossier",
+                                        "[scc]This is how I typically grep. -R recurse into subdirectories, -n show line numbers of matches, -i ignore case, -s suppress \"doesn't exist\" and \"can't read\" messages, -I ignore binary files (technically, process them as having no matches, important for showing inverted results with -v) I have grep aliased to \"grep --color=auto\" as well, but that's a matter of formatting not function.",
+                                        "[cod]grep -RnisI <pattern> *"
                                     ],
                                     "children": []
                                 }
@@ -741,7 +799,7 @@
                     ]
                 },
                 {
-                    "title": "Shell Style",
+                    "title": "Shell Tips",
                     "key": "ShellStyle042",
                     "type": "categorie",
                     "children": [
@@ -759,6 +817,30 @@
                             "children": []
                         },
                         {
+                            "title": "Arborescence",
+                            "key": "arborescence042",
+                            "keyWords": "shell cmd tree arnorescence display ls folder sub-directories",
+                            "type": "code",
+                            "description": "Prints a graphical directory tree from your current directory Show Sample Output",
+                            "content": [
+                                "[cod]ls -R | grep \":$\" | sed -e 's/:$//' -e 's/[^-][^\\/]*\\//--/g' -e 's/^/ /' -e 's/-/|/'"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Progress Information",
+                            "key": "progressInf042",
+                            "keyWords": "shell cmd copy progress terminal",
+                            "type": "code",
+                            "description": "Copy a file using pv and watch its progress",
+                            "content": [
+                                "[cmt]pv",
+                                "[cod]man pv",
+                                "[cod]pv sourcefile > destfile"
+                            ],
+                            "children": []
+                        },
+                        {
                             "title": "Simulate typing",
                             "key": "typingShell042",
                             "keyWords": "shell cmd pimp style matrix type typing keyboard terminal",
@@ -768,6 +850,17 @@
                                 "[cmt]pv",
                                 "[cod]sudo apt install pv",
                                 "[cod]echo \"No tech == No futur ! ! !\" | pv -qL 10"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Sav 2 IMG",
+                            "key": "outputImg042",
+                            "keyWords": "shell cmd img png output",
+                            "type": "code",
+                            "description": "save command output to image",
+                            "content": [
+                                "[cod]ifconfig | convert label:@- ip.png"
                             ],
                             "children": []
                         },
@@ -819,6 +912,18 @@
                             "children": []
                         },
                         {
+                            "title": "Temperature CPU",
+                            "key": "cpuTemp042",
+                            "keyWords": "hardware temp temperature capteur degres linux",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cod]sudo apt install lm-sensors",
+                                "[cod]sensors | grep °"
+                            ],
+                            "children": []
+                        },
+                        {
                             "title": "Shell Player",
                             "key": "ShellPlayer042",
                             "keyWords": "shell cmd terminal lecteur player vlc mplayer youtube",
@@ -840,6 +945,53 @@
                             "children": []
                         }
                     ]
+                },
+                {
+                    "title": "Fun Troll & EasterEggs",
+                    "key": "easterEggs042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Google",
+                            "key": "googlEggs042",
+                            "keyWords": "fun google url easter eggs",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cmt]Chuck Norris",
+                                "[ssc]tape sur j'ai de la chance",
+                                "[cod]trouver Chuck Norris",
+                                "[cmt]Coeur",
+                                "[cod]sqrt(cos(x))*cos(300x)+sqrt(abs(x))-0.7) *(4-x*x)^0.01, sqrt(6-x^2), -sqrt(6-x^2) from -4.5 to 4.5",
+                                "[ssc]Resultat qui tombe :",
+                                "[ssc]taper sur j'ai de la chance",
+                                "[cod]google gravity",
+                                "[ssc]Resultat qui tourne :",
+                                "[cod]do a barrel roll",
+                                "[ssc]Resultat qui penche :",
+                                "[cod]askew",
+                                "[lnk]https://www.google.fr",
+                                "[cmt]Game",
+                                "[cod]pacman",
+                                "[cod]solitaire",
+                                "[cod]tic tac toe",
+                                "[cod]roll a die",
+                                "[lnk]https://www.google.fr",
+                                "[ssc]Anniv Google",
+                                "[cod]Faites touner la roue pour l’anniversaire de Google",
+                                "[ssc]Pony Express",
+                                "[lnk]https://www.google.com/logos/2015/ponyexpress/ponyexpress15.html",
+                                "[ssc]Halloween",
+                                "[lnk]https://www.google.com/logos/2016/halloween16/halloween16.html?&hl=fr&host=www.google.fr",
+                                "[ssc]Zerg",
+                                "[lnk]https://elgoog.im/zergrush/",
+                                "[lnk]https://www.google.fr",
+                                "[cmt]Solfege",
+                                "[lnk]https://www.google.com/logos/2016/rockmore/rockmore16.html?&hl=fr&host=www.google.fr"
+                            ],
+                            "children": []
+                        }
+                    ]
                 }
             ]
         },
@@ -851,7 +1003,7 @@
             "children": [
                 {
                     "title": "Composants REACT",
-                    "key": "Component042",
+                    "key": "ComponentReactJs042",
                     "type": "categorie",
                     "children": [
                         {

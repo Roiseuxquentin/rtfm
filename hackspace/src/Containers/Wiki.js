@@ -61,14 +61,12 @@ class Wiki extends Component {
          
          <Nav pages={this.props.data.axes} selectedName={this.state.selected} selectedIndex={this.state.page} onChange={(event) => this.onChangePage(event)} />
 
-         {
-          (this.state.selected) ?
-          (<div className="corps fadeIn" >
-            <Sommaire data={this.props.data.axes[this.state.page]} mode />
-            <hr/>
-            <Content data={this.props.data.axes[this.state.page]} />
-          </div> ) : <div className="inMiddleScreen" ><img src={inProgress} /></div>
-         }
+         { (this.state.selected) ?
+            (<div className="corps fadeIn" >
+              <Sommaire data={this.props.data.axes[this.state.page]} mode />
+              <hr/>
+              <Content data={this.props.data.axes[this.state.page]} />
+            </div> ) : <div className="inMiddleScreen" ><img src={inProgress} /></div> }
 
 
             <Footer display={this.state.selected} />
