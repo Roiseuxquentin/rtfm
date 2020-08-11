@@ -115,6 +115,9 @@ select {
 .cursorDefault {
     cursor: default;
 }
+.cursorInterdit {
+  cursor: not-allowed;
+}
 .invisible {
   display: none;
 }

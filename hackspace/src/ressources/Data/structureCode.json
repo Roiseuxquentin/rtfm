@@ -117,22 +117,49 @@
                             "type": "categorie",
                             "children": [
                                 {
-                                    "title": "String",
+                                    "title": "Declare",
                                     "key": "string042",
                                     "type": "code",
                                     "keyWords": "",
                                     "description": "Declaration d'une variable de type sting.",
                                     "content": [
                                         "[cmt]JAVASCRIPT",
-                                        "[cod]let maVariable = 'hello World!'\nconst maVariableBis = 'byWorld'",
+                                        "[ssc]const pour les constantes , variable invariable une fois declaree",
+                                        "[ssc]let pour les variables pouvant etre redefinies, (type compteur incrementales etc..)",
+                                        "[ssc]var pour les anciennes syntax",
+                                        "[cod]let maVariable = 'hello World!'\nconst maVariableBis = 'byWorld'\nvar maVariable = \"eegloo\"\n alert(maVariable)\nconsole.log(maVariable)",
+                                        "[ssc]Fonction :",
+                                        "[cod]const maFonction = (argument) => {\n  return argument\n}\n\nfunction maFonction(argument){\n  return argument\n}\n\nmaFonction(\"hello\")",
+                                        "[code]const sum = new Function('a', 'b', 'return a + b')\n\nconsole.log(sum(2, 6))",
                                         "[cmt]PHP",
                                         "[cod]<?php \n $myVariable =  \"ceci est une chaîne simple\";\n?>",
+                                        "[ssc]Fonction :",
+                                        "[cod]<?php\n   function servir_cafe ($type = \"cappuccino\")\n {\n     return \"Servir un $type.\n\";\n    }\n\n   echo servir_cafe();\n   echo servir_cafe(null);\n   echo servir_cafe(\"espresso\");\n?>",
                                         "[cmt]C#",
                                         "[cod]string maVariable = \"La string du C!\";",
+                                        "[ssc]Fonction :",
+                                        "[cod]in Progress...",
                                         "[cmt]BASH",
                                         "[cod]STR=\"Hello World!\"",
+                                        "[ssc]Fonction :",
+                                        "[cod]#!/bin/bash\n\nfunction quit{\n   exit\n}\n\nfunction e{\n    echo$1\n}\n\ne Hello\ne World\nquit",
                                         "[cmt]PYTHON",
-                                        "[cod]maVariableString = 'Yo World!'"
+                                        "[cod]maVariableString = 'Yo World!'",
+                                        "[ssc]Fonction :",
+                                        "[cod]def my_function(argument):\n  print(argument + \" word!\")\n\nmy_function(\"Hello\")",
+                                        "[cmt]POWERSHELL",
+                                        "[ssc]Variables automatiques : \n$FALSE\n$TRUE\n$NULL\n$PWD",
+                                        "[ssc]Type de variables :",
+                                        "[ssc][datetime]    Date ou heure",
+                                        "[ssc][string] Chaîne de caractères",
+                                        "[ssc][char]    Un seul caractère",
+                                        "[ssc][double] Nombre flottant double précision",
+                                        "[ssc][single]  Nombre flottant simple précision",
+                                        "[ssc][int] Entier 32 bits",
+                                        "[ssc][Boolean]   Valeur True ou False (Vrai ou Faux)",
+                                        "[cod]$var=65\n[string]$var = 65\n$var=\"powershell\"\nWrite-Host \"classic $var string\"",
+                                        "[ssc]Fonction :",
+                                        "[cod]function ExecuteMe([string]$parameter1, [string]$parameter2) \n{ \n     Write-Host \"Executed\"\n}\nExecuteMe \"Value1\" \"Value2\""
                                     ],
                                     "children": []
                                 },
@@ -190,6 +217,61 @@
                             "type": "categorie",
                             "children": [
                                 {
+                                    "title": "Operateurs logiques",
+                                    "key": "Operateur042",
+                                    "type": "code",
+                                    "keyWords": "operateur logique algo et ou",
+                                    "description": " Logique de base pour articuler le code ",
+                                    "content": [
+                                        "[cmt]SQL",
+                                        "[ssc][ssc]=           Égale",
+                                        "[ssc]<>          Pas égale",
+                                        "[ssc]!=          Pas égale",
+                                        "[ssc]>           Supérieur à",
+                                        "[ssc]<           Inférieur à",
+                                        "[ssc]>=          Supérieur ou égale à",
+                                        "[ssc]<=          Inférieur ou égale à",
+                                        "[ssc]IN          Liste de plusieurs valeurs possibles",
+                                        "[ssc]BETWEEN     Valeur comprise dans un intervalle donnée (utile pour les nombres ou dates)",
+                                        "[ssc]LIKE        Recherche en spécifiant le début, milieu ou fin d'un mot.",
+                                        "[ssc]IS NULL     Valeur est nulle",
+                                        "[ssc]IS NOT NULL Valeur n'est pas nulle",
+                                        "[cmt]PYTHON",
+                                        "[ssc]==      égal à ",
+                                        "[ssc]!=      différent de (fonctionne aussi avec )",
+                                        "[ssc]>       strictement supérieur à ",
+                                        "[ssc]>=      supérieur ou égal à",
+                                        "[ssc]<       strictement inférieur à ",
+                                        "[ssc]<=      inférieur ou égal à",
+                                        "[cmt]BASH",
+                                        "[ssc]$variable1 = $variable2",
+                                        "[ssc]$variable1 == $variable2",
+                                        "[ssc]$variable1 != $variable2",
+                                        "[ssc]$variable1 < $variable2",
+                                        "[ssc]$variable1 > $variable2",
+                                        "[ssc]$variable1 >= $variable2",
+                                        "[ssc]$variable1 <= $variable2",
+                                        "[cmt]POWERSHELL",
+                                        "[ssc]-eq   Comparateur d’égalité   ",
+                                        "[ssc]-ne   'not equal to'  La valeur est True si les opérandes ne sont pas égales",
+                                        "[ssc]-ge   'greater than or equal' La valeur est True si l’opérande de gauche est supérieure ou égale à l’opérande de droite",
+                                        "[ssc]-gt   'greater than'  La valeur est True si l’opérande de gauche est strictement supérieure à l’opérande de droite",
+                                        "[ssc]-le   'less than or equal'    La valeur est True si l’opérande de gauche est inférieure ou égale à l’opérande de droite",
+                                        "[ssc]-lt   'less than' La valeur est True si l’opérande de gauche est strictement inférieure à l’opérande de droite",
+                                        "[ssc]-like et -notlike     Permet d’effectuer des comparaisons d’égalité de chaines de caractères en utilisant des wildcards:",
+                                        "[ssc]? pour désigner un seul caractère non spécifié",
+                                        "[ssc]* pour désigner un ou plusieurs caractères non spécifiés ",
+                                        "[ssc]ex: $var -like \"*uary\"",
+                                        "[ssc]-match et -notmatch       Permet de vérifier si une chaine de caractères respecte une expression régulière.",
+                                        "[ssc]ex: $string -match \"\\w\"",
+                                        "[ssc]-contains et -notcontains     Permet de tester si une valeur se trouve dans une liste.",
+                                        "[ssc]ex: $names = \"val1\", \"val2\", \"val3\" $names -Contains \"val2\"",
+                                        "[ssc]-is et -isnot     Permet de tester le type d’une variable .NET (même opérateur qu’en C#).",
+                                        "[ssc]ex: $stringToTest = \"chaine de caracteres\" ($stringToTest -is [System.String])"
+                                    ],
+                                    "children": []
+                                },
+                                {
                                     "title": "Boucles",
                                     "key": "Boucle042",
                                     "type": "code",
@@ -204,7 +286,9 @@
                                         "for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
                                         "[cmt]BASH",
                                         "[cod]while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
-                                        "[cod]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
+                                        "[cod]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone",
+                                        "[cmt]POWERSHELL",
+                                        "[lnk]http://nacta.fr/?p=190"
                                     ],
                                     "children": []
                                 },
@@ -217,6 +301,7 @@
                                     "content": [
                                         "[cmt]JS",
                                         "[cod]const expr = \"Papayas\"\n\nswitch (expr) {\n  case \"Oranges\":\n    console.log(\"Le prix des Oranges est de 1€.\")\n    break\n  case \"Mangoes\":\n  case \"Papayas\":\n    console.log(\"Le prix des Mangues et des Papayes est de 2€.\")\n    break\n  default:\n    console.log(`Dsl, aucun prix pour ${expr}.`)\n}",
+                                        "[cod](42 == 42) ? \"OK\" : \"NOK\" ",
                                         "[cmt]PYTHON",
                                         "[cod]a = 43\n\nif a > 43:\n    a = a + 1\nelif a == 43:\n    a = a - 1\nelse:\n    a = a * 2\n\n//========> a\n//========> 42",
                                         "[cmt]BASH",
@@ -224,23 +309,30 @@
                                         "[cod]nom=\"Jack\"\n\nif [ $nom = \"Jack\" ]\nthen\n        echo \"Salut Jack !\"\nelif [ encore_autre_test ]\nthen\n        echo \"Le deuxieme test a été vérifié\"\nelse\n        echo \"Aucun des tests précédents n'a été vérifié\"\nfi",
                                         "[cmt]C#",
                                         "[cod]if (string.IsNullOrEmpty(OpportunityNumber) || (OpportunityNumber.Length > 100))\n{\n\n}",
-                                        "[cod]if (float.IsNaN(montant))\n{\n\n}"
+                                        "[cod]if (float.IsNaN(montant))\n{\n\n}",
+                                        "[cmt]POWERSHELL",
+                                        "[cod]$var = 2\nif ($var -eq 1)\n{\n  Write-Host \"OK\"\n}\nelse  \n{\n  Write-Host \"KO\"\n}",
+                                        "[cod]$var = 2; if ($var -eq 1) { Write-Host \"OK\" } else { Write-Host \"KO\" };"
                                     ],
                                     "children": []
                                 },
                                 {
-                                    "title": "Operateurs logiques",
-                                    "key": "Operateur042",
+                                    "title": "Encrypted Format",
+                                    "key": "cryptype042",
                                     "type": "code",
-                                    "keyWords": "operateur logique algo et ou",
-                                    "description": " Logique de base pour articuler le code ",
+                                    "keyWords": "cryptage crack mdp format type sha sha1 md5 base64",
+                                    "description": "Format des types d'encryption",
                                     "content": [
-                                        "[cmt]SQL",
-                                        "[ssc]=           Égale\n<>          Pas égale\n!=          Pas égale\n>           Supérieur à\n<           Inférieur à\n>=          Supérieur ou égale à\n<=          Inférieur ou égale à\nIN          Liste de plusieurs valeurs possibles\nBETWEEN     Valeur comprise dans un intervalle donnée (utile pour les nombres ou dates)\nLIKE        Recherche en spécifiant le début, milieu ou fin d'un mot.\nIS NULL     Valeur est nulle\nIS NOT NULL Valeur n'est pas nulle",
-                                        "[cmt]PYTHON",
-                                        "[ssc]==      égal à \n!=      différent de (fonctionne aussi avec )\n>       strictement supérieur à \n>=      supérieur ou égal à\n<       strictement inférieur à \n<=      inférieur ou égal à",
-                                        "[cmt]BASH",
-                                        "[ssc]$variable1 = $variable2\n$variable1 == $variable2\n$variable1 != $variable2\n$variable1 < $variable2\n$variable1 > $variable2\n$variable1 >= $variable2\n$variable1 <= $variable2"
+                                        "[cmt]SHA256 64 char",
+                                        "[ssc]1a80b0691b696fe18dbc9e94722bc7bb2325d76078bda9fdd0c1760bd4cd9864",
+                                        "[cmt]SHA1 40 char",
+                                        "[ssc]8fc09b916932134fec2dd747a6f0d6e0de4c7e5f",
+                                        "[cmt]MD5 32 char",
+                                        "[ssc]b13082ea3fe2642f1fd1fb76de03058b",
+                                        "[cmt]BASE64 finit par =",
+                                        "[ssc]ZWxpdGU=",
+                                        "[cmt]MORSE",
+                                        "[ssc]. .-.. .. - ."
                                     ],
                                     "children": []
                                 }
@@ -325,18 +417,22 @@
                                     "keyWords": "serveur http access serv localhost",
                                     "description": "Serveur HTTP",
                                     "content": [
+                                        "[cmt]NodeJs",
+                                        "[cod]echo '{ \"private\": true }' > package.json",
+                                        "[cmt]Express",
+                                        "[cod]npm i express",
+                                        "[ssc]./server.js",
+                                        "[cod]const express = require('express')\nconst app = express()\n\nconst users = require('./user/users.js')\n\napp.use('/user', users)\n\nconst started = () => console.log('listening port : 424242 ')\napp.listen(424242, started)",
+                                        "[ssc]./user/users.js",
+                                        "[cod]const express = require('express')\nconst router = express.Router()\n\nrouter.put('/:name', (req, res) => {\n  res.send(`Hey ! my NAME is ${req.params.name}`)\n})\n\nrouter.delete('/:id(\\d+)', (req, res ) => {\n  res.send(`Hey it\\'s a DELETE ID ${req.params.id}`)\n})\n\nmodule.exports = router",
+                                        "[ssc]Display react build :",
+                                        "[cod]const express = require('express')\nconst path = require('path')\nconst app = express()\n\napp.use(express.static(path.join(__dirname, 'build')))\n\napp.get('/', function(req, res) {\n  res.sendFile(path.join(__dirname, 'build', 'index.html'))\n})\n\napp.listen(9000);",
+                                        "[cmt]http",
+                                        "[cod]const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)",
                                         "[cmt]PYTHON",
                                         "[cod]python -m SimpleHTTPServer <PORT>",
                                         "[ssc]$python3 server.py",
                                         "[cod]import http.server\n \nPORT = 8888\nserver_address = (\"\", PORT)\n\nserver = http.server.HTTPServer\nhandler = http.server.CGIHTTPRequestHandler\nhandler.cgi_directories = [\"/\"]\nprint(\"Serveur actif sur le port :\", PORT)\n\nhttpd = server(server_address, handler)\nhttpd.serve_forever()",
-                                        "[cmt]NODE JS",
-                                        "[cod]echo '{ \"private\": true }' > package.json",
-                                        "[cmt]express",
-                                        "[cod]const express = require('express')\n// const bodyParser = require('body-parser')\n// const cors = require('cors')\n\nconst app = express()\n\n// Middleware\n// app.use(bodyParser.urlencoded({ extended: true })) \n// app.use(cors())\n\napp.get('/', (req, res) => {\n\n    console.log(\"Ping\")\n\n   res.send('Pong' )\n\n})\n\napp.get('/data/:id', (request, res) => {\n   const argument = request.params\n\n console.log(\"data :\",argument)\n  res.json(argument)\n})\n\n app.post('/post', (req, res) => {\n  const argument = req.body.data\n\n  res.send(argument)\n    console.log('Data recus :', argument)\n\n})\n\napp.listen(8080, () => console.log('serveur sur le port 8080'))",
-                                        "[ssc]Display react build :",
-                                        "[cod]const express = require('express')\nconst path = require('path')\nconst app = express()\napp.use(express.static(path.join(__dirname, 'build')))\napp.get('/', function(req, res) {\n  res.sendFile(path.join(__dirname, 'build', 'index.html'))\n})\napp.listen(9000);",
-                                        "[cmt]http",
-                                        "[cod]const http = require('http')\n// https://devdocs.io/node/http\n\nconst handleRequest = (request, response) => {\n  console.log('Got a request on', request.url)\n  response.end('OK')\n}\n\nconst server = http.createServer(handleRequest)\n\nconst afterServerStart = () => console.log('listening on port 4242')\n\nserver.listen(4242, afterServerStart)",
                                         "[cmt]NGINX",
                                         "[ssc]Installation de la clef du dépôt Nginx",
                                         "[cod]wget http://nginx.org/keys/nginx_signing.key",
@@ -377,7 +473,12 @@
                                         "[cmt]PHP",
                                         "[cod]<?php\n\n$b = 3.1;\n$c = true;\nvar_dump($b, $c);\n\n?>",
                                         "[cmt]C#",
-                                        "[cod]throw new Exception(\"===========================\"+ refErpInstallateur.new_name.ToString() );"
+                                        "[cod]throw new Exception(\"===========================\"+ refErpInstallateur.new_name.ToString() );",
+                                        "[cmt]DOS",
+                                        "[scc]Stopper un processus",
+                                        "[cod]break",
+                                        "[scc]dBug",
+                                        "[cod]Try\n{\n    $arg= 3/0\n}\nCatch\n{\n    Write-Host \"Une erreur est survenue\"\n}"
                                     ],
                                     "children": []
                                 },
@@ -502,13 +603,60 @@
                             "type": "categorie",
                             "children": [
                                 {
-                                    "title": "ping",
-                                    "key": "pingWin042",
+                                    "title": "RTFM",
+                                    "key": "rtfmWin042",
                                     "type": "code",
-                                    "keyWords": "microsoft windows powershell",
+                                    "keyWords": "microsoft windows powershell cmd help aide manuel rtfm",
+                                    "description": "Obtenir la liste des options pour une commande",
+                                    "content": [
+                                        "[cmt]MANUEL",
+                                        "[cod]Get-Help <nom de la commande> ",
+                                        "[cod]<Commande> /?"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Copy Result",
+                                    "key": "cpyResultWin042",
+                                    "type": "code",
+                                    "keyWords": "microsoft windows powershell cmd copy press-papiers output",
+                                    "description": "Renvoie le résultat d’une commande dans le presse-papiers.",
+                                    "content": [
+                                        "[cod]clip"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Clear",
+                                    "key": "clearWin042",
+                                    "type": "code",
+                                    "keyWords": "microsoft windows powershell cmd clear clean",
+                                    "description": "Efface l'ecran du terminal",
+                                    "content": [
+                                        "[cod]cls"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "CAT",
+                                    "key": "catWin042",
+                                    "type": "code",
+                                    "keyWords": "microsoft windows powershell cmd cat display file txt shell",
+                                    "description": "Affiche le contenu d’un fichier texte.",
+                                    "content": [
+                                        "[cod]type file.txt"
+                                    ],
+                                    "children": []
+                                },
+                                {
+                                    "title": "Color",
+                                    "key": "colorWin042",
+                                    "type": "code",
+                                    "keyWords": "microsoft windows powershell cmd color shell ",
                                     "description": "",
                                     "content": [
-                                        "[cmt]In Progress.."
+                                        "[ssc] coloration du shell /?",
+                                        "[cod]color 5"
                                     ],
                                     "children": []
                                 }
@@ -616,8 +764,10 @@
                                 "[cod]npm install minimal-react",
                                 "[cod]minimal-react my-simple-react-example",
                                 "[cod]npm run dev",
-                                "[cmt]Style CSS for minimal react : 1 stall package u do & 2 webpack.config.js u put will code",
+                                "[cmt]Style CSS for minimal react :",
+                                "[ssc] 1 stall package u do ",
                                 "[cod]npm install style-loader",
+                                "[ssc] 2 webpack.config.js u put will code",
                                 "[cod]{\n  test: /\\.css$/,\n  use: [ 'style-loader', 'css-loader' ]\n}",
                                 "[cmt]Build",
                                 "[cod]npm run build"
@@ -722,8 +872,11 @@
                             "description": "",
                             "content": [
                                 "[cmt]IP PUBLIQUE",
-                                "[cod]ip a",
                                 "[cod]curl roiseux.fr",
+                                "[ssc]linux",
+                                "[cod]ip a",
+                                "[ssc]Dos",
+                                "[cod]ifconfig",
                                 "[cmt]IP LOCAL",
                                 "[cod]curl hostname -I",
                                 "[ssc]retrouver le script JS ",
@@ -774,12 +927,52 @@
             "img": "",
             "children": [
                 {
-                    "title": "Web Design",
+                    "title": "ISO",
+                    "key": "iso042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "LINUX",
+                            "key": "linuxIso042",
+                            "keyWords": "os linux pi system iso image boot unix debian raspian ubuntu mint",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cmt]Ubuntu",
+                                "[lnk]https://ubuntu.com/download",
+                                "[cmt]Linux Mint",
+                                "[lnk]https://www.linuxmint.com/download.php",
+                                "[cmt]Debian",
+                                "[lnk]https://www.debian.org/distrib/index.fr.html",
+                                "[cmt]Raspberry Pi",
+                                "[lnk]https://www.raspberrypi.org/downloads/raspberry-pi-os/",
+                                "[cmt]N900",
+                                "[lnk]https://www.fladnag.net/downloads/telephone/n900/",
+                                "[lnk]https://lea-linux.org/documentations/Flasher_firmware_Nokia_N900_Maemo"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "MICROSOFT",
+                            "key": "microsoftIso042",
+                            "keyWords": "os microsoft windows system iso image boot ",
+                            "type": "code",
+                            "description": "",
+                            "content": [
+                                "[cmt]Windows",
+                                "[lnk]https://www.microsoft.com/fr-fr/software-download/windows10ISO"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Design",
                     "key": "FrameWork042",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Integration Graphique",
+                            "title": "Web Graphisme",
                             "key": "IG042",
                             "keyWords": "design color icon icone veille inspi front",
                             "type": "code",
@@ -793,6 +986,20 @@
                                 "[lnk]https://www.flaticon.com/",
                                 "[cmt]Inspiration Veille",
                                 "[lnk]https://www.awwwards.com"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Art",
+                            "key": "arT042",
+                            "keyWords": "art inspi ascii dessin image images background",
+                            "type": "code",
+                            "description": "Create Free Mind Space",
+                            "content": [
+                                "[cmt]Ascii-Art",
+                                "[lnk]https://www.askapache.com/online-tools/figlet-ascii/",
+                                "[cmt]Devian Art",
+                                "[lnk]https://www.deviantart.com/"
                             ],
                             "children": []
                         }
@@ -1060,6 +1267,89 @@
                                 "[cmt]Javascript",
                                 "[ssc]String to binary",
                                 "[cod]function convert(string) {\nlet binary\nfor (let i = 0; i < string.length; i++) {\nbinary += string[i].charCodeAt(0).toString(2)\n}\n}"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Cookie",
+                            "key": "cookieJs042",
+                            "type": "code",
+                            "keyWords": "js function cookie trace",
+                            "description": "Cookies pour Visiteur",
+                            "content": [
+                                "[cmt] Set Cookie",
+                                "[cod]const = setCookie = (name,value,days) => {\n    const expire=new Date()\n    expire.setDate(expire.getDate()+days)\n    document.cookie=name+'='+escape(value)+'expires='+expire.toGMTString()\n    return true\n}",
+                                "[cmt] Get Cookie",
+                                "[cod]const getCookie = (name) => {\n    if(document.cookie.length>0)\n    {\n        let start=document.cookie.indexOf(name+\"=\")\n        let pos = start + name.length + 1\n        if (start!=0)\n        {\n            start=document.cookie.indexOf(\" \"+name+\"=\")\n            pos = start+name.length+3\n        }\n        if (start!=-1)\n        { \n            start=pos\n            end=document.cookie.indexOf(\"\",start)\n            if(end==-1)\n            {\n                end=document.cookie.length\n            }\n            return unescape(document.cookie.substring(start,end))\n        } \n    }\n    return ''\n}",
+                                "[cmt] Delete Cookie",
+                                "[ssc] call setCookie() et de mettre comme date d'expiration -1"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Anti Click&Select",
+                            "key": "bloClikNCurs042",
+                            "type": "code",
+                            "keyWords": "js function mouse cursor anti select selection click clik clic bloque block empecher bloquer",
+                            "description": "",
+                            "content": [
+                                "[cmt]Selection : ",
+                                "[ssc] Desactive la selection du texte sur le document",
+                                "[cod]document.onselectstart = new Function (\"return false\")",
+                                "[cmt]Click Gauche : ",
+                                "[ssc] Desactive le click gauche sur le document.",
+                                "[cod]document.onmousedown = new Function (\"return false\")",
+                                "[cmt]Click Droit :",
+                                "[ssc] Desactive le click droit sur le document.",
+                                "[cod]document.oncontextmenu = new Function(\"return false\")",
+                                "[cod]document.addEventListener('contextmenu', event => event.preventDefault())"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "PressPapier",
+                            "key": "042",
+                            "type": "code",
+                            "keyWords": "js function presspapier copy paste press-papier  ",
+                            "description": "",
+                            "content": [
+                                "[cod]// THX https://hackernoon.com///////////////////////\nconst copyToClipboard = str => {                  //\n  const el = document.createElement('textarea');  // Create a <textarea> element\n  el.value = str;                                 // Set its value to the string that you want copied\n  el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof\n  el.style.position = 'absolute';                 //\n  el.style.left = '-9999px';                      // Move outside the screen to make it invisible\n  document.body.appendChild(el);                  // Append the <textarea> element to the HTML document\n  const selected =                                //\n    document.getSelection().rangeCount > 0        // Check if there is any content selected previously\n      ? document.getSelection().getRangeAt(0)     // Store selection if found\n      : false;                                    // Mark as false to know no selection existed before\n  el.select();                                    // Select the <textarea> content\n  document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)\n  document.body.removeChild(el);                  // Remove the <textarea> element\n  if (selected) {                                 // If a selection existed before copying\n    document.getSelection().removeAllRanges();    // Unselect everything on the HTML document\n    document.getSelection().addRange(selected);   // Restore the original selection\n                                                  //\n  }                                               //\n}                                                 //\n// THX https://hackernoon.com///////////////////////"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "NodeJS",
+                    "key": "NodeJs042",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Serveur",
+                            "key": "srvNodeJs042",
+                            "type": "code",
+                            "keyWords": "arg server node nodejs serveur data post get",
+                            "description": " ",
+                            "content": [
+                                "[cmt]Express",
+                                "[cod]npm init",
+                                "[cod]npm install express body-parser cors",
+                                "[ssc]./server.js",
+                                "[cod]const express = require('express')\n// const bodyParser = require('body-parser')\n// const cors = require('cors')\n\nconst app = express()\n\n// Middleware\n// app.use(bodyParser.urlencoded({ extended: true })) \n// app.use(cors())\n\napp.get('/', (req, res) => {\n\n    console.log(\"Ping\")\n\n   res.send('Pong' )\n\n})\n\napp.get('/data/:id', (request, res) => {\n   const argument = request.params\n\n console.log(\"data :\",argument)\n  res.json(argument)\n})\n\n app.post('/post', (req, res) => {\n  const argument = req.body.data\n\n  res.send(argument)\n    console.log('Data recus :', argument)\n\n})\n\napp.listen(8080, () => console.log('serveur sur le port 8080'))",
+                                "[cmt]node server.js"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Run Cmd",
+                            "key": "nodeExeCmd042",
+                            "type": "code",
+                            "keyWords": "server node nodejs serveur cmd execute run system",
+                            "description": "Execute une commande system depuis Node",
+                            "content": [
+                                "[ssc]./run.js",
+                                "[cod]const { spawn } = require('child_process')\n\nconst cowSay = spawn('cowsay',['Yo'])\n\ncowSay.stdout.on('data', (data) => {\n   console.log(data)\n})",
+                                "[cmt]node run.js"
                             ],
                             "children": []
                         }
