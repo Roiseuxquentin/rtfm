@@ -2,25 +2,47 @@
     "axes": [
         {
             "title": "Syntax",
-            "key": "syntax042",
+            "key": "syntax043",
             "type": "categorie",
             "img": "",
             "children": [
                 {
-                    "title": "Trace",
-                    "key": "trace042",
+                    "title": "secure",
+                    "key": "securit043",
                     "type": "categorie",
                     "children": [
-                        {
-                            "title": "Signature",
-                            "key": "Signature042",
-                            "type": "categorie",
-                            "children": [
+                       
                                         {
-                                            "title": "Core",
-                                            "key": "coreID42",
+                                            "title": "MAC Adress",
+                                            "key": "macAdd043",
                                             "type": "code",
-                                            "keyWords": "Identite",
+                                            "keyWords": "secure macAdress mac adress adresse hardware serie numero",
+                                            "description": "",
+                                            "content": [
+                                                "[cmt]",
+                                                "[link]BASH Escape Ascii-Art",
+                                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
+                                            ],
+                                            "children": []
+                                        },
+                                        {
+                                            "title": "FireWall",
+                                            "key": "firewall043",
+                                            "type": "code",
+                                            "keyWords": "iptable firewall port secure",
+                                            "description": "",
+                                            "content": [
+                                                "[cmt]",
+                                                "[link]BASH Escape Ascii-Art",
+                                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
+                                            ],
+                                            "children": []
+                                        },
+                                        {
+                                            "title": "Files",
+                                            "key": "secureFile043",
+                                            "type": "code",
+                                            "keyWords": "image img file files secure meta data metadata",
                                             "description": "",
                                             "content": [
                                                 "[cmt]",
@@ -29,30 +51,22 @@
                                             ],
                                             "children": []
                                         }
-                            ]
-                        }
+                       
+                        
                     ]
                 },
                 {
-                    "title": "Algorithme",
-                    "key": "Algorithme042",
+                    "title": "Post Secure",
+                    "key": "PostSecure043",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "Boucles",
-                            "key": "Boucle042",
+                            "key": "Boucle043",
                             "type": "code",
                             "keyWords": "",
                             "description": " ",
                             "content": [
-                                "[cmt]JS",
-                                "[cod]let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
-                                "[cod]const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
-                                "[cmt]PYTHON",
-                                "[cod]x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
-                                "[cod]for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
-                                "[cmt]BASH",
-                                "[cod]while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
                                 "[code]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
                             ],
                             "children": []
@@ -60,24 +74,17 @@
                     ]
                 },
                 {
-                    "title": "Reseau",
-                    "key": "rzo042",
+                    "title": "Sentin'L",
+                    "key": "sauron043",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "IP",
-                            "key": "scanIp042",
+                            "key": "scanIp043",
                             "type": "code",
                             "keyWords": "",
                             "description": "",
                             "content": [
-                                "[cmt]IP PUBLIQUE",
-                                "[cod]ip a",
-                                "[cod]curl roiseux.fr",
-                                "[cmt]IP LOCAL",
-                                "[cmt]retrouver le script JS ",
-                                "[cmt]Scanner les IP sur le reseau local",
-                                "[cod]sudo arp-scan 192.168.0.1/24",
                                 "[cod]nmap -sP 192.168.0.1/24"
                             ],
                             "children": []
@@ -85,13 +92,13 @@
                     ]
                 },
                 {
-                    "title": "Tools",
-                    "key": "rTool042",
+                    "title": "Nettoyage",
+                    "key": "rTool043",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "Coding Check",
-                            "key": "codcheck042",
+                            "key": "codcheck043",
                             "type": "code",
                             "keyWords": "",
                             "description": "Outils de bonne pratique , verifie le code pondue.",
@@ -106,13 +113,13 @@
         },
         {
             "title": "Méthodes",
-            "key": "Methodes042",
+            "key": "Methodes043",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Webdddsaaa Design",
-                    "key": "FrameWordddkaaaa042",
+                    "key": "FrameWordddkaaaa043",
                     "type": "categorie",
                     "children": [
                         {
@@ -121,12 +128,6 @@
                             "type": "link",
                             "description": "Outils de developpements visuel, Images SVG, OpenSource",
                             "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/",
-                                "[lnkhttps://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
                                 "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                             ],
                             "children": []
@@ -137,24 +138,21 @@
         },
         {
             "title": "Scripts",
-            "key": "script042",
+            "key": "script043",
             "type": "categorie",
             "img": "",
             "children": [
                 {
-                    "title": "Webddd Design",
-                    "key": "FrameWordddk042",
+                    "title": "Iptable",
+                    "key": "scriptIptable043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Intedddddgration Graphique",
-                            "key": "IG0ddd42",
+                            "title": "HARD SHIELD",
+                            "key": "hardShieldIptable043",
                             "type": "link",
                             "description": "Outils de developpements visuel, Images SVG, OpenSource",
                             "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
                                 "[lnk]https://icones8.fr/"
                             ],
                             "children": []
@@ -165,27 +163,21 @@
         },
         {
             "title": "Ressources",
-            "key": "Ressources042",
+            "key": "Ressources043",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Web Design",
-                    "key": "FrameWork042",
+                    "key": "FrameWork043",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "Integration Graphique",
-                            "key": "IG042",
+                            "key": "IG043",
                             "type": "link",
                             "description": "Outils de developpements visuel, Images SVG, OpenSource",
                             "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/",
-                                "[lnk]https://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
                                 "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                             ],
                             "children": []
