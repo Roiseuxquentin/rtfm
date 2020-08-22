@@ -2,101 +2,431 @@
     "axes": [
         {
             "title": "Syntax",
-            "key": "syntax042",
+            "key": "syntax",
             "type": "categorie",
             "img": "",
             "children": [
                 {
-                    "title": "Trace",
-                    "key": "trace042",
+                    "title": "Lock Access",
+                    "key": "cryptMe043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Signature",
-                            "key": "Signature042",
-                            "type": "categorie",
-                            "children": [
-                                        {
-                                            "title": "Core",
-                                            "key": "coreID42",
-                                            "type": "code",
-                                            "keyWords": "Identite",
-                                            "description": "",
-                                            "content": [
-                                                "[cmt]",
-                                                "[link]BASH Escape Ascii-Art",
-                                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
-                                            ],
-                                            "children": []
-                                        }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Algorithme",
-                    "key": "Algorithme042",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Boucles",
-                            "key": "Boucle042",
+                            "title": "P4s$w0rD",
+                            "key": "passpass043",
                             "type": "code",
-                            "keyWords": "",
-                            "description": " ",
+                            "keyWords": "password pass cryptage crypter random aleatoire",
+                            "description": "Generate password",
                             "content": [
-                                "[cmt]JS",
-                                "[cod]let num = 0\n\nwhile (n < 3) {\n  n++;\n}",
-                                "[cod]const object = { a: 1, b: 2, c: 3 }\n\nfor (const property in object) {\n  console.log(`${property}: ${object[property]}`)\n}",
-                                "[cmt]PYTHON",
-                                "[cod]x = 1\nwhile x < 10:\n    print(\"x a pour valeur\", x)\n    x = x * 2\nprint(\"Fin\")\n\n//========> x a pour valeur 1\n//========> x a pour valeur 2\n//========> x a pour valeur 4\n//========> x a pour valeur 8\n//========> Fin",
-                                "[cod]for i in [0, 1, 2, 3]:\n\n    print(\"i a pour valeur\", i)\n\n\nfor i in range(3):\n    print(\"i a pour valeur\", i)\n\n//========> i a pour valeur 0\n//========> i a pour valeur 1\n//========> i a pour valeur 2\n    \nc = [\"element01\", \"element02\", \"element03\"]\nfor i in range(len(c)):\n    print(\"i vaut\", i, \"et c[i] vaut\", c[i])\n\n//========> i vaut 0 et c[i] vaut element01\n//========> i vaut 1 et c[i] vaut element02\n//========> i vaut 2 et c[i] vaut element03\n\nlen(c)\n//========> 3\n\nfor i in c:\n    print(\"i vaut\", i)\n\n//========> i vaut element01\n//========> i vaut element02\n//========> i vaut element03",
-                                "[cmt]BASH",
-                                "[cod]while [ -z $reponse ] || [ $reponse != 'oui' ]\ndo\n        read -p 'Dites oui : ' reponse\ndone",
-                                "[code]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
+                                "[cmt]Random",
+                                "[ssc]32 characters long",
+                                "[cod]openssl rand -base64 32",
+                                "[cod]date | md5sum",
+                                "[cod]date +%s | sha256sum | base64 | head -c 32 ; echo",
+                                "[cod]strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 32 | tr -d '\\n'; echo",
+                                "[cod]< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;",
+                                "[cod]tr -cd '[:alnum:]' < /dev/urandom | fold -w30 | head -n1",
+                                "[cod]< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c32"
+
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Chiffrement",
+                            "key": "chiffrement043",
+                            "type": "code",
+                            "keyWords": "chiffrement file fichier cryptage crypter secure",
+                            "description": "",
+                            "content": [
+                                "[cmt]Cloaker",
+                                "[ssc]Un outil pour chiffrer et déchiffrer vos documents sous Windows, Linux et Mac"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Brouilleur",
+                            "key": "brouilleur043",
+                            "type": "code",
+                            "keyWords": "brouilleur blur secure port spoofing spoof trap",
+                            "description": "",
+                            "content": [
+                                "[cmt]Portspoof",
+                                "[ssc]simulation de faux services sur des ports fermés"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "firewall",
+                            "key": "firewalLinux043",
+                            "type": "code",
+                            "keyWords": "iptable reseau port firewall secure",
+                            "description": "linux",
+                            "content": [
+                                "[cmt]Cloaker",
+                                "[ssc]Un outil pour chiffrer et déchiffrer vos documents sous Windows, Linux et Mac"
                             ],
                             "children": []
                         }
                     ]
                 },
                 {
-                    "title": "Reseau",
-                    "key": "rzo042",
+                    "title": "Monitoring",
+                    "key": "monit043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "IP",
-                            "key": "scanIp042",
+                            "title": "Surveillance Sytem",
+                            "key": "monitOs043",
+                            "type": "code",
+                            "keyWords": "os system monitoring surveillance analyse user connected",
+                            "description": "",
+                            "content": [
+                                "[cmt]current user connection",
+                                "[cod]who -aH",
+                                "[ssc]OU",
+                                "[cod]w",
+                                "[cmt]Get Security Information of Linux Process",
+                                "[cod]ps -eM",
+                                "[cmt]Big list open files, network connections and much more...",
+                                "[cod]lsof"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Surveillance reseaux",
+                            "key": "monitNetwork043",
                             "type": "code",
                             "keyWords": "",
                             "description": "",
                             "content": [
-                                "[cmt]IP PUBLIQUE",
-                                "[cod]ip a",
-                                "[cod]curl roiseux.fr",
-                                "[cmt]IP LOCAL",
-                                "[cmt]retrouver le script JS ",
-                                "[cmt]Scanner les IP sur le reseau local",
-                                "[cod]sudo arp-scan 192.168.0.1/24",
-                                "[cod]nmap -sP 192.168.0.1/24"
+                                "[cmt]traceroute and ping programs in a single network diagnostic tool.",
+                                "[cod]mtr",
+                                "[cmt]carte reseau",
+                                "[ssc]sudo iftop  <interface>",
+                                "[cod]sudo iftop wlp3s0",
+                                "[cmt]Socket Statistique",
+                                "[ssc]SS remplace netStat[depreciate]",
+                                "[cmt]all open network ports :",
+                                "[cod]ss -pl",
+                                "[cmt]List currently established, closed, orphaned and waiting TCP sockets",
+                                "[cod]ss -s",
+                                "[ssc]TCP Sockets :",
+                                "[cod]ss -t -a",
+                                "[ssc]UDP Sockets",
+                                "[cod]ss -u -a",
+                                "[ssc]RAW Sockets",
+                                "[cod]ss -w -a",
+                                "[ssc]UNIX Sockets",
+                                "[cod]ss -x -a",
+                                "[ssc]SMTP Connections",
+                                "[cod]ss -o state established '( dport = :smtp or sport = :smtp )'",
+                                "[ssc]HTTP&HTTPS Connections",
+                                "[cod]ss -o state established '( dport = :http or sport = :http )'",
+                                "[cod]ss -o state established '( dport = :https or sport = :https )'",
+                                "[cmt]NETSTAT windows",
+                                "[cod]netstat | findstr ESTABLISHED",
+                                "[cod]netstat | findstr LISTEN  ",
+                                "[cod]netstat | findstr CLOSE_WAIT  ",
+                                "[cod]netstat | findstr TIME_WAIT"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Surveillance Log",
+                            "key": "monitLog043",
+                            "type": "code",
+                            "keyWords": "log monitoring surveillance analyse logs",
+                            "description": "",
+                            "content": [
+                                "[cmt]Temps Reel",
+                                "[cod]sudo tail -n2 -f /lefichierde.log",
+                                "[cmt]LNAV",
+                                "[ssc]visualisateur de fichiers de logs libre et pratique",
+                                "[cmt]List of users who logged",
+                                "[ssc]from /var/log/wtmp",
+                                "[cod]last -ax",
+                                "[cmt]From Past",
+                                "[cod]journalctl",
+                                "[cod]journalctl -u network.service",
+                                "[cod]journalctl -u ssh.service",
+                                "[ssc]kernel message from current boot :",
+                                "[cod]journalctl -k"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Port",
+                            "key": "port043",
+                            "type": "code",
+                            "keyWords": "brouilleur blur stress secure port spoofing spoof trap",
+                            "description": "",
+                            "content": [
+                                "[cmt]psad",
+                                "[ssc]Linux Detect And Block Port Scan Attacks In Real Time",
+                                "[cod]sudo apt-get install psad"
                             ],
                             "children": []
                         }
                     ]
                 },
                 {
-                    "title": "Tools",
-                    "key": "rTool042",
+                    "title": "Analyse",
+                    "key": "forensic043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Coding Check",
-                            "key": "codcheck042",
+                            "title": "History",
+                            "key": "cmdhisto043",
+                            "type": "code",
+                            "keyWords": "cmd history forensic date commande",
+                            "description": "date + heure pour l'historique des commandes",
+                            "content": [
+                                "[cmt]%F date format %Y-%m-%d",
+                                "[cmt]%T heure format (%H:%M:%S).",
+                                "[cod]export HISTTIMEFORMAT='%F %T '",
+                                "[cod]history"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Logs",
+                            "key": "logAnalyse043",
+                            "type": "code",
+                            "keyWords": "log logs analyse auth trace historique",
+                            "description": "",
+                            "content": [
+                                "[cmt]Log",
+                                "[ssc]Total size :",
+                                "[cod]du -sh /var/log/journal/",
+                                "[ssc]Archive et rafraichis les logs :",
+                                "[cod]sudo journalctl --rotate",
+                                "[ssc]Clear journal log older than N days :",
+                                "[cod]sudo journalctl --vacuum-time=2d",
+                                "[ssc]Failed and successful login attempts. (SSH, SUDO...) :",
+                                "[cod]sudo cat /var/log/auth.log",
+                                "[ssc] Where whole system logs or current activity logs are available.",
+                                "[cod]sudo cat /var/log/message",
+                                "[ssc] Kernel logs.",
+                                "[cod]sudo cat /var/log/kern.log",
+                                "[ssc] Crond logs (cron job).",
+                                "[cod]sudo cat /var/log/cron.log",
+                                "[ssc] Mail server logs.",
+                                "[cod]sudo cat /var/log/maillog",
+                                "[ssc] System boot log.",
+                                "[cod]sudo cat /var/log/boot.log",
+                                "[ssc] MySQL database server log file.",
+                                "[cod]sudo cat /var/log/mysqld.log",
+                                "[ssc] Login records file.",
+                                "[cod]sudo cat /var/log/wtmp",
+                                "[ssc] Apache",
+                                "[cod]sudo cat /var/log/apache2/access.log",
+                                "[ssc] Apache",
+                                "[cod]sudo cat /var/log/apache2/error.log"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "metaData",
+                            "key": "img043",
+                            "type": "code",
+                            "keyWords": "metadata forensic img clean cleaning jpeg png exif data clear jhead exiftool",
+                            "description": "",
+                            "content": [
+                                "[cmt]exiftool",
+                                "[ssc]install :",
+                                "[cod]sudo apt-get install libimage-exiftool-perl",
+                                "[ssc]read metaData :",
+                                "[cod]exiftool image.jpeg",
+                                "[ssc]remove all metaData :",
+                                "[cod]exiftool -all= image.jpeg",
+                                "[cmt]jhead",
+                                "[ssc]ability to remove non-image metadata from JPEG files",
+                                "[cod]man jhead"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Mails",
+                            "key": "mails043",
+                            "type": "code",
+                            "keyWords": "mails pattern forensic",
+                            "description": "",
+                            "content": [
+                                "[cmt]mailsniper",
+                                "[ssc]mail search by pattern"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Reconnaissance Facial",
+                            "key": "reconnaissanceFacial043",
+                            "type": "code",
+                            "keyWords": "forensic visage face reconnaissance identite id identy irl hardware",
+                            "description": "recherche sur le web a partir d'un visage en photo",
+                            "content": [
+                                "[ssc]Google russe",
+                                "[lnk]https://yandex.ru/images/"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Anonymisation",
+                    "key": "anonymisationMetodo043",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "PROXY",
+                            "key": "proxy043",
                             "type": "code",
                             "keyWords": "",
-                            "description": "Outils de bonne pratique , verifie le code pondue.",
+                            "description": "intermédiaire placer entre deux hôtes",
                             "content": [
-                                "[cmt]Lint , travis .."
+                                "[cmt]proxy",
+                                "[ssc]"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "VPN",
+                            "key": "vpn043",
+                            "type": "code",
+                            "keyWords": "vpn proxy prive private network ip hide secure",
+                            "description": "Virtual Private Network",
+                            "content": [
+                                "[cmt]service de VPN communautaire, gratuit et anonyme",
+                                "[ssc]PenguinProxy",
+                                "[lnk]https://www.penguinproxy.com/"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "TOR",
+                            "key": "tor043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]TOR",
+                                "[ssc]"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Communication",
+                            "key": "chatAnonym043",
+                            "type": "code",
+                            "keyWords": "crypter cryptage chat anonyme communication",
+                            "description": "",
+                            "content": [
+                                "[cmt]CHAT TOTALEMENT CRYPTER ANONYME",
+                                "[ssc]darkwire",
+                                "[lnk]https://darkwire.io/"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Navigateur",
+                            "key": "chatAnonym043",
+                            "type": "code",
+                            "keyWords": "navigateur browser firefox chrome explorer config blur emprunte anonyme communication",
+                            "description": "",
+                            "content": [
+                                "[cmt]Firegloves",
+                                "[ssc]Brouiller l'emprunte config du navigateur"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "MAC address",
+                            "key": "MACAnonym043",
+                            "type": "code",
+                            "keyWords": "MAC addr address adresse mac macaddr ip",
+                            "description": "",
+                            "content": [
+                                "[cmt]Network devices",
+                                "[cod]ip link show",
+                                "[cmt]Stop interface reseau",
+                                "[cod]sudo ip link set dev <your device here> down",
+                                "[ssc]OU",
+                                "[cod]sudo /etc/init.d/networking stop",
+                                "[cmt]Ifconfig",
+                                "[cod]sudo ip link set dev <your device here> address <your new mac address>",
+                                "[cmt]MacChanger",
+                                "[cod]sudo apt-get install macchanger",
+                                "[ssc]addr random , mm gamm",
+                                "[cod]macchanger --another eth1",
+                                "[cmt]Start interface réseau",
+                                "[cod]sudo ip link set dev <your device here> up",
+                                "[ssc]OU",
+                                "[cod]sudo /etc/init.d/networking start"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Nettoyage",
+                    "key": "cleaning043",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Remove",
+                            "key": "deleted042",
+                            "type": "code",
+                            "keyWords": "bash linux rm cmd supression delete kill",
+                            "description": "",
+                            "content": [
+                                "[cmt]RM Super Sayan",
+                                "[cod]shred -zu filename",
+                                "[cmt]Delete empty folder",
+                                "[cod]find . -type d -empty -delete"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Packets",
+                            "key": "deleted043",
+                            "type": "code",
+                            "keyWords": "bash linux rm packets supression delete kill clean cleaning space remove",
+                            "description": "Linux",
+                            "content": [
+                                "[cmt]Cache Size",
+                                "[cod]sudo du -sh /var/cache/apt",
+                                "[cmt]clean",
+                                "[cod]sudo apt clean",
+                                "[cod]sudo apt autoclean",
+                                "[cod]sudo apt autoremove",
+                                "[cmt]Snap lib",
+                                "[ssc]folder size",
+                                "[cod]du -h /var/lib/snapd/snaps",
+                                "[ssc]Snaps useless if apt used",
+                                "[cod]Sudo apt autoremove snapd ",
+                                "[cod]Sudo apt autoremove --purge snapd",
+                                "[ssc]fr désactivé",
+                                "[cod]snap list --all | awk 'BEGIN {print \"#! /bin/sh\\n\"} ; /désactivé/ {print \"snap remove \"$1\" --revision \"$3\"\\n\"} ; END {print \"exit 0\"}' > script && chmod +x script && ./script && rm script && echo && snap list --all && echo && df -Th",
+                                "[ssc]en disabled",
+                                "[cod]snap list --all | awk 'BEGIN {print \"#! /bin/sh\\n\"} ; /disabled/ {print \"snap remove \"$1\" --revision \"$3\"\\n\"} ; END {print \"exit 0\"}' > script && chmod +x script && ./script && rm script && echo && snap list --all && echo && df -Th",
+                                "[ssc]Then",
+                                "[cod]sudo apt update && apt upgrade"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "OS",
+                            "key": "043",
+                            "type": "code",
+                            "keyWords": "bash linux rm supression delete clean cleaning space remove poubelle bin thumbnails sauvegarde cache",
+                            "description": "linux",
+                            "content": [
+                                "[cmt]vidange poubelle",
+                                "[cod]rm -r -f ~/.local/share/Trash/*/*",
+                                "[cmt]Fichiers de sauvegarde",
+                                "[cod]find ~/ -name '*~' ",
+                                "[cod]find ~/ -name '*~' -print0 | xargs -0 rm",
+                                "[cmt]thumbnails cache",
+                                "[cod]rm -rf ~/.cache/thumbnails/*"
                             ],
                             "children": []
                         }
@@ -106,56 +436,169 @@
         },
         {
             "title": "Méthodes",
-            "key": "Methodes042",
+            "key": "Methodes",
             "type": "categorie",
             "img": "",
             "children": [
                 {
-                    "title": "Webdddsaaa Design",
-                    "key": "FrameWordddkaaaa042",
+                    "title": "méT0D0",
+                    "key": "meTodo043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Intedddddgraaaation Graphique",
-                            "key": "IG0ddd42aaaaa",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "title": "Serveur",
+                            "key": "servtodo043",
+                            "type": "code",
+                            "keyWords": "serveur todo metode pratiques bonnes secure",
+                            "description": " ",
                             "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/",
-                                "[lnkhttps://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
-                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                                "[code]foe"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Rdy 4 P0wn",
+                            "key": "saveAss043",
+                            "type": "code",
+                            "keyWords": "save hide secure todo metode pratiques bonnes secure",
+                            "description": " ",
+                            "content": [
+                                "[code]foe"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Sh3rlocKed",
+                            "key": "reverseatak043",
+                            "type": "code",
+                            "keyWords": "save reverse find post forensic secure todo metode pratiques bonnes secure",
+                            "description": " ",
+                            "content": [
+                                "[code]foe"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Ubiquiste",
+                            "key": "ubiquiste043",
+                            "type": "code",
+                            "keyWords": "save surveillance monitoring reseaux port etablished current actual actuel connection socket hide secure todo metode pratiques bonnes secure",
+                            "description": " ",
+                            "content": [
+                                "[code]foe"
                             ],
                             "children": []
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "title": "Scripts",
-            "key": "script042",
-            "type": "categorie",
-            "img": "",
-            "children": [
+                },
                 {
-                    "title": "Webddd Design",
-                    "key": "FrameWordddk042",
+                    "title": "System",
+                    "key": "os043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Intedddddgration Graphique",
-                            "key": "IG0ddd42",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "title": "Distrib",
+                            "key": "distrib043",
+                            "type": "code",
+                            "keyWords": "os unix linux tails anonyme system incognito",
+                            "description": "",
                             "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/"
+                                "[cmt]The Amnesic Incognito Live System ",
+                                "[ssc]Tails",
+                                "[lnk]https://tails.boum.org/install/"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Virtual Machine",
+                            "key": "vm043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]VM",
+                                "[ssc]bla"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Post-Install",
+                            "key": "postInstall043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]KALI",
+                                "[ssc]todo"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "ShielD",
+                    "key": "securit043",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "FireWall",
+                            "key": "firewall043",
+                            "type": "code",
+                            "keyWords": "iptable firewall port secure",
+                            "description": "",
+                            "content": [
+                                "[cmt]dd",
+                                "[link]BASH Escape Ascii-Art",
+                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "Files",
+                            "key": "secureFile043",
+                            "type": "code",
+                            "keyWords": "image img file files secure meta data metadata",
+                            "description": "",
+                            "content": [
+                                "[cmt]dd",
+                                "[link]BASH Escape Ascii-Art",
+                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Hid'N",
+                    "key": "PostSecure043",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Oo",
+                            "key": "Boucle0ss4ll3",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": " ",
+                            "content": [
+                                "[code]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Sentin'L",
+                    "key": "sauron043",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "IP",
+                            "key": "scanIp043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cod]nmap -sP 192.168.0.1/24"
                             ],
                             "children": []
                         }
@@ -165,28 +608,118 @@
         },
         {
             "title": "Ressources",
-            "key": "Ressources042",
+            "key": "Ressources",
             "type": "categorie",
             "img": "",
             "children": [
                 {
-                    "title": "Web Design",
-                    "key": "FrameWork042",
+                    "title": "Bonnes Pratiques",
+                    "key": "bonnePratique043",
                     "type": "categorie",
                     "children": [
                         {
-                            "title": "Integration Graphique",
-                            "key": "IG042",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
+                            "title": "SERVEUR",
+                            "key": "srv043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
                             "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/",
-                                "[lnk]https://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
-                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                                "[cmt]SOURCING"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Referenciel",
+                    "key": "ref",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Ethatique",
+                            "key": "etat",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]🇫🇷",
+                                "[ssc]ANSSI",
+                                "[lnk]https://www.ssi.gouv.fr/",
+                                "[ssc]CERT FR",
+                                "[lnk]https://www.cert.ssi.gouv.fr/",
+                                "[ssc]CyberMalveillance",
+                                "[lnk]https://www.cybermalveillance.gouv.fr/"
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Scripts",
+            "key": "Scripts",
+            "type": "categorie",
+            "img": "",
+            "children": [
+                {
+                    "title": "Iptables",
+                    "key": "FrameWordddk",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "HARD",
+                            "key": "hardFire043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "Autarcie",
+                            "content": [
+                                "[cmt]Kolor PTOTOalette & Nuances",
+                                "[cod]https://icones8.fr/"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "MEDIUM",
+                            "key": "middleFire043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]Kolor PTOTOalette & Nuances",
+                                "[cod]https://icones8.fr/"
+                            ],
+                            "children": []
+                        },
+                        {
+                            "title": "SOFT",
+                            "key": "softFire043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]Kolor PTOTOalette & Nuances",
+                                "[cod]https://icones8.fr/"
+                            ],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Clear",
+                    "key": "clearScript",
+                    "type": "categorie",
+                    "children": [
+                        {
+                            "title": "Snap Packets",
+                            "key": "hardFire043",
+                            "type": "code",
+                            "keyWords": "",
+                            "description": "",
+                            "content": [
+                                "[cmt]Delete old revision",
+                                "[ssc]snapCleaning.sh",
+                                "[cod]#!/bin/bash\n# Removes old revisions of snaps\n# CLOSE ALL SNAPS BEFORE RUNNING THIS\nset -eu\nsnap list --all | awk '/disabled/{print $1, $3}' |\n    while read snapname revision; do\n        snap remove \"$snapname\" --revision=\"$revision\"\n    done"
                             ],
                             "children": []
                         }

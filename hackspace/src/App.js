@@ -31,7 +31,7 @@ class App extends Component {
   constructor(props) {
       super(props)
       this.state = {
-          select : ""
+          select : "D3f"
       }
   }
 
@@ -45,7 +45,7 @@ class App extends Component {
       case "C0d3" :
         return <Wiki data={dataCode} select={this.state.select} />
         break
-      case "Secu" :
+      case "D3f" :
         return <Wiki data={dataBlue} select={this.state.select} />
         break
       case "Hack" :

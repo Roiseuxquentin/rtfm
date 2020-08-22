@@ -2,7 +2,7 @@
     "axes": [
         {
             "title": "Syntax",
-            "key": "syntax042",
+            "key": "syntax",
             "type": "categorie",
             "img": "",
             "children": [
@@ -562,6 +562,8 @@
                                     "keyWords": "bash linux cmd supression delete kill",
                                     "description": "",
                                     "content": [
+                                        "[cmt]RM Super Sayan",
+                                        "[cod]shred -zu filename",
                                         "[cmt]Delete all files in a folder that don't match a certain file extension",
                                         "[cod]rm !(*.foo|*.bar|*.baz)",
                                         "[cmt]Delete les dossiers vident",
@@ -668,7 +670,7 @@
         },
         {
             "title": "Méthodes",
-            "key": "Methodes042",
+            "key": "Methodes",
             "type": "categorie",
             "img": "",
             "children": [
@@ -922,7 +924,7 @@
         },
         {
             "title": "Ressources",
-            "key": "Ressources042",
+            "key": "Ressources",
             "type": "categorie",
             "img": "",
             "children": [
@@ -1204,7 +1206,7 @@
         },
         {
             "title": "Modules",
-            "key": "Scripts042",
+            "key": "Scripts",
             "type": "categorie",
             "img": "",
             "children": [

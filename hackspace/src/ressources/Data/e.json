@@ -2,7 +2,7 @@
     "axes": [
         {
             "title": "Syntax",
-            "key": "syntax",
+            "key": "syntax042",
             "type": "categorie",
             "img": "",
             "children": [
@@ -110,13 +110,13 @@
         },
         {
             "title": "Méthodes",
-            "key": "Methodes",
+            "key": "Methodes042",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Webdddsaaa Design",
-                    "key": "FrameWordddkaaaa",
+                    "key": "FrameWordddkaaaa042",
                     "type": "categorie",
                     "children": [
                         {
@@ -141,18 +141,18 @@
         },
         {
             "title": "Ressources",
-            "key": "Ressources",
+            "key": "Ressources042",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Web Design",
-                    "key": "FrameWork",
+                    "key": "FrameWork042",
                     "type": "categorie",
                     "children": [
                         {
                             "title": "Integration Graphique",
-                            "key": "IG",
+                            "key": "IG042",
                             "type": "link",
                             "description": "Outils de developpements visuel, Images SVG, OpenSource",
                             "content": [
@@ -172,13 +172,13 @@
         },
         {
             "title": "Scripts",
-            "key": "Scripts",
+            "key": "Scripts042",
             "type": "categorie",
             "img": "",
             "children": [
                 {
                     "title": "Wtotoign",
-                    "key": "FrameWordddk",
+                    "key": "FrameWordddk042",
                     "type": "categorie",
                     "children": [
                         {

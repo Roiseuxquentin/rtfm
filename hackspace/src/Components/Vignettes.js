@@ -16,7 +16,7 @@ import data from '../ressources/Data/categories.json'
 const Vignettes = ({onSelected}) => {
 
   const url = "http://127.0.0.1:3000/"
-  // const url = "http://88.127.234.194/"
+  //const url = "http://88.127.234.194/"
 
   const vignettes = (categories) => {
     return categories.map( (vignette,index) => {

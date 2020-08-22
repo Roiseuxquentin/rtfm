@@ -66,10 +66,10 @@
   background: black;
 }
 .footer:hover .footerLine {
-  height: 26px !important;
+  height: 29px !important;
 }
 .footer:hover {
-  height: 60px !important;
+  height: 65px !important;
 }
 .footer , .firstFooter {
   height: 30px;

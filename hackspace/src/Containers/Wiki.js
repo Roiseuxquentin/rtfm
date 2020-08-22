@@ -37,16 +37,16 @@ class Wiki extends Component {
     const selected = event.target.id
 
     switch (selected) {
-      case "syntax042" :
+      case "syntax" :
         this.setState({page : 0, selected : selected })
         break;
-      case "Methodes042" :
+      case "Methodes" :
         this.setState({page : 1, selected : selected  })
         break;
-      case "Ressources042" :
+      case "Ressources" :
         this.setState({page : 2, selected : selected  })
         break;
-      case "Scripts042" :
+      case "Scripts" :
         this.setState({page : 3, selected : selected  })
         break;
       default :
