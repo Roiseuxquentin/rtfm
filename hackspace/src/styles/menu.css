@@ -100,8 +100,21 @@
 }
 
 .firstFooterLine {
-  height: 26px !important;
+  height: 60px !important;
 }
 .firstFooter {
-  height: 60px !important;
+  height: 95px !important;
+}
+
+.footerDuFooter {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/*SOMMAIRE*/
+.sommaire {
+  min-height: 100vh;
 }

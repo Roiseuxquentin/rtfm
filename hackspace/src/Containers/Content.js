@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Link from '../Components/Link.js'
 import Breek from '../Components/Breek.js'
 
 // ################################################### 
@@ -34,9 +33,6 @@ const recursive = (parents) => {
 											{recursive(element.children)}
 										</div>)
 
-								} else if (element.type == "link") {
-									return <Link element={element} key={element.key} /> 
-								
 								} else {
 									return <Breek element={element} key={element.key} />
 								}

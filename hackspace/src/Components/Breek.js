@@ -49,7 +49,7 @@ const copyToClipboard = str => {                  //
 			<p className="codeDescription italic" >{element.description}</p>
 
 			{element.content.map((elt,index) => {
-
+				// subStr pour pour delete l identificateur [cod],[cmt]...
 				if (elt.includes('[cod]')) {
 					return (<pre key={index + Math.random()} style={{marginTop : "6px"}} >
 						<code className="finger code" onClick={(event)=> copyToClipboard(elt.substr(5)) } >
@@ -58,7 +58,7 @@ const copyToClipboard = str => {                  //
 						</pre>)
 				} else if (elt.includes('[lnk]')) {
 					return (<a key={index + Math.random()}
-								className="finger"
+								className="finger link"
 								style={{display : "flex",marginLeft : "15vw"}}
 							    href={elt.substr(5)}
 							    onClick={(event,elt)=> handleClick(event)} >

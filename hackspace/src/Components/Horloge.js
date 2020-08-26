@@ -12,7 +12,7 @@ import React, {Component} from 'react';
 // ###################################################
 
 class Horloge extends Component {
-  state = { horloge : '00 : 00 : 00' }
+  state = { horloge : false }
 
   componentDidMount() {
     setTimeout(() => this.chronos() , 1000)
@@ -36,7 +36,9 @@ class Horloge extends Component {
   }
 
   render() {
-    return (<div>{this.state.horloge}</div>)
+    if (this.state.horloge)
+      return (<div className="flex center white noMargin" ><p className="footerDuFooter textTyping" ><span>{this.state.horloge}</span></p></div>)
+    else return (<div />)
   }
 }
 

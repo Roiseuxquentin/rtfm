@@ -13,7 +13,8 @@ html {
 }
 
 a:visited {
-  text-decoration: none;
+  /*text-decoration: none;*/
+  /*color : none;*/
 }
 
 /*//////////////////////////////////////////////////////////////////*/
@@ -72,6 +73,8 @@ select {
   height: 15px;
 }
 
+.codeStep{  magin : 0; }
+
 /*//////////////////////////////////////////////////////////////////*/
 
 /*BASIC*/
@@ -100,8 +103,14 @@ select {
 .blue {
   color:#0265D6;
 }
+.blueTwitter {
+  color : #00acee;
+}
 .black {
   color:black;
+}
+.white {
+  color:white;
 }
 .casperColor {
   color : transparent;
@@ -138,6 +147,9 @@ select {
 }
 .marginB {
   margin-bottom: 30px;
+}
+.noMargin {
+  margin : none;
 }
 .noBorder {
   border:none !important;

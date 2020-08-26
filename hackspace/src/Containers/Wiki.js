@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
+import { AnimateOnChange } from 'react-animation'
 
 import Nav from './Nav.js'
 import Content from './Content.js'
 
 import Sommaire from '../Components/Menu/Sommaire.js'
+import Citation from '../Components/Citation.js'
+import Lycos from '../Components/Lycos.js'
 import Footer from '../Components/Menu/Footer.js'
-
-import inProgress from '../ressources/inProgress.png'
 
 // ################################################### 
 // #*/=============================================\*# 
@@ -21,19 +22,18 @@ import inProgress from '../ressources/inProgress.png'
 
 class Wiki extends Component {
   state = {
-    scrollPos : 0,
+    home : true,
     data : {},
     page : 0,
     selected : false
   }
 
   componentDidMount() {
-      this.setState({data : this.props.data })
+      this.setState({data : this.props.data , selected : false })
       document.getElementById("goTop").style.opacity = 0
   }
 
   onChangePage(event) {
-    let page
     const selected = event.target.id
 
     switch (selected) {
@@ -50,6 +50,7 @@ class Wiki extends Component {
         this.setState({page : 3, selected : selected  })
         break;
       default :
+        this.setState({page : 4, selected : false  })
         return
     }
   }
@@ -62,14 +63,22 @@ class Wiki extends Component {
          <Nav pages={this.props.data.axes} selectedName={this.state.selected} selectedIndex={this.state.page} onChange={(event) => this.onChangePage(event)} />
 
          { (this.state.selected) ?
-            (<div className="corps fadeIn" >
-              <Sommaire data={this.props.data.axes[this.state.page]} mode />
+            (<div className="corps" >
+              <AnimateOnChange><Sommaire data={this.props.data.axes[this.state.page]} mode /></AnimateOnChange>
               <hr/>
               <Content data={this.props.data.axes[this.state.page]} />
-            </div> ) : <div className="inMiddleScreen" ><img src={inProgress} /></div> }
+            </div> )
+             : (<AnimateOnChange>
+                  <Citation txt={this.props.data.citation} />
+                  <Lycos /> 
+                  </AnimateOnChange>) 
+          }
 
-
-            <Footer display={this.state.selected} />
+            <Footer display={this.state.selected}
+                    stack={this.props.data.stack}
+                    onSelected={(e) => {
+                      this.onChangePage({target : { id : "coquille"}})
+                      this.props.onSelected(e)}}  />
         </div>
       )
     } else {

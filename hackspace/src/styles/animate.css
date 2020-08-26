@@ -25,7 +25,7 @@ pre:active, code:active {
 
 /*FADE IN*/
 
-#contents *, .sommaire * {
+ .fadeIn * {
     -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera  */
        -moz-animation: fadein 0.7s; /* Firefox  */
         -ms-animation: fadein 0.7s; /* Internet Explorer */
@@ -121,18 +121,16 @@ pre:active, code:active {
 /*TEXT TYPING*/
 
 
-.typingCase {
-  width: 100%;
+.textTyping, .typingCase {
+  margin: 0;
 }
 
 .textTyping {
   position: absolute; 
-  top: 80vh;
   left: 50%;
  
   transform: translate(-50%,-50%);
   -webkit-transform:translate(-50%,-50%);
-  z-index: -2;
 }
 
 /*UNDERSCORE CLIGNOTANT*/
@@ -149,7 +147,7 @@ pre:active, code:active {
     color: transparent;
   }
   50% {
-    color: orange;
+    color: white;
   }
 }
 
@@ -158,7 +156,7 @@ pre:active, code:active {
     color: transparent;
   }
   50% {
-    color: orange;
+    color: white;
   }
 }
 
@@ -167,7 +165,7 @@ pre:active, code:active {
     color: transparent;
   }
   50% {
-    color: orange;
+    color: white;
   }
 }
 
@@ -176,7 +174,7 @@ pre:active, code:active {
     color: transparent;
   }
   50% {
-    color: orange;
+    color: white;
   }
 }
 
@@ -185,6 +183,9 @@ pre:active, code:active {
     color: transparent;
   }
   50% {
-    color: orange;
+    color: white;
   }
 }
+
+/*//////////////////////////////////////////////////////////////////*/
+/*FOOTER ICON*/

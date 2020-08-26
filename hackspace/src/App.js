@@ -1,7 +1,6 @@
   import React, {Component} from 'react'
 
 import Wiki from './Containers/Wiki.js'
-import HomePage from './Containers/HomePage.js'
 
 import dataCode from './ressources/Data/structureCode.json'
 import dataRed from './ressources/Data/structureRed.json'
@@ -31,32 +30,34 @@ class App extends Component {
   constructor(props) {
       super(props)
       this.state = {
-          select : "D3f"
+          select : "code",
+          data : dataCode
       }
   }
 
   onSelect(e) {
+    let data 
     const category = e.target.id
-    this.setState({ select : category })
+
+    switch (category) {
+      case "code" :
+        data = dataCode
+        break
+      case "secure" :
+        data = dataBlue
+        break
+      case "hack" :
+        data = dataRed
+        break
+      default :
+        break
+    }
+
+    this.setState({ select : category, data : data })
   }
 
   render() {
-    switch (this.state.select) {
-      case "C0d3" :
-        return <Wiki data={dataCode} select={this.state.select} />
-        break
-      case "D3f" :
-        return <Wiki data={dataBlue} select={this.state.select} />
-        break
-      case "Hack" :
-        return <Wiki data={dataRed} select={this.state.select} />
-        break
-      case "tools" :
-        return <Wiki data={dataRed} select={this.state.select} />
-        break
-      default :
-        return <HomePage onSelected={(e) => this.onSelect(e)} />
-    }
+    return <Wiki data={this.state.data} select={this.state.select}  onSelected={(e) => this.onSelect(e)} />
   }
 }
 

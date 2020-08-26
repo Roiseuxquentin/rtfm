@@ -27,7 +27,7 @@ class TextAnimated extends Component {
 
 	  if(this.state.compteur < this.props.string.length){
 	    let typing = this.state.typing + this.props.string.charAt(this.state.compteur)
-	    this.setState({typing : typing.toUpperCase() })
+	    this.setState({typing : typing })
 	  }else{
 	    this.setState({blink : "blinkingCursor"})
 	    return false
@@ -45,7 +45,7 @@ class TextAnimated extends Component {
 
 	render() {
 		return (
-		  <div className="typingCase"><h1 className="textTyping dontouch">{this.state.typing}{this.blinking()}</h1></div>
+		  <div className="typingCase  white"><p className="textTyping footerDuFooter">{this.state.typing}{this.blinking()}</p></div>
 		)
  	}
 }

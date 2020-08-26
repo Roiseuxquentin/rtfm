@@ -28,6 +28,7 @@ class Header extends Component {
 		this.setState({ pages : this.props.axes })
     	window.addEventListener('scroll', this.hiddenScrollingDown )
 	}
+
 	hiddenScrollingDown() {
 	    let windowY = window.scrollY;
 

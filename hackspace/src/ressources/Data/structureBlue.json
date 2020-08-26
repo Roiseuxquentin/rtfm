@@ -1,4 +1,6 @@
 {
+    "stack": "secure",
+    "citation": "Loi 1 : un robot ne peut porter atteinte à un être humain ni, restant passif, permettre qu'un être humain soit exposé au danger.[R]Loi 2 : un robot doit obéir aux ordres que lui donne un être humain, sauf si de tels ordres entrent en conflit avec la première loi.[R]Loi 3 : un robot doit protéger son existence tant que cette protection n'entre pas en conflit avec la première ou la deuxième loi.[R]#isaacAsimov",
     "axes": [
         {
             "title": "Syntax",
@@ -26,8 +28,11 @@
                                 "[cod]strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 32 | tr -d '\\n'; echo",
                                 "[cod]< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;",
                                 "[cod]tr -cd '[:alnum:]' < /dev/urandom | fold -w30 | head -n1",
-                                "[cod]< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c32"
-
+                                "[cod]< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c32",
+                                "[cmt]Convert",
+                                "[cod]echo -n \"myPassWord\" | md5sum",
+                                "[ssc]passing -1 will generate an MD5 password, -5 a SHA256 and -6 SHA512 :",
+                                "[cod]openssl passwd -6 -salt xyz  secretpass"
                             ],
                             "children": []
                         },
@@ -441,7 +446,7 @@
             "img": "",
             "children": [
                 {
-                    "title": "méT0D0",
+                    "title": "T0D0",
                     "key": "meTodo043",
                     "type": "categorie",
                     "children": [
@@ -674,8 +679,8 @@
                             "keyWords": "",
                             "description": "Autarcie",
                             "content": [
-                                "[cmt]Kolor PTOTOalette & Nuances",
-                                "[cod]https://icones8.fr/"
+                                "[cmt]Script Bash",
+                                "[cod]In progress"
                             ],
                             "children": []
                         },
@@ -686,8 +691,8 @@
                             "keyWords": "",
                             "description": "",
                             "content": [
-                                "[cmt]Kolor PTOTOalette & Nuances",
-                                "[cod]https://icones8.fr/"
+                                "[cmt]Script Bash",
+                                "[cod]In progress"
                             ],
                             "children": []
                         },
@@ -698,8 +703,8 @@
                             "keyWords": "",
                             "description": "",
                             "content": [
-                                "[cmt]Kolor PTOTOalette & Nuances",
-                                "[cod]https://icones8.fr/"
+                                "[cmt]Script Bash",
+                                "[cod]In progress"
                             ],
                             "children": []
                         }

@@ -1,4 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react';
+
+import TextAnimated from '../TextAnimated.js'
+import Horloge from '../Horloge.js'
+import Image from '../Image.js'
+import Ip from '../Ip.js'
 
 import gist from '../../ressources/gist.png'
 
@@ -13,53 +18,84 @@ import gist from '../../ressources/gist.png'
 // #.\=============================================/.#
 // ###################################################
 
-const Footer = (obj) => {
+class Footer extends Component {
 
-	const handleClick = (e) => {
-		e.preventDefault();
-		const url = e.target.name
-		window.open(url,'_blank');
-	}
+  constructor(props) {
+      super(props)
+      this.state = {
+        // url : "http://88.127.234.194/"
+        url : "http://127.0.0.1:3000/",
+        linksBoard : [{ id:"hack",
+                        src:"https://image.flaticon.com/icons/svg/18/18554.svg"
+                    },
+                    {   id:"secure",
+                        src:"/Img/protect.svg"
+                    },
+                    {   id:"code",
+                        src:"https://image.flaticon.com/icons/svg/645/645199.svg"
+                    },
+                    {   id:"github",
+                        name : "http://github.com/roiseuxquentin",
+                        src:"https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
+                    },
+                    {   id:"gist",
+                        name : "https://gist.github.com/Roiseuxquentin",
+                        src: gist }]
+      }
+  }
 
-      const linksBoard = [{     id:"codepen",
-                                name : "https://codepen.io/",
-                                className:"footerItem" ,
-                                src:"https://assets.codepen.io/t-1/internal/avatars/teams/default.png?format=auto&height=256&version=100000&width=256"
-                            },
-                            {   id:"shell",
-                                name : "http://roiseux.fr",
-                                className:"footerItem" ,
-                                src:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWoH1mBpYI0W9koIPeZi1X477y4ppIRjNJWg&usqp=CAU"
-                            },
-                            {   id:"back",
-                                name : "http://localhost:3000/",
-                                className:"footerBack" ,
-                                src:"https://www.shareicon.net/data/256x256/2015/12/17/688997_arrows_512x512.png"
-                            },
-                            {   id:"github",
-                                name : "http://github.com/roiseuxquentin",
-                                className:"footerItem" ,
-                                src:"https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
-                            },
-                            {   id:"gist",
-                                name : "https://gist.github.com/Roiseuxquentin",
-                                className:"footerItem" ,
-                                src: gist
-                            }]
+ action(e) {
+    e.preventDefault();
+    const url = e.target.name
+    const id = e.target.id
+    
 
-        return (<div className={!obj.display ? "firstFooter endStick" : "footer endStick"} >
-            <div className="flex center">                            
-                { linksBoard.map((btn,i) => <img onClick={(event) => handleClick(event) } 
-                                                key={i}
-                                                id={btn.id}
-                                                name = {btn.name}
-                                                className={btn.className} 
-                                                src={btn.src} />
-                 ) }
-                <div className={!obj.display ? "firstFooterLine" : "footerLine"} />
-            </div>
-        </div>)
+    if ((id == "hack") || (id == "secure") || (id == "code")) {
+        (id == "hack") ? this.setState({ footerLine : "noTech , no future.." }) : this.setState({footerLine : this.state.ip }) 
+        
+        //THX STACK OVER FLOW///////////////////////////////////////////
+         function array_move(arr, old_index, new_index) {             //  
+            if (new_index >= arr.length) {                            //  
+                var k = new_index - arr.length + 1;                   //  
+                while (k--) {                                         // 
+                    arr.push(undefined);                              //
+                }                                                     // 
+            }                                                         //
+            arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);    //
+            return arr; // for testing                                //
+        }                                                             //
+        ////////////////////////////////////////////////////////////////
 
+        const btnList = this.state.linksBoard.map(elt => elt.id )
+        const oldPlace = btnList.indexOf(id)
+        const btn = array_move(this.state.linksBoard, oldPlace, 2)
+        this.setState({linksBoard : btn })
+
+        document.getElementById("header").style.opacity = 1
+        document.getElementById("header").style.height = "130px"
+        document.getElementById("header").style.zIndex = "2";
+        this.props.onSelected(e)
+    } else {
+        window.open(url,'_blank');
+    } 
+ }
+
+    render() {
+        return (<div className={!this.props.display ? "firstFooter endStick " : "footer endStick"} >
+                    <div className="flex center fadeIn">   
+                        { this.state.linksBoard.map((btn,i) => <img onClick={(e) => this.action(e) } 
+                                                                    key={i}
+                                                                    id={btn.id}
+                                                                    name={(!!btn.name) ? btn.name : "" }
+                                                                    className={(i == 2) ? "footerBack" : "footerItem"} 
+                                                                    src={btn.src} /> ) }
+                        <div className={!this.props.display ? "firstFooterLine" : "footerLine"} />
+                    </div>
+
+            <div className="fadeIn" >{(this.props.stack == "code") ? <Horloge /> : (this.props.stack == "hack") ?  <TextAnimated string="noTech , no future.." up /> : <Ip />  }</div>
+                </div>
+                )
+    }
 }
 
-export default Footer
+export default Footer;

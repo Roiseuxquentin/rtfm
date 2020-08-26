@@ -1,4 +1,7 @@
 {
+    
+    "stack" : "hack",
+  "citation": "« J'entends la grenaille des lignes de code que Zlich tape comme on mitraille.[...] Il a son armurerie de softs a lui, accumulee sur dix ans, un tresor de guerre d'appli, de vers et de routines agressives qui percent les boucliers de securite par des failles minuscules et penetrent les serveurs comme de l'acide; Il a surtout sa banque de donnees mentale, caffie d'algorithmes qu'enrichit sans cesse une intelligence ultravive. Et pour finir, il carbure a la neuroine, ce qui coupe tout lag, toute pause: il deteste. » [R]Les furtifs  #Damasio",
     "axes": [
         {
             "title": "Syntax",
@@ -6,106 +9,6 @@
             "type": "categorie",
             "img": "",
             "children": [
-                {
-                    "title": "secure",
-                    "key": "securit043",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "MAC Adress",
-                            "key": "macAdd043",
-                            "type": "code",
-                            "keyWords": "secure macAdress mac adress adresse hardware serie numero",
-                            "description": "",
-                            "content": [
-                                "[cmt]dd",
-                                "[link]BASH Escape Ascii-Art",
-                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "FireWall",
-                            "key": "firewall043",
-                            "type": "code",
-                            "keyWords": "iptable firewall port secure",
-                            "description": "",
-                            "content": [
-                                "[cmt]dd",
-                                "[link]BASH Escape Ascii-Art",
-                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
-                            ],
-                            "children": []
-                        },
-                        {
-                            "title": "Files",
-                            "key": "secureFile043",
-                            "type": "code",
-                            "keyWords": "image img file files secure meta data metadata",
-                            "description": "",
-                            "content": [
-                                "[cmt]dd",
-                                "[link]BASH Escape Ascii-Art",
-                                "[cod]cat <<OSEF \n''''leDess1n'''Plein de quote \nOSEF "
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Post Secure",
-                    "key": "PostSecure043",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Oo",
-                            "key": "Boucle0ss4ll3",
-                            "type": "code",
-                            "keyWords": "",
-                            "description": " ",
-                            "content": [
-                                "[code]for variable in 'valeur1' 'valeur2' 'valeur3'\ndo\n        echo \"La variable vaut $variable\"\ndone"
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Sentin'L",
-                    "key": "sauron043",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "IP",
-                            "key": "scanIp043",
-                            "type": "code",
-                            "keyWords": "",
-                            "description": "",
-                            "content": [
-                                "[cod]nmap -sP 192.168.0.1/24"
-                            ],
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Nettoyage",
-                    "key": "cleqning043",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "--",
-                            "key": "codchsseck043",
-                            "type": "code",
-                            "keyWords": "",
-                            "description": "Outils de bonne pratique , verifie le code pondue.",
-                            "content": [
-                                "[cmt]Lint , travis .."
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
             ]
         },
         {
@@ -114,29 +17,7 @@
             "type": "categorie",
             "img": "",
             "children": [
-                {
-                    "title": "Webdddsaaa Design",
-                    "key": "FrameWordddkaaaa",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Intedddddgraaaation Graphique",
-                            "key": "IG0ddd42aaaaa",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
-                            "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/",
-                                "[lnkhttps://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
-                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
+                
             ]
         },
         {
@@ -145,29 +26,6 @@
             "type": "categorie",
             "img": "",
             "children": [
-                {
-                    "title": "Web Design",
-                    "key": "FrameWork",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Integration Graphique",
-                            "key": "IG",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
-                            "content": [
-                                "[cmt]Kolor Palette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/",
-                                "[lnk]https://www.flaticon.com/",
-                                "[cmt]BOOTSTAP CDN CSS",
-                                "[lnk]https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
             ]
         },
         {
@@ -176,26 +34,6 @@
             "type": "categorie",
             "img": "",
             "children": [
-                {
-                    "title": "Wtotoign",
-                    "key": "FrameWordddk",
-                    "type": "categorie",
-                    "children": [
-                        {
-                            "title": "Intedddddgration Graphique",
-                            "key": "IG0ddd42",
-                            "type": "link",
-                            "description": "Outils de developpements visuel, Images SVG, OpenSource",
-                            "content": [
-                                "[cmt]Kolor PTOTOalette & Nuances",
-                                "[lnk]https://www.color-hex.com/color-palettes/popular.php",
-                                "[cmt]Icone SVG",
-                                "[lnk]https://icones8.fr/"
-                            ],
-                            "children": []
-                        }
-                    ]
-                }
             ]
         }
     ]

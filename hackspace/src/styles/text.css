@@ -65,6 +65,11 @@
   text-decoration: none;
 }
 
+.link {
+  color : purple;
+  font-size: 11px;
+}
+
 /*CONTENT*/
 .categorie {
   text-decoration: underline;
@@ -102,14 +107,23 @@
 
 /*TEXT TYPING*/
 
-.textTyping, .blinkingCursor {
-  color: orange;
-  font-size: 1.8rem;
+.textTyping, .blinkingCursor , .footerDuFooter {
+  font-size: 1rem;
+  font-weight: 600;
   font-family: 'Helvetica',san-serif;
 }
 
 
 /*GENERIQUE*/
+
+.homeCitations {
+  /*font-family: 'Cinzel', serif;*/
+  font-size: 15px;
+}
+.homeAuteur {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+}
 
 .contentSpace {
   margin: auto;
@@ -118,13 +132,12 @@
   padding: 10px;
 }
 
-.dontouch {
-
-/*Not selected text*/
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; 
+.dontouch, body:not(.code) {
+  /*Not selected text*/
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; 
 }
