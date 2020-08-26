@@ -27,7 +27,7 @@ class Citation extends Component {
 		const formatCitation = citationSplited.map((elt,index) => { 
 					console.log(citationSplited.length)
 					return ( <p id="citation" 
-								className={(index == (citationSplited.length - 1)) ? "homeAuteur" : "homeCitations" } >{elt}<br/><br/></p>)
+								className={(index == (citationSplited.length - 1)) ? "homeAuteur purple" : "homeCitations" } >{elt}<br/><br/></p>)
 				})
 		return formatCitation
 	}

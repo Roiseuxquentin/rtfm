@@ -23,8 +23,8 @@ class Footer extends Component {
   constructor(props) {
       super(props)
       this.state = {
-        // url : "http://88.127.234.194/"
-        url : "http://127.0.0.1:3000/",
+        // url : "http://127.0.0.1:3000/",
+         url : "http://88.127.234.194/",
         linksBoard : [{ id:"hack",
                         src:"https://image.flaticon.com/icons/svg/18/18554.svg"
                     },
