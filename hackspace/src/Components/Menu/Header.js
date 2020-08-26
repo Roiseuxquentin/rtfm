@@ -82,7 +82,7 @@ class Header extends Component {
 	render() {
 		return (<div className="header" id="header" 
 					onMouseEnter={ () => this.display() } 
-					onMouseLeave={ () => this.hidden() } >
+					onMouseLeave={ () => (this.props.selected) ? this.hidden() : true } >
 			  		{ 	this.state.pages.map(page => <h1 id={page.key} 
 									key={page.key}
 									onClick={(event) => this.changePage(event)} >{page.title.toUpperCase()}</h1>) }
