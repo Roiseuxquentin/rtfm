@@ -3,9 +3,9 @@
 
 .lycos {
 	/*overflow: hidden;*/
-	z-index: 2;
+	z-index: 1;
 	position: absolute;
-	top: 210px;
+	top: 100px;
 	right: 5vw;
 	color: black;
 	text-align: start;

@@ -64,8 +64,8 @@ class Wiki extends Component {
 
          { (this.state.selected) ?
             (<div className="corps" >
-              <Lycos /> 
               <AnimateOnChange><Sommaire data={this.props.data.axes[this.state.page]} mode /></AnimateOnChange>
+              <Lycos /> 
               <hr/>
               <Content data={this.props.data.axes[this.state.page]} />
             </div> )
