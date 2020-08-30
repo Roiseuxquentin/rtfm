@@ -15,7 +15,7 @@ const recursive = (parents, lateral) => {
 
 	let marginSubTitle, marginLastTitle, indexage  
 
-	if (lateral) marginSubTitle = {marginLeft : "40px"}
+	marginSubTitle = (lateral) ? {marginLeft : "40px"} : {}
 
 
 	if ( parents.type == "categorie" ) {
@@ -35,8 +35,8 @@ const recursive = (parents, lateral) => {
 
 					if (element.type == "categorie") {
 						return ( 
-							<p key={element.key} >
-								<a href={`#${element.key}`} ><span className="subTitle " style={marginSubTitle} > {element.title}</span> </a>
+							<p key={element.key} style={{marginTop : "5px"}} >
+								<a href={`#${element.key}`} ><span className="subTitle " style={marginSubTitle} >{element.title}</span> </a>
 								<br/>  
 								{recursive(element.children, lateral)}
 							</p>	) 

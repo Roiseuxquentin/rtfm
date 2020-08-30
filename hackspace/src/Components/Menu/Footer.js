@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactTooltip from 'react-tooltip';
 
 import TextAnimated from '../TextAnimated.js'
 import Horloge from '../Horloge.js'
@@ -25,22 +26,22 @@ class Footer extends Component {
       this.state = {
         // url : "http://127.0.0.1:3000/",
          url : "http://88.127.234.194/",
-        linksBoard : [{ id:"hack",
-                        src:"https://image.flaticon.com/icons/svg/18/18554.svg"
-                    },
-                    {   id:"secure",
-                        src:"/Img/protect.svg"
-                    },
-                    {   id:"code",
-                        src:"https://image.flaticon.com/icons/svg/645/645199.svg"
-                    },
-                    {   id:"github",
-                        name : "http://github.com/roiseuxquentin",
-                        src:"https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
-                    },
-                    {   id:"gist",
-                        name : "https://gist.github.com/Roiseuxquentin",
-                        src: gist }]
+        linksBoard : [{   id:"secure",
+                            src:"https://image.flaticon.com/icons/svg/149/149464.svg"
+                        },
+                        {   id:"hack",
+                            src:"https://image.flaticon.com/icons/svg/2910/2910793.svg"
+                        },
+                        {   id:"code",
+                            src:"https://image.flaticon.com/icons/svg/2586/2586083.svg"
+                        },
+                        {   id:"github",
+                            name : "http://github.com/roiseuxquentin",
+                            src:"https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
+                        },
+                        {   id:"gist",
+                            name : "https://gist.github.com/Roiseuxquentin",
+                            src: gist }]
       }
   }
 
@@ -86,13 +87,16 @@ class Footer extends Component {
                         { this.state.linksBoard.map((btn,i) => <img onClick={(e) => this.action(e) } 
                                                                     key={i}
                                                                     id={btn.id}
+                                                                    data-tip={btn.id}
                                                                     name={(!!btn.name) ? btn.name : "" }
                                                                     className={(i == 2) ? "footerBack" : "footerItem"} 
                                                                     src={btn.src} /> ) }
                         <div className={!this.props.display ? "firstFooterLine" : "footerLine"} />
                     </div>
-
-            <div className="fadeIn" >{(this.props.stack == "code") ? <Horloge /> : (this.props.stack == "hack") ?  <TextAnimated string="noTech , no future.." up /> : <Ip />  }</div>
+                    <div className="fadeIn" >
+                        <ReactTooltip />
+                        {(this.props.stack == "code") ? <Horloge /> : (this.props.stack == "hack") ?  <TextAnimated string="noTech , no future.." up /> : <Ip />  }
+                    </div>
                 </div>
                 )
     }
