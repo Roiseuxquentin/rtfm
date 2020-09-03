@@ -60,7 +60,9 @@ const Sommaire = ({ data, mode, lateral }) => {
 					transition : `${mode ?  "1.5s" : "0.2s" }`, 
 					textAlign : `${lateral ?  "start" : "center" }`,
 					marginLeft : `${lateral ?  "30px" : "0px" }` ,
-					margin : `${lateral ?  "30px" : "50px" }` }
+					margin : `${lateral ?  "30px" : "50px" }` ,
+					marginTop : `${lateral ?  "30px" : "25px" }` 
+				}
 					
 	let categorieTitle = { visibility : `${lateral ? "visible" : "hidden" }` }
 	

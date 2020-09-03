@@ -6,6 +6,7 @@ import Content from './Content.js'
 
 import Sommaire from '../Components/Menu/Sommaire.js'
 import Citation from '../Components/Citation.js'
+import AddMe from '../Components/AddMe.js'
 import Lycos from '../Components/Lycos.js'
 import Footer from '../Components/Menu/Footer.js'
 
@@ -60,12 +61,14 @@ class Wiki extends Component {
       return (
         <div className="App">
          
-         <Nav pages={this.props.data.axes} selectedName={this.state.selected} selectedIndex={this.state.page} onChange={(event) => this.onChangePage(event)} />
+          <Nav pages={this.props.data.axes} selectedName={this.state.selected} selectedIndex={this.state.page} onChange={(event) => this.onChangePage(event)} />
 
-         { (this.state.selected) ?
+          <AddMe /> 
+          <Lycos /> 
+         
+          { (this.state.selected) ?
             (<div className="corps" >
               <AnimateOnChange><Sommaire data={this.props.data.axes[this.state.page]} mode /></AnimateOnChange>
-              <Lycos /> 
               <hr/>
               <Content data={this.props.data.axes[this.state.page]} />
             </div> )
@@ -74,11 +77,11 @@ class Wiki extends Component {
                   </AnimateOnChange>) 
           }
 
-            <Footer display={this.state.selected}
-                    stack={this.props.data.stack}
-                    onSelected={(e) => {
-                      this.onChangePage({target : { id : "coquille"}})
-                      this.props.onSelected(e)}}  />
+          <Footer display={this.state.selected}
+                  stack={this.props.data.stack}
+                  onSelected={(e) => {
+                    this.onChangePage({target : { id : "coquille"}})
+                    this.props.onSelected(e)}}  />
         </div>
       )
     } else {

@@ -9,7 +9,7 @@ import dataBlue from './ressources/Data/structureBlue.json'
 import './styles/App.css';
 import './styles/text.css';
 import './styles/animate.css';
-import './styles/search.css';
+import './styles/icones.css';
 import './styles/pics.css';
 import './styles/menu.css';
 import './styles/phone.css';
@@ -43,10 +43,10 @@ class App extends Component {
       case "code" :
         data = dataCode
         break
-      case "secure" :
+      case "securite" :
         data = dataBlue
         break
-      case "hack" :
+      case "audit" :
         data = dataRed
         break
       default :

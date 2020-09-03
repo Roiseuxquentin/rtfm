@@ -21,13 +21,13 @@ class Citation extends Component {
 	format() {
 		let citationSplited = this.props.txt.split("[R]")
 
-		if ((citationSplited > 1 ) && this.state.position != 'start' ) this.setState({position : "start"})
-		else if ( this.state.position != 'center' ) this.setState({position : "center"})
+		if ((citationSplited.length > 3 ) && this.state.position != 'start' ) this.setState({position : "start"})
+		else if ((citationSplited.length < 3 ) && this.state.position != 'center' ) this.setState({position : "center"})
 
 		const formatCitation = citationSplited.map((elt,index) => { 
 					console.log(citationSplited.length)
 					return ( <p id="citation" 
-								className={(index == (citationSplited.length - 1)) ? "homeAuteur purple" : "homeCitations" } >{elt}<br/><br/></p>)
+								className={(index == (citationSplited.length - 1)) ? "homeAuteur purple center" : "homeCitations" } >{elt}<br/><br/></p>)
 				})
 		return formatCitation
 	}

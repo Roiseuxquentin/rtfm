@@ -28,7 +28,7 @@ class Lycos extends Component {
 
   render() {
     return (
-      <div className="lycos" > 
+      <div id="lycos" > 
         <form id="lycosForm">
           <input  type="text" id="lycosBar" value={this.state.input}
                   onClick={() => this.setState({input : "" })}

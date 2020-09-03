@@ -1,5 +1,5 @@
 {
-    "stack": "secure",
+    "stack": "securite",
     "citation": "Loi 1 : un robot ne peut porter atteinte à un être humain ni, restant passif, permettre qu'un être humain soit exposé au danger.[R]Loi 2 : un robot doit obéir aux ordres que lui donne un être humain, sauf si de tels ordres entrent en conflit avec la première loi.[R]Loi 3 : un robot doit protéger son existence tant que cette protection n'entre pas en conflit avec la première ou la deuxième loi.[R]#isaacAsimov",
     "axes": [
         {
@@ -368,7 +368,7 @@
                         },
                         {
                             "title": "Communication",
-                            "key": "chatAnonym043",
+                            "key": "communicationAnonym043",
                             "type": "code",
                             "keyWords": "crypter cryptage chat anonyme communication",
                             "description": "",
@@ -568,10 +568,7 @@
                             "type": "code",
                             "keyWords": "",
                             "description": "",
-                            "content": [
-                                "[cmt]VM",
-                                "[ssc]bla"
-                            ],
+                            "content": [],
                             "children": []
                         },
                         {
@@ -580,10 +577,7 @@
                             "type": "code",
                             "keyWords": "",
                             "description": "",
-                            "content": [
-                                "[cmt]KALI",
-                                "[ssc]todo"
-                            ],
+                            "content": [],
                             "children": []
                         }
                     ]

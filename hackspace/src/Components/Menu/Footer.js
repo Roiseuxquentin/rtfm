@@ -26,10 +26,10 @@ class Footer extends Component {
       this.state = {
         // url : "http://127.0.0.1:3000/",
          url : "http://88.127.234.194/",
-        linksBoard : [{   id:"secure",
+        linksBoard : [{   id:"securite",
                             src:"https://image.flaticon.com/icons/svg/149/149464.svg"
                         },
-                        {   id:"hack",
+                        {   id:"audit",
                             src:"https://image.flaticon.com/icons/svg/2910/2910793.svg"
                         },
                         {   id:"code",
@@ -51,8 +51,8 @@ class Footer extends Component {
     const id = e.target.id
     
 
-    if ((id == "hack") || (id == "secure") || (id == "code")) {
-        (id == "hack") ? this.setState({ footerLine : "noTech , no future.." }) : this.setState({footerLine : this.state.ip }) 
+    if ((id == "audit") || (id == "securite") || (id == "code")) {
+        (id == "audit") ? this.setState({ footerLine : "noTech , no future.." }) : this.setState({footerLine : this.state.ip }) 
         
         //THX STACK OVER FLOW///////////////////////////////////////////
          function array_move(arr, old_index, new_index) {             //  
@@ -95,7 +95,7 @@ class Footer extends Component {
                     </div>
                     <div className="fadeIn" >
                         <ReactTooltip />
-                        {(this.props.stack == "code") ? <Horloge /> : (this.props.stack == "hack") ?  <TextAnimated string="noTech , no future.." up /> : <Ip />  }
+                        {(this.props.stack == "code") ? <Horloge /> : (this.props.stack == "audit") ?  <TextAnimated string="noTech , no future.." up /> : <Ip />  }
                     </div>
                 </div>
                 )

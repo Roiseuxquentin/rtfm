@@ -28,10 +28,12 @@ class Lateral extends Component {
 
 		if (boolean) {
 			code.forEach(elt => elt.style.marginLeft = "20vw")
-			document.getElementById("header").style.zIndex = "0"
+			document.getElementById("header").style.zIndex = "1"
 			document.getElementById("header").style.opacity = 0
+			document.getElementById("lycos").style.zIndex = "-1"
 		} else {
 			code.forEach(elt => elt.style.marginLeft = "10px")
+			document.getElementById("lycos").style.zIndex = "0"
 		}
 	}
 
